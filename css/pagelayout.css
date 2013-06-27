@@ -1,0 +1,164 @@
+@charset "utf-8";
+/* CSS Document */
+.myDiv{
+    position:relative;
+    z-index:0;
+	width:1200px;
+	margin:0px auto 0px auto;
+	font-family:Signika;
+	
+}
+.content{
+	position:absolute;
+	z-index:-1;
+	top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:#FFF;
+	opacity:0.7;
+    width: 100%;
+    height: 2000px;
+}
+.fixedHeader{
+	top:0px;
+	z-index:1;
+	position:fixed;
+	width:1200px;
+	height:50px;
+	background-color:#000;
+	margin:0px auto 0px auto;
+}
+
+/* This is the CSS for the Main menus............................................................*/
+
+.pageHeader nav {
+	background: rgba(35, 31, 32, .8);
+	height: 80px;
+	width: 1200px;	
+	position:relative;
+	top:40px;
+}
+
+nav#pageNav {
+	
+	height: 80px;
+	background: #222;
+	width: 1200px;	
+	position:relative;
+	
+}
+
+nav#pageNav ul {
+	text-align: center;
+	float:left;
+}
+
+
+nav#pageNav ul li {
+	font: 16px Signika;
+	cursor: pointer;
+	-webkit-transition: padding .05s linear;
+	-moz-transition: padding .05s linear;
+	-ms-transition: padding .05s linear;
+	-o-transition: padding .05s linear;
+	transition: padding .05s linear;
+}
+nav#pageNav ul li.drop {
+	position: relative;
+}
+nav#pageNav ul > li {
+	display: inline-block;
+}
+nav#pageNav ul li a.heading {
+	line-height: 80px;
+	height: 80px;
+	color: #777;
+	text-decoration: none;
+	display: block;	
+	padding:0px 50px;
+	font-size: 1em;
+	-webkit-transition: all .1s ease-out;
+	-moz-transition: all .1s ease-out;
+	-ms-transition: all .1s ease-out;
+	-o-transition: all .1s ease-out;
+	transition: all .1s ease-out;
+}
+nav#pageNav ul li.current a.heading {
+	color:#FF9900;
+}
+
+nav#pageNav .dropOut .triangle {
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 8px solid white;
+	top: -8px;
+	left: 50%;
+	margin-left: -8px;
+}
+
+nav#pageNav .dropdownContain {
+	width: 160px;
+	position: absolute;
+	z-index: 2;
+	left: 50%;
+	margin-left: -80px; 
+	top: -500px;
+}
+
+nav#pageNav .dropOut {
+	width: 160px;
+	background: white;
+	float: left;	
+	position: relative;
+	margin-top: 0px;
+	opacity: 0;	
+	border:2px solid #FF9900;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 1px 6px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 1px 6px rgba(0,0,0,.15);
+	box-shadow: 0 1px 6px rgba(0,0,0,.15);
+	-webkit-transition: all .1s ease-out;
+	-moz-transition: all .1s ease-out;
+	-ms-transition: all .1s ease-out;
+	-o-transition: all .1s ease-out;
+	transition: all .1s ease-out;
+}
+
+nav#pageNav .dropOut ul {
+	float: left;
+	padding: 10px 0;
+}
+nav#pageNav .dropOut ul li {
+	text-align: left;
+	float: left;
+	width: 125px;
+	padding: 12px 0 10px 15px;
+	margin: 0px 10px;
+	color: #777;	
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-transition: background .1s ease-out;
+	-moz-transition: background .1s ease-out;
+	-ms-transition: background .1s ease-out;
+	-o-transition: background .1s ease-out;
+	transition: background .1s ease-out;
+}
+
+nav#pageNav .dropOut ul li:hover {
+	background: #f6f6f6;
+}
+
+nav#pageNav li:hover a.heading  { color: #FFF;}
+nav#pageNav li:hover a.subheading { color: #000;text-decoration:none; }/* On hovering...this adds the color effects to the elements*/
+nav#pageNav ul li:hover .dropdownContain { top: 65px; }
+nav#pageNav ul li:hover .underline { border-bottom-color: #777; }
+nav#pageNav ul li:hover .dropOut { opacity: 1; margin-top: 8px; }
+
+/* CSS for Main Menu end...........................................................*/

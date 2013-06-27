@@ -1,0 +1,24 @@
+/* TEAM */
+
+	UI developer: Maria Macias
+	Twitter: @maria_ux
+	From:Barcelona, Catalonia, Spain
+
+	One eyed illustrator: Carlos Mañas
+	Twitter: @oneeyedman
+	From:Madrid, Spain
+
+	Standard Man: Abel Cabans
+	Twitter: @abelcabans
+	From:Barcelona, Catalonia, Spain
+
+	Web designer: Abel Sutilo
+	Twitter: @abelsutilo
+	From:Sevilla, Andalucia, Spain
+		
+
+/* SITE */
+	Last update: 26/06/2013
+	Language: English
+	Doctype:HTML5
+	IDE: Sublime Text, Inkscape
