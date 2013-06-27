@@ -1,9 +1,9 @@
 $(document).ready(function(){
 	//FB, Twitter, gplus logos mouse hover events
-	$("#fblogo").mouseenter(function(){$(this).attr('src', "images/Logos/fb_logo_2.jpg");});
-	$("#fblogo").mouseleave(function(){$(this).attr('src', "images/Logos/fb_logo.jpg");});
-	$("#gpluslogo").mouseenter(function(){$(this).attr('src', "images/Logos/gplus_logo_2.jpg");});
-	$("#gpluslogo").mouseleave(function(){$(this).attr('src', "images/Logos/gplus_logo.jpg");});
-	$("#twitterlogo").mouseenter(function(){$(this).attr('src', "images/Logos/twitter_logo_2.jpg");});
-	$("#twitterlogo").mouseleave(function(){$(this).attr('src', "images/Logos/twitter_logo.jpg");});
+	$("#fblogo").mouseenter(function(){$(this).animate({width: '70px', height: '70px'}, 200);});
+	$("#fblogo").mouseleave(function(){$(this).animate({width: '27px', height: '27px'}, 200);});
+	$("#gpluslogo").mouseenter(function(){$(this).animate({width: '70px', height: '70px'}, 200);});
+	$("#gpluslogo").mouseleave(function(){$(this).animate({width: '27px', height: '27px'}, 200);});
+	$("#youtubelogo").mouseenter(function(){$(this).animate({width: '70px', height: '70px'}, 200);});
+	$("#youtubelogo").mouseleave(function(){$(this).animate({width: '27px', height: '27px'}, 200);});
 });
