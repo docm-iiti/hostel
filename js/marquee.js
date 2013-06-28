@@ -1,13 +1,13 @@
 // JavaScript Document
 $(document).ready(function(){
-
-    // Generate Navigation links
+	//Indicator's at the bottom
 	$('.marquee_panels .marquee_panel').each(function(index){
 		$('.marquee_nav').append('<a class="marquee_nav_item" ></a>');
 	});
 	
-	var no_of_photos;
+	
 	// Generate PhotoStrip
+	var no_of_photos;
 	$('img.marquee_panel_photo').each(function(index){
 		var photoWidth = $('.marquee_container').width();
 		var photoPosition = index * photoWidth;
@@ -19,9 +19,10 @@ $(document).ready(function(){
 	
 	
 	//This is my AutoPlay Code
+	var photoChangeInterval=5000;
 	var marqueeIndex=0;
 	var navHandle=document.getElementsByClassName("marquee_nav_item");
-	var loopState=setInterval(function autoPlay(){
+	function autoPlay(){
 		if(marqueeIndex==no_of_photos)
 			marqueeIndex=0;
 		else marqueeIndex++;	
@@ -37,12 +38,21 @@ $(document).ready(function(){
 			$('.marquee_caption_content').html(newHTML);
 			setCaption();
 		});
-	},5000);
+	}
+	var autoPlay_handle=setInterval(autoPlay,photoChangeInterval);
+	$('.marquee_container').mouseenter(function(){
+			clearInterval(autoPlay_handle);
+	});
+	$('.marquee_container').mouseleave(function(){
+		autoPlay_handle=setInterval(autoPlay,photoChangeInterval);
+	});
+	
 
 		
-	// Set up Navigation Links	
-	$('.marquee_nav a.marquee_nav_item').click(function(){
-		
+	
+	
+		// Set up Navigation Links	
+		$('.marquee_nav a.marquee_nav_item').click(function(){
 		//This is for changing the navigaion orb at the bottom
 		$('.marquee_nav a.marquee_nav_item').removeClass('selected');
 		$(this).addClass('selected');
