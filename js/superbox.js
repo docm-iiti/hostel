@@ -51,31 +51,37 @@ $(document).ready(function() {
         
         superbox.append(superboximg).append(superboxclose);
         $(".superbox").append(superbox);
-        superbox.css('display','none');
+        superbox.css('display','hidden');
         
         return this.each(function() {
             
             $('.superbox-list').click(function() {
-        
+                var clickedImage = $(this);
                 var currentimg = $(this).find('.superbox-img');
                 var imgData = currentimg.data('img');
-                superboximg.attr('src', imgData);
-                
-                if($('.superbox-current-img').css('opacity') == 0) {
-                    $('.superbox-current-img').animate({opacity: 1});
-                }
-                
-                if($(this).next().hasClass('superbox-show')){
+
+                $('.superbox-current-img').animate({opacity: 0}, 100, function(){
+                    superboximg.attr('src', imgData);
+
+                    if(clickedImage.next().hasClass('superbox-show')){
                         superbox.slideToggle();
-                } else {
-                    $(".superbox-show").remove();
-                    superbox.insertAfter(this);
-                    superbox.slideDown();
-                }
+                        if ($('.superbox-current-img').css('opacity', 0))
+                            $('.superbox-current-img').animate({opacity: 1}, 100);
+                        else
+                            $('.superbox-current-img').animate({opacity: 0}, 100);
+
+                    } else {
+                        $(".superbox-show").remove();
+                        superbox.insertAfter(clickedImage);
+                        $('.superbox-current-img').animate({opacity: 1}, 100);
+                        superbox.slideDown();
+                    }
                 
-                $('html, body').animate({
-                    scrollTop:superbox.position().top - currentimg.width()
-                }, 'medium');
+                    $('html, body').animate({
+                        scrollTop:superbox.position().top - currentimg.width()
+                    }, 'medium');
+
+                });
             
             });
                         
