@@ -50,6 +50,8 @@ $(document).ready(function() {
         var superboxclose = $('<div class="superbox-close"></div>');
         
         superbox.append(superboximg).append(superboxclose);
+        $(".superbox").append(superbox);
+        superbox.css('display','none');
         
         return this.each(function() {
             
@@ -63,10 +65,12 @@ $(document).ready(function() {
                     $('.superbox-current-img').animate({opacity: 1});
                 }
                 
-                if ($(this).next().hasClass('superbox-show')) {
-                    superbox.toggle();
+                if($(this).next().hasClass('superbox-show')){
+                        superbox.slideToggle();
                 } else {
-                    superbox.insertAfter(this).css('display', 'block');
+                    $(".superbox-show").remove();
+                    superbox.insertAfter(this);
+                    superbox.slideDown();
                 }
                 
                 $('html, body').animate({
