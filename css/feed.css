@@ -1,11 +1,15 @@
 /* CSS for feed ................... */
 
 #feed {
-    position: relative;
+    position: absolute;
     margin : 0;
-    width: 700px;
-	height: 400px;
+	display:block;
+	float:left;
+    width: 800px;
+	height: 300px;
+	margin-left:400px;
 	background: rgba(20,20,20,0.4);
+	
 }
 
 #feed div {
@@ -15,28 +19,31 @@
 #feedheader {
 	padding: 8px 0 4px;
 	background: #9e5c1a; /* Old browsers */
-	background: -moz-linear-gradient(-45deg,  #9e5c1a 0%, #794711 50%, #5d350b 51%, #915617 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#9e5c1a), color-stop(50%,#794711), color-stop(51%,#5d350b), color-stop(100%,#915617)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(-45deg,  #9e5c1a 0%,#794711 50%,#5d350b 51%,#915617 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(-45deg,  #9e5c1a 0%,#794711 50%,#5d350b 51%,#915617 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(-45deg,  #9e5c1a 0%,#794711 50%,#5d350b 51%,#915617 100%); /* IE10+ */
-	background: linear-gradient(135deg,  #9e5c1a 0%,#794711 50%,#5d350b 51%,#915617 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9e5c1a', endColorstr='#915617',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	background: -moz-linear-gradient(-45deg,  #ff6600 0%, #794711 50%, #5d350b 51%, #e07000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ff6600), color-stop(50%,#794711), color-stop(51%,#5d350b), color-stop(100%,#e07000)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg,  #ff6600 0%, #794711 50%, #5d350b 51%, #e07000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg,  #ff6600 0%, #794711 50%, #5d350b 51%, #e07000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg,  #ff6600 0%, #794711 50%, #5d350b 51%, #e07000 100%); /* IE10+ */
+	background: linear-gradient(135deg,  #ff6600 0%,#794711 50%,#5d350b 51%,#eo7000 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='##ff6600', endColorstr='#e07000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	color: white;
 	font-style: bold;
+
+	/*ff9900 e07000*/
 }
 
 #feedmain {
-	height: 368px;
+	height: 268px;
 	overflow-y: auto;
 	overflow-x: hidden;
+	
 }
 
 .feedpost {
 	margin-top: -19px;
 	font-family: Helvetica;
-	background: rgba(210,200,180,0.5);
-	height: 368px;
+	background:rgba(255,255,255,0.6);
+	height: 268px;
 }
 
 .feedposthead {
@@ -56,7 +63,7 @@
 .feedpostdes {
 	margin-left: 30px;
 	margin-right: 30px;
-	height: 240px;
+	height: 140px;
 	overflow: auto;
 }
 
