@@ -19,11 +19,9 @@
 }
 
 .marquee_caption {
-	color: #FFF;
+	
 	background-image: url(../images/Slider/marquee_caption.png);
 	background-repeat:repeat-x;
-	background-position: 0px 0px;
-	margin: 0px;
 	width: 1200px;
 	padding-top: 15px;
 	padding-right: 0px;
@@ -32,6 +30,7 @@
 	position: absolute;
 	left: 0px;
 	top:300px;
+	
 }
 
 .marquee_caption_content {
@@ -76,7 +75,14 @@
 	top: 370px;
 	right: 20px;
 }
-
+.marquee_hover_to_pause{
+	float:right;
+	top:0px;
+	right:5px;
+	color:#FFF;
+	z-index:4;
+	
+}
 .marquee_nav a {
 	background-image: url(../images/Slider/nav_buttons.png);
 	background-repeat: no-repeat;
@@ -90,11 +96,7 @@
 
 .marquee_nav a:hover {
 	background-position: -25px 0px;
-	-webkit-transition: all .1s ease-out;
-	-moz-transition: all .1s ease-out;
-	-ms-transition: all .1s ease-out;
-	-o-transition: all .1s ease-out;
-	transition: all .1s ease-out;
+	
 }
 
 .marquee_panels {
