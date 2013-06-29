@@ -56,7 +56,7 @@ $(document).ready(function(){
 	//scrolling
 
 	var curfeedno = 0;
-	var postheight = 268;
+	var postheight = 468;
 	var autoplay = true;
 	function scrollToNextFeed(){
 		if(autoplay){

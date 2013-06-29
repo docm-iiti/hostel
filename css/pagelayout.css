@@ -179,14 +179,25 @@ nav#pageNav ul li:hover .dropOut {
 }
 /**********CSS for Student Corner*********************/
 
-.student_corner{
+.description_content{
 	
 	position:absolute;
 	width:1200px;
 	height:498px;
 	background-image:url(../images/student_bg_img.png);
 	border-top:2px solid #F90;
-	position:relative;	
+		
+	color:#FFF;
+	
+}
+.hostel_description{
+	position:absolute;
+	font-family:'Playball',cursive;
+	height:300px;
+	font-size:25px;
+	width:400px;
+	margin-top:70px;
+	margin-left:70px;
 }
 /***********Footer*************************************/
 .footer{
