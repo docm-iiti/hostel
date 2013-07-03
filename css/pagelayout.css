@@ -171,8 +171,6 @@ nav#pageNav ul li:hover .dropOut {
 /**********CSS for Student Corner*********************/
 
 .student_corner{
-	
-	position:absolute;
 	width:1200px;
 	height:498px;
 	background-image:url(../images/student_bg_img.png);
