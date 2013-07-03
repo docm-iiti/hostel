@@ -4,17 +4,15 @@
   <title>Hostel | IIT Indore</title>
   <link rel="stylesheet" href="css/pagelayout.css" />
   <link rel="stylesheet" href="css/superbox.css" />
+  <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
 </head>
 
-<body background="images/background.jpg">
-  <div class="myDiv">
-    <div class="fixedHeader">
-      <a href="index.html"><img src="images/logo.jpg" style="height:50px;float:left;padding:0 10px 0 10px;"><p style="float:left;margin:0px;padding:12px 4px;color:#FFF;font-size:18px">Hostel</p></a>
-      <a href="http://webmail.iiti.ac.in"><p style="color:#FFF;float:right;margin:0px;padding:12px 4px 0 10px;font-size:18px">Login to Webmail</p></a>
-      <a href="https://www.facebook.com/pages/iit-indore/130703073519"><img id="fblogo" style="float:right;padding:10px 4px; " height="27px" src="images/Logos/fb_logo.svg" alt="Like" /></a>
-      <a href="https://plus.google.com/+iitindore"><img id="gpluslogo" style="float:right;padding:10px 4px;" height="27px" src="images/Logos/gplus_logo.svg" alt="+1" /></a>
-      <a href="http://www.youtube.com"><img id="youtubelogo" style="float:right;padding:10px 4px; " height="27px" alt="Videos" src="images/Logos/youtube_logo.svg"/></a>
+<body background="images/background.jpg" >
+  <div class="fixedHeader">
+      <a href="index.php"><img src="images/logo.jpg" style="height:50px;float:left;padding:0 10px 0 10px;"><p style="float:left;margin:0px;padding:12px 4px;color:#FFF;font-size:18px">Hostel</p></a>
+      <a href="http://www.youtube.com"><p style="color:#FFF;float:right;margin:0px;padding:12px 4px 0 10px;font-size:18px">Sign In </p></a>
     </div>
+  <div class="myDiv" style="height:auto;">
     <div class="pageHeader">
       <nav id="pageNav" role="navigation">
         <ul> 
@@ -78,12 +76,8 @@
     <div class="content">
       <!--/*********** Content ***************/-->
 
-
-
-      <!--/*********** Superbox Gallery ***************/-->
-
-
-      <div class="superbox">
+      <!-- Superbox Gallery-->
+	<div class="superbox">
         <div class="superbox-list">
             <img src="images/superbox/1.jpg" data-img="images/superbox/1.jpg" alt="" class="superbox-img">
         </div><!--
@@ -93,38 +87,51 @@
             <img src="http://dummyimage.com/600x400/000/fff&text=BKC" data-img="http://dummyimage.com/600x400/000/fff&text=BKC" alt="" class="superbox-img">
         </div>
       </div>
+	<!-- Super Box Gallery Ends-->
+   
+   
+    <!-- PhotoSphere Starts -------------------------------->
+    <g:panoembed imageurl="https://lh5.googleusercontent.com/-kr97Eucg6sM/UKGEuvo_eBI/AAAAAAAAi0s/adq8uqyhm_k/photo.jpg"
+             fullsize="4096,2048"
+             croppedsize="4096,1380"
+             offset="0,480"
+             displaysize="1200,600"/>
+    <!-----------PhotoSphere Ends-------->         
+    
+		</div>
+  </div>
+	
 
-
-  <div class="footer">
-     	
-     	<div class="footer_overlay_content">
-        	<div class="footer_quicklinks">
-            	<h2>QUICK LINKS</h2>
+  <footer class="footer">
+     	<div class="footercontent">
+             <div id="quicklinks">
+            	<h2>Quick Links</h2>
                 <ul>
                 <li><a href="#">Institute Website</a></li>
-                <li><a href="#">Student Gymkhana</a></li>
-                <li><a href="#">Training and Placement Cell</a></li>
                 <li><a href="">School of Computer Science and Engineering</a></li>
                 <li><a href="">School of Electrical Engineering</a></li>
                 <li><a href="">School of Mechanical Engineering</a></li>
-                <li><a href="">School of Physchology</a></li>
-            </ul></div>
-            <div class="footer_quicklinks_2">
-            	<ul><li><a href="">Downloads</a>
-                <li><a href="">Complaint Box</a></li>
-                <li>
-           
-            
-            
+                <li><a href="">School of Psychology</a></li>
+                <li><a href="#">Training and Placement Cell</a></li>
+                <li><a href="#">Student Gymkhana</a></li>
+                <li><a href="#">Webmail</a></li>      
+            	</ul>
+             </div>
+            <div id="connect">
+        	<h2>Connect With Us</h2>
+            <img id="fblogo" src="images/Logos/fb_logo.png" height="64px" />
+            <img id="gpluslogo" src="images/Logos/gplus_logo.png" height="64px" />
+            <img id="youtubelogo" src="images/Logos/youtube_logo.png" height="64px" />
             </div>
-        
-        
-        </div>
-     
+           <p style="font-family:Signika; font-size:14px;color:#666;">IIT Indore Hostel Website 2013-14 <br> Designed and Developed by <b>Synapse</b>. Copyright  &copy </p> 
      </div>
+   </footer>
      
   <script type="text/javascript" src="js/vendor/jquery-1.10.1.min.js" ></script>
   <script type="text/javascript" src="js/superbox.js" ></script>
   <script type="text/javascript" src="js/index.js" ></script>
+  <script>
+  gapi.panoembed.go();
+  </script>
 </body>
 </html>
