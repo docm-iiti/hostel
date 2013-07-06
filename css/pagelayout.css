@@ -5,39 +5,53 @@
 	font-weight:300;
 	src:url(../fonts/Signika-Light.woff);
 }
+html,body{
+	margin:0px;
+}
 
 .myDiv {
 	position:relative;
-	top:42px;
+	top:34px;
 	z-index:0;
 	width:1200px;
 	font-family:Signika;
 	margin:0 auto;
 	background:rgba(255,255,255,0.7);
 	height:1000px;
+	
 }
 
 .fixedHeader {
+	font-family:Signika;
 	top:0;
 	z-index:10;
 	position:fixed;
-	width:1200px;
+	width:100%;
+	margin:0px;
 	height:50px;
-	background-color:#000;
-	margin:0 auto;
+	background:rgba(0,0,0,0.8);
+	text-rendering: optimizeLegibility;
 	-webkit-box-shadow:0 2px 6px rgba(0,0,0,.15);
 	-moz-box-shadow:0 2px 6px rgba(0,0,0,.15);
 	box-shadow:0 2px 6px rgba(0,0,0,.15);
+}
+
+
+.pageHeader nav {
+	background:rgba(35,31,32,.8);
+	height:80px;
+	width:1200px;
+	position:absolute;
 }
 
 nav#pageNav {
 	height:80px;
 	background:#222;
 	width:1200px;
+	position:relative;
 }
 
 nav#pageNav ul {
-	margin: 0 auto;
 	text-align:center;
 }
 
@@ -61,7 +75,7 @@ nav#pageNav ul > li {
 
 nav#pageNav ul li a.heading {
 	line-height:80px;
-	height:70px;
+	height:80px;
 	color:#777;
 	text-decoration:none;
 	display:block;
@@ -71,7 +85,7 @@ nav#pageNav ul li a.heading {
 	-ms-transition:all .1s ease-out;
 	-o-transition:all .1s ease-out;
 	transition:all .1s ease-out;
-	padding:10px 45px 0 45px;
+	padding:0 45px;
 }
 
 nav#pageNav ul li.current a.heading {
@@ -157,7 +171,7 @@ nav#pageNav li:hover a.subheading {
 }
 
 nav#pageNav ul li:hover .dropdownContain {
-	top:80px;
+	top:65px;
 }
 
 nav#pageNav ul li:hover .underline {
@@ -170,14 +184,33 @@ nav#pageNav ul li:hover .dropOut {
 }
 /**********CSS for Student Corner*********************/
 
-.student_corner{
+.description_content{
+	
+	position:absolute;
 	width:1200px;
 	height:498px;
-	background-image:url(../images/student_bg_img.png);
+	/*background-image:url(../images/background_footer.jpg);*/
 	border-top:2px solid #F90;
-	position:relative;	
+	border-bottom:2px solid #F90;	
+	color:#FFF;
+	z-index:2;
+	-webkit-box-shadow:0 2px 6px rgba(0,0,0,.15);
+	-moz-box-shadow:0 2px 6px rgba(0,0,0,.15);
+	box-shadow:0 2px 6px rgba(0,0,0,.15);
+	
 }
-/***********Footer*************************************/
+.hostel_description{
+	position:absolute;
+	font-family:'Playball',cursive;
+	height:300px;
+	color:#000;
+	font-size:20px;
+	width:330px;
+	margin-top:10px;
+	margin-left:20px;
+	
+}
+/***********Footer*************************************
 .footer{
 	position:relative;
 	z-index:0;
@@ -224,3 +257,78 @@ nav#pageNav ul li:hover .dropOut {
 color:#F90;
 font-size:17px;
 }
+*/
+.footer{
+	margin-top:10px;
+	background-image:url(../images/background_footer.jpg);
+	position:relative;
+	width:100%;
+	height:300px;
+	border-bottom:1px solid #F90;
+	font-family:Signika;
+	bottom:0px;
+}
+.footercontent{
+	position:relative;
+	background-image:url(../images/footer_background.png);
+	color:#CCC;
+	text-align:center;
+	width:1200px;
+	height:300px;
+	margin:0px auto;
+	overflow:hidden;
+}
+.connect{
+	position:absolute;
+	width:150px;
+	top:20px;
+	margin-left:600px;
+	right:20px;
+	border:3px solid #FFF;
+	
+	
+}
+.footercontent img{
+	margin:16px auto;
+	padding-right:5px;
+	cursor:pointer;
+	
+}
+#quicklinks{
+	position:absolute;
+	
+	text-align:left;
+	
+	color:#CCC;
+	margin-top:0px;
+	margin-left:20px;
+}
+
+#quicklinks li{
+	list-style:none;
+	background:rgba(255,255,255,0.8);
+	display:block;
+	color:#CCC;
+	margin-left:0px;
+	
+}
+#quicklinks li a{
+	text-decoration:none;
+	float:left;
+	color:#999;
+}
+#quicklinks li a:hover{
+color:#F90;
+
+}	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
