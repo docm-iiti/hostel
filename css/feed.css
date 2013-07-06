@@ -5,9 +5,9 @@
     margin : 0;
 	display:block;
 	float:left;
-    width: 600px;
+    width: 800px;
 	height: 300px;
-	margin-left:600px;
+	margin-left:400px;
 	background: rgba(20,20,20,0.4);
 	z-index:4;
 }
