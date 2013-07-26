@@ -12,11 +12,12 @@
   <?php 
     session_start();
   ?>
-  <div class="fixedHeader">
-    <a href="index.php"><img src="images/logo.jpg" style="height:50px;float:left;padding:0 10px 0 10px;"><p style="float:left;margin:0px;padding:12px 4px;color:#FFF;font-size:18px">Hostel</p></a>
-    <a href="http://www.youtube.com"><p style="color:#FFF;float:right;margin:0px;padding:12px 4px 0 10px;font-size:18px">Sign In </p></a>
-  </div>
+  <?php
+  include 'header.php';
+  ?>
   <div class="myDiv" style="height:790px">
+    <div class="pageHeader_fill">
+    <div class="pageHeader">
     <nav id="pageNav" role="navigation">
       <ul> 
         <li>
@@ -77,6 +78,8 @@
     
       </ul> 
     </nav>
+    </div>
+    </div>
       <!--/*********** Content ***************/-->
 
     <div id="stdcnr">
@@ -173,5 +176,6 @@
   <script type="text/javascript" src="js/index.js" ></script>
   <script type="text/javascript" src="js/login.js" ></script>
   <script type="text/javascript" src="js/studentscorner.js" ></script>
+  <script src="js/header_login.js"></script>
 </body>
 </html>

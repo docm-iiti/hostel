@@ -1,5 +1,4 @@
 #profile{
-	width: 1000px;
 	height: 600px;
 	padding: 50px 50px 0 50px;
 }
@@ -26,7 +25,7 @@
 #profDataDiv {
 	position: relative;
 	top: -120px;
-	height: 690px;
+	height: 700px;
 	border-left: #F90 2px solid;
 	border-right: #F90 2px solid;
 	margin: 0 auto;

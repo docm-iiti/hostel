@@ -17,6 +17,8 @@
     <a href="http://www.youtube.com"><p style="color:#FFF;float:right;margin:0px;padding:12px 4px 0 10px;font-size:18px">Sign In </p></a>
   </div>
   <div class="myDiv" style="height:790px">
+    <div class="pageHeader_fill">
+    <div class="pageHeader">
     <nav id="pageNav" role="navigation">
       <ul> 
         <li>
@@ -77,6 +79,8 @@
     
       </ul> 
     </nav>
+    </div>
+    </div>
     <div id="stdcnr">
       <div id="sidebar">
         <div id="sidebarmenu">

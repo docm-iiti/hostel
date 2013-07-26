@@ -3,7 +3,7 @@
 	font-family:Roboto;
 	font-style:normal;
 	font-weight:300;
-	/*src:url(../fonts/Roboto-Light.woff);*/
+	src:url(../fonts/Roboto-Light.woff);
 }
 html,body{
 	margin:0px;
@@ -12,12 +12,17 @@ html,body{
 
 .myDiv {
 	position:relative;
-	top:34px;
+	padding:34px 0 1px 0;
 	z-index:0;
 	width:100%
 	font-family:Roboto;
 	margin:0 auto;
-	background:#CCC;
+	background: #9e5c1a; /* Old browsers */
+	background: -moz-linear-gradient(90deg, #777 0%,#CACACA 40%, #CACACA 60%, #777 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(60%,#CACACA), color-stop(100%,#777)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(90deg, #777 0%,#CACACA 40%, #CACACA 60%, #777 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(90deg, #777 0%,#CACACA 40%, #CACACA 60%, #777 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(90deg, #777 0%,#CACACA 40%, #CACACA 60%, #777 100%); /* IE10+ */
 }
 
 .fixedHeader {
@@ -225,34 +230,31 @@ nav#pageNav ul li:hover .dropOut {
 .news_border{
 	border-right:dotted 2px #e74c3c;
 }
-.news{
+.card{
 	position:relative;
-	width:350px;
 	height:400px;
+	border-radius: 2px;
 	border-top:2px solid #e74c3c;
-	border-bottom:2px solid #e74c3c;	
-	color:#FFF;
+	border-bottom:2px solid #e74c3c;
+	background: rgba(245,245,245,0.65);
+	color:#111;
 	z-index:2;
 	float:left;
-	padding:0px;
 	margin-left:50px;
 	-webkit-box-shadow:0 2px  rgba(0,0,0,.15);
 	-moz-box-shadow:0 2px 6px rgba(0,0,0,.15);
 	box-shadow:0 2px 6px rgba(0,0,0,.15);
 }
+.card h4 {
+	margin: 20px;
+	padding: 10px;
+}
+.news{
+	width:350px;	
+	padding:0px;
+}
 .something{
-	position:relative;
 	width:700px;
-	height:400px;
-	border-top:2px solid #e74c3c;
-	border-bottom:2px solid #e74c3c;	
-	color:#FFF;
-	z-index:2;
-	float:left;
-	margin-left:50px;
-	-webkit-box-shadow:0 2px 6px rgba(0,0,0,.15);
-	-moz-box-shadow:0 2px 6px rgba(0,0,0,.15);
-	box-shadow:0 2px 6px rgba(0,0,0,.15);
 }
 	
 /***********Footer*************************************/

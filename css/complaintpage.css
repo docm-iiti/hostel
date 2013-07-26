@@ -1,5 +1,4 @@
 #profile{
-	width: 1000px;
 	height: 600px;
 	padding: 50px 50px 0 50px;
 }
@@ -18,9 +17,14 @@
 	width: 800px;
 }
 
+#editProfile {
+	float: right;
+	top: -7px;
+}
+
 #profDataDiv {
 	position: relative;
-	top: -120px;
+	top: -117px;
 	height: 690px;
 	border-left: #F90 2px solid;
 	border-right: #F90 2px solid;
