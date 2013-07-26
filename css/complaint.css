@@ -13,7 +13,7 @@
 	background: #000;
 	font-size: 24px;
 	padding: 33px;
-	color: #F90;
+	color: #e74c3c;
 }
 
 #cbTabs {
@@ -40,9 +40,9 @@
 	text-align: center;
 	font-size: 40px;
 	background: rgba(20,10,0,0.9);
-	border: #F90 1px solid;
+	border: #e74c3c 1px solid;
 	border-radius: 3px;
-	color: #F90;
+	color: #e74c3c;
 }
 
 .cbnotvotes{
@@ -51,7 +51,7 @@
 
 .cbpost{
 	font-family: Signika;
-	border-left: 4px #F90 solid;
+	border-left: 4px #e74c3c solid;
 	background: rgba(255,255,255,0.4);
 	min-height: 60px;
 	padding: 5px;

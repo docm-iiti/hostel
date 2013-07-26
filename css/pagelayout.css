@@ -266,6 +266,7 @@ nav#pageNav ul li:hover .dropOut {
 	height:400px;
 	font-family:Roboto;
 	overflow:hidden;
+	z-index:3;
 }
 .footercontent{
 	position:relative;
