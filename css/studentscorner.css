@@ -1,0 +1,70 @@
+#stdcnr {
+	height: 700px;
+}
+
+#sidebar {
+	position: absolute;
+	background: #000;
+	width: 30px;
+	height: 700px;
+	overflow: hidden;
+	float: left;
+  -webkit-transition: all 0.3s ease-out; 
+     -moz-transition: all 0.3s ease-out; 
+       -o-transition: all 0.3s ease-out; 
+          transition: all 0.3s ease-out; 
+    z-index: 5;
+}
+
+#sidebar:hover {
+	background: rgba(0,0,0,0.85);
+	width: 200px;
+	box-shadow: rgba(0,0,0,0.7) 10px 0 10px -5px;
+	border-right: 2px #F90 solid;
+}
+
+#sidebarmenu {
+	position: absolute;
+	top: 30%;
+	left: 7px;
+	width: 10px;
+	color: #FFF;
+	height: 100%;
+	z-index: 5;
+}
+
+#sidebar ul{
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	width: 200px;
+}
+
+#sidebar li {
+	white-space: nowrap;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 40px;
+	list-style-type: none;
+}
+
+#sidebar a {
+	color: #DDD;
+	text-decoration: none;
+}
+
+#sidebar li:hover{
+	background: #222;
+	cursor: pointer;
+	color: #F90;
+}
+
+#stdcnrcont {
+	padding-left: 50px; 
+	padding-right: 50px; 
+	width: 1100px;
+	height: 700px;
+	overflow: auto;
+	left: 30px;
+	float: left;
+}

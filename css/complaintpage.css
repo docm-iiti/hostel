@@ -1,0 +1,39 @@
+#profile{
+	width: 1000px;
+	height: 600px;
+	padding: 50px 50px 0 50px;
+}
+
+#profileHeader{
+	position: relative;
+	background: #000;
+	margin: 0 -100px 0 -100px;
+	padding: 20px 150px;
+	color: #F90;
+	z-index: 2;
+}
+
+#profile h2 {
+	margin: 0;
+	width: 800px;
+}
+
+#profDataDiv {
+	position: relative;
+	top: -120px;
+	height: 690px;
+	border-left: #F90 2px solid;
+	border-right: #F90 2px solid;
+	margin: 0 auto;
+	width: 800px; 
+	background: #DDD;
+	z-index: 1;
+}
+
+#profData {
+	position: relative;
+	top: 170px;
+	margin: 0 auto;
+	width: 600px; 
+	background: #DDD;
+}

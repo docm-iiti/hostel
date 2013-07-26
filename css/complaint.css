@@ -1,0 +1,77 @@
+#complaintbox {
+	font: 75% "Signika", sans-serif;
+	height: 700px;
+	border-left: #000 2px solid;
+	border-right: #000 2px solid;
+	margin: 0 auto;
+	width: 800px; 
+	background: #DDD;
+	z-index: 1;
+}
+
+#cbHeader{
+	background: #000;
+	font-size: 24px;
+	padding: 33px;
+	color: #F90;
+}
+
+#cbTabs {
+	height: 595px;
+}
+
+.cbpost:nth-child(2n) {
+	background: rgba(235,223,200,0.4);
+}
+
+.cbplus {
+	float: left;
+	margin: 3px;
+	width: 17px;
+	height: 17px;
+	position: relative;
+	top: 11px;
+}
+
+.cbvotes{
+	height: 50px;
+	width: 50px;
+	float: left;
+	text-align: center;
+	font-size: 40px;
+	background: rgba(20,10,0,0.9);
+	border: #F90 1px solid;
+	border-radius: 3px;
+	color: #F90;
+}
+
+.cbnotvotes{
+    padding-left: 100px;
+}
+
+.cbpost{
+	font-family: Signika;
+	border-left: 4px #F90 solid;
+	background: rgba(255,255,255,0.4);
+	min-height: 60px;
+	padding: 5px;
+    margin: 20px 0;
+    box-shadow: rgba(0,0,0,0.4) 0 0 4px 0;
+	clear: both;
+}
+
+.cbpost:hover{
+    background: rgba(255,255,255,0.8);
+}
+
+.cbcomp *{
+	font-size: 150%;
+	text-decoration:none;
+	font-weight: 700;
+}
+
+.cbinfo{
+	font-size: 80%;
+	font-family: Helvetica;
+	margin-top: 10px;
+}

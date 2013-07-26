@@ -210,54 +210,7 @@ nav#pageNav ul li:hover .dropOut {
 	margin-left:20px;
 	
 }
-/***********Footer*************************************
-.footer{
-	position:relative;
-	z-index:0;
-	border-top:2px solid #F90;
-	width:1200px;
-	font-family:Signika;
-	margin:0 auto;
-	background-image:url(../images/footer.jpg);
-	height:300px;
-	overlay:hidden;
-	bottom:0px;
-}
-.footer .footer_quicklinks{
-	position:absolute;
-	margin-left:50px;
-	width:400px;
-	color:#FFF;
-}
-	
-.footer .footer_quicklinks li{
-	list-style-type:none;
-}
-.footer .footer_quicklinks li a{
-	text-decoration:none;
-	color:#FFF;
-}
-.footer .footer_quicklinks_2{
-	position:absolute;
-	margin-left:600px;
-	margin-top:50px;
-	width:200px;
-	color:#FFF;
-	
-}
-	
-.footer .footer_quicklinks_2 li{
-	list-style-type:none;
-}
-.footer .footer_quicklinks_2 li a{
-	text-decoration:none;
-	color:#FFF;
-}
-.footer  li a:hover{
-color:#F90;
-font-size:17px;
-}
-*/
+/***********Footer*************************************/
 .footer{
 	margin-top:10px;
 	background-image:url(../images/background_footer.jpg);
@@ -320,15 +273,4 @@ font-size:17px;
 #quicklinks li a:hover{
 color:#F90;
 
-}	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+}
