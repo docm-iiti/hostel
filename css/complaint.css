@@ -16,12 +16,44 @@
 	color: #e74c3c;
 }
 
-#cbTabs {
-	height: 595px;
+#cbContr{
+	font-size: 150%;
+	font-weight: 700;
+	height: 30px;
+	padding: 10px;
+	background: #333;
+	color: #DDD;
+	border-bottom: 2px solid #e74c3c;
 }
 
+#cbContr input,select{
+	height: 23px;
+}
+
+#cbComplaints{
+	height: 550px;
+	padding: 0 30px;
+	overflow: auto;
+}
+
+// Posts
 .cbpost:nth-child(2n) {
 	background: rgba(235,223,200,0.4);
+}
+
+.cbpost{
+	font-family: Signika;
+	border-left: 4px #e74c3c solid;
+	background: rgba(255,255,255,0.4);
+	min-height: 60px;
+	padding: 5px;
+    margin: 20px 0;
+    box-shadow: rgba(0,0,0,0.4) 0 0 4px 0;
+	clear: both;
+}
+
+.cbpost:hover{
+    background: rgba(255,255,255,0.8);
 }
 
 .cbplus {
@@ -47,21 +79,6 @@
 
 .cbnotvotes{
     padding-left: 100px;
-}
-
-.cbpost{
-	font-family: Signika;
-	border-left: 4px #e74c3c solid;
-	background: rgba(255,255,255,0.4);
-	min-height: 60px;
-	padding: 5px;
-    margin: 20px 0;
-    box-shadow: rgba(0,0,0,0.4) 0 0 4px 0;
-	clear: both;
-}
-
-.cbpost:hover{
-    background: rgba(255,255,255,0.8);
 }
 
 .cbcomp *{

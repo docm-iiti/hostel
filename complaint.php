@@ -114,29 +114,32 @@ if (isset($_SESSION['rollno'])){
         <div id="cbHeader">
           Complaint Box
         </div>
-        <div id="cbTabs">
-          <ul>
-            <li><a href="#info-tab">Info</a></li>
-            <li><a href="#loadingNew">New</a></li>
-            <li><a href="#loadingTop">Top</a></li>
-            <li><a href="#loadingAll">All</a></li>
-            <li><a href="#add-tab">Add</a></li>
-          </ul>
-          <div id="info-tab">
-            <h3>What is this complaint box?</h3>
-            <p>This complaint box is a place where you can submit your daily complaints about your college/hostel life. Other users can vote on them and hence help priorotize the complaints.</p>
-            <h3>How do I add my complaint?</h3>
-            <p>Just click the "Add" tab of the complaint box, write the complaint and click send.</p>
-            <h3>How do I vote?</h3>
-            <p>Go to one of the "new"/"top" tabs where you can view the latest and most voted complaints, and click the respective button for voting it.</p>
+        <div id="cbCont" ng-controller="complaintCtrl" ng-app>
+          <div id="cbContr">
+            Search: <input ng-model="query">
+            Order by: <select ng-model="order">
+              <option value="time" selected>New</option>
+              <option value="votes">Top</option>
+            </select>
           </div>
-          <div id="loadingNew">dummy</div>
-          <div id="loadingTop">dummy</div>
-          <div id="loadingAll">dummy</div>
-          <div id="add-tab">Enter complaint:<br/>
-            <input id="complaintInp" /><br/>
-            <input type="button" id="bSendComplaint" value="Send" />
-            <div id="complaintMsg"></div>
+          <div id="cbComplaints">
+
+            <div class="cbpost" ng-repeat="c in complaints | filter:query | orderBy:order">
+              <div complaintid="{{c.complaintid}}" voted="{{c.voted}}" class="cbplus ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only" role="button" aria-disabled="false" title="">
+                <span class="ui-button-icon-primary ui-icon ui-icon-plusthick"></span>
+                <span class="ui-button-text"></span>
+              </div>
+              <div class="cbvotes">{{c.votes}}
+              </div>
+              <div class="cbnotvotes">
+                <div class="cbcomp">
+                  <a href="complaintPage.php?comp={{c.complaintid}}">#{{c.complaintid}} {{c.complaint}}</a>
+                </div>
+                <div class="cbinfo">submitted by <a href="profile.php?rollno={{c.rollno}}">{{c.name}}</a> at {{c.time}}
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -157,8 +160,10 @@ if (isset($_SESSION['rollno'])){
 
   <script type="text/javascript" src="js/vendor/jquery-1.10.1.min.js" ></script>
   <script type="text/javascript" src="js/vendor/jquery-ui-1.9.2.custom.min.js" ></script>
+  <script type="text/javascript" src="js/vendor/angular.min.js" ></script>
   <script type="text/javascript" src="js/index.js" ></script>
   <script type="text/javascript" src="js/studentscorner.js" ></script>
   <script type="text/javascript" src="js/complaint.js" ></script>
+  <script type="text/javascript" src="js/complaintCtrl.js" ></script>
 </body>
 </html>
