@@ -20,44 +20,8 @@
 	z-index: 2;
 }
 
-#gMapHelperHead, #gMapHead {
-	color: #49B;
-	background: rgba(255,255,255,0.6);
-	width: 300px;
-	padding: 20px 0;
-	border: #49B 2px solid;
-	border-radius: 100%;
-	position: relative;
-
-  -webkit-box-shadow: 0px 0px 32px 0px rgba(82,157,201,0.6);
-          box-shadow: 0px 0px 32px 0px rgba(82,157,201,0.6);
 
 
-}
-
-#gMapHelperHead {
-	top: -50px;
-	left: 30px;
-	float:right;
-  -webkit-transform: rotate(7.5deg); 
-     -moz-transform: rotate(7.5deg); 
-      -ms-transform: rotate(7.5deg); 
-       -o-transform: rotate(7.5deg); 
-          transform: rotate(7.5deg); 
-
-}
-
-#gMapHead {
-	top: -72px;
-	left: -36px;
-	float:left;
-  -webkit-transform: rotate(-7.5deg); 
-     -moz-transform: rotate(-7.5deg); 
-      -ms-transform: rotate(-7.5deg); 
-       -o-transform: rotate(-7.5deg); 
-          transform: rotate(-7.5deg); 
-
-}
 
 #gMapHelperDirections {
 	clear: both;
@@ -65,8 +29,100 @@
 	padding: 50px;
 }
 
-#gFrame {
-	position: relative;
-	top: -68px;
-	border: #FFF 1px solid;
+.gFrame {
+	
+	position:absolute;
+	margin:0px;
+	
 }
+
+.pacl_contact{
+	width:1096px;
+	position:relative;
+	border-left:2px solid #e74c3c;
+	border-right:2px solid #e74c3c;
+	height:400px;
+	padding:0px;
+	margin-top:50px;
+	background-color:#DFDFDF;
+	-webkit-box-shadow:0 2px 6px rgba(0,0,0,.15);
+	-moz-box-shadow:0 2px 6px rgba(0,0,0,.15);
+	box-shadow:0 2px 6px rgba(0,0,0,.15);
+	
+	
+}
+.pacl_map{
+	position:absolute;
+	width:500px;
+	height:100%;
+	float:left;
+	margin:0px;
+	
+}
+.pacl_address{
+	position:absolute;
+	margin-left:550px;
+	width:546px;
+	float:left;
+	height:100%;
+	color:#333333;
+	
+	
+}
+.simrol_contact{
+	width:1096px;
+	position:relative;
+	border-left:2px solid #e74c3c;
+	border-right:2px solid #e74c3c;
+	height:400px;
+	padding:0px;
+	margin-top:50px;
+	background-color:#DFDFDF;
+	-webkit-box-shadow:0 2px 6px rgba(0,0,0,.15);
+	-moz-box-shadow:0 2px 6px rgba(0,0,0,.15);
+	box-shadow:0 2px 6px rgba(0,0,0,.15);
+	
+	
+}
+.simrol_map{
+	position:absolute;
+	width:500px;
+	height:100%;
+	float:left;
+	margin:0px;
+	
+}
+.simrol_address{
+	position:absolute;
+	margin-left:550px;
+	width:546px;
+	float:left;
+	height:100%;
+	color:#333333;
+	
+	
+}
+.temp_campus_contact{
+	
+	width:1096px;
+	position:relative;
+	border-left:2px solid #e74c3c;
+	border-right:2px solid #e74c3c;
+	height:400px;
+	padding:0px;
+	margin-top:50px;
+	background-color:#DFDFDF;
+	-webkit-box-shadow:0 2px 6px rgba(0,0,0,.15);
+	-moz-box-shadow:0 2px 6px rgba(0,0,0,.15);
+	box-shadow:0 2px 6px rgba(0,0,0,.15);
+	
+	
+}
+	
+	
+	
+	
+	
+	
+	
+	

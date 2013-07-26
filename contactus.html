@@ -4,101 +4,181 @@
   <title>Hostel | IIT Indore</title>
   <link rel="stylesheet" href="css/pagelayout.css" />
   <link rel="stylesheet" href="css/contactus.css" />
+  <link rel="stylesheet" href="css/header_login.css" />
 </head>
 
-<body background="images/background.jpg">
-  <div class="fixedHeader">
-      <a href="index.php"><img src="images/logo.jpg" style="height:50px;float:left;padding:0 10px 0 10px;"><p style="float:left;margin:0px;padding:12px 4px;color:#FFF;font-size:18px">Hostel</p></a>
-      <a href="http://www.youtube.com"><p style="color:#FFF;float:right;margin:0px;padding:12px 4px 0 10px;font-size:18px">Sign In </p></a>
+<body >
+   <div class="fixedHeader">
+      <a href="index.php">
+      <img src="images/logo.jpg" style="height:50px;float:left;padding:0 10px 0 10px;"><p style="float:left;margin:0px;padding:12px 4px;color:#FFF;font-size:18px">Hostel</p></a>
+      <div class="login_container">
+        <div class="flat-form">
+            <ul class="tabs">
+                <li>
+                    <a href="#login" class="active">Login</a>
+                </li>
+                
+            </ul>
+            <div id="login" class="form-action show">
+                <h2>Login to BASKET <span style="font-weight:100;font-size:10px;">BETA</span></h2>
+               
+                <form id="form">
+                    <ul>
+                        <li>
+                            <input type="text" placeholder="Username" />
+                        </li>
+                        <li>
+                            <input type="password" placeholder="Password" />
+                        </li>
+                        <li>
+                            <input type="submit" value="Login" class="button" />
+                        </li>
+                    </ul>
+                   
+                </form>
+                 
+            </div>
+            <!--/#login.form-action-->
+            
+        </div>
     </div>
-  <div class="myDiv">
+    </div>
+  
+  <div class="myDiv" style="height:auto;">
+    <div class="pageHeader_fill">
     <div class="pageHeader">
       <nav id="pageNav" role="navigation">
         <ul> 
-          <li><a href="index.html" class="heading">Home</a></li>
+          <li class="current"><a href="index.html" class="heading">Home</a></li>
             <li class="drop">
-            <a href="people.html" class="heading">People</a>
-                  <div class="dropdownContain">
-                      <div class="dropOut">
-                          <div class="triangle"></div>
-                        <ul>
-                  <li><a href="warden.html" class="subheading">Wardens</a></li>
-                
-					 <!-------------Add Students Menu Here------------------>
-                
-                            <li><a href="adminstaff.html" class="subheading">Admin Staff</a></li>
-                        </ul>
+              <a href="people.html" class="heading">People</a>
+              <div class="dropdownContain">
+                <div class="dropOut">
+                  <div class="triangle"></div>
+                  <ul>
+                    <li><a href="warden.html" class="subheading">Wardens</a></li>
+                    
+               <!-------------Add Students Menu Here------------------>
+                    
+                    <li><a href="adminstaff.html" class="subheading">Admin Staff</a></li>
+                  </ul>
+                </div>
               </div>
-            </div>
-          </li>           
+            </li>           
           
-          <li class="drop" ><a href="residences.html" class="heading">Facilities</a>
-                    <div class="dropdownContain">
-                        <div class="dropOut">
-                            <div class="triangle"></div>
-                            <ul>
-                  <li><a href="residences.html" class="subheading">Residences</a></li>
-                  <li><a href="hostel_office.html" class="subheading">Hostel Office</a></li>
-                  <li><a href="medical.html" class="subheading">Medical</a></li>
-                  <li><a href="transport.html" class="subheading">Transport</a></li>
-                  <li><a href="guest_house.html" class="subheading">Guest House</a></li>
-                  <li><a href="sport.html" class="subheading">Sports</a></li>
-                  <li><a href="internet.html" class="subheading">Internet</a></li>
-                  <li><a href="diningfaci.html" class="subheading">Dining</a></li>
-                  <li><a href="lafresco.html" class="subheading">La-Fresco</a></li>
-                </ul>
-              </div>
-            </div>			
-              </li>
+            <li class="drop" ><a href="residences.html" class="heading">Facilities</a>
+              <div class="dropdownContain">
+                <div class="dropOut">
+                  <div class="triangle"></div>
+                  <ul>
+                    <li><a href="residences.html" class="subheading">Residences</a></li>
+                    <li><a href="hostel_office.html" class="subheading">Hostel Office</a></li>
+                    <li><a href="medical.html" class="subheading">Medical</a></li>
+                    <li><a href="transport.html" class="subheading">Transport</a></li>
+                    <li><a href="guest_house.html" class="subheading">Guest House</a></li>
+                    <li><a href="sport.html" class="subheading">Sports</a></li>
+                    <li><a href="internet.html" class="subheading">Internet</a></li>
+                    <li><a href="diningfaci.html" class="subheading">Dining</a></li>
+                    <li><a href="lafresco.html" class="subheading">La-Fresco</a></li>
+                  </ul>
+                </div>
+              </div>      
+            </li>
           
-          <li class="drop" ><a href="life.html" class="heading">Life</a>
-                    <div class="dropdownContain">
-                        <div class="dropOut">
-                            <div class="triangle"></div>
-                            <ul>
-                  <li>Events</li>
+            <li class="drop" ><a href="life.html" class="heading">Life</a>
+              <div class="dropdownContain">
+                <div class="dropOut">
+                  <div class="triangle"></div>
+                  <ul>
+                    <li>Events</li>
                     <li>Festivals</li>
-                  <li>Trips</li>
-                  <li>Others</li>
-                          </ul>
-              </div>
-            </div>			
-              </li>
+                    <li>Trips</li>
+                    <li>Others</li>
+                  </ul>
+                </div>
+              </div>      
+            </li>
           
-			<li><a href="gallery.html" class="heading">Gallery</a></li>
-			<li><a href="http://hostel-iiti.vacau.com" class="heading">Student's Corner</a></li>
-			<li class="current"><a href="contactus.html" class="heading">Contact Us</a></li>
+            <li><a href="gallery.html" class="heading">Gallery</a></li>
+            <li><a href="http://hostel-iiti.vacau.com" class="heading">Student's Corner</a></li>
+            <li><a href="contactus.html" class="heading">Contact Us</a></li>
         
           </ul> 
       </nav>
     </div>
-
-    <div id="gMap">
-      <center><h2 id="gMapHead">Where?</h2>
-            <iframe width="575" id="gFrame" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Silver+Springs+Township,+Indore,+Madhya+Pradesh,+India&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=47.215051,99.931641&amp;t=h&amp;ie=UTF8&amp;hq=Silver+Springs+Township,&amp;hnear=Indore,+Madhya+Pradesh,+India&amp;ll=22.658992,75.908085&amp;spn=0.133269,0.11079&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Silver+Springs+Township,+Indore,+Madhya+Pradesh,+India&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=47.215051,99.931641&amp;t=h&amp;ie=UTF8&amp;hq=Silver+Springs+Township,&amp;hnear=Indore,+Madhya+Pradesh,+India&amp;ll=22.658992,75.908085&amp;spn=0.133269,0.11079" style="color:#0000FF;text-align:left;position:relative;top:-60px;">View Larger Map</a></small></center>
+    <!--For class pageHeader-->
     </div>
-    <div id="gMapHelper">
-        <center>
-          <h2 id="gMapHelperHead">How to reach?</h2>
-          <div id="gMapHelperDirections">
-            <h3>Address:</h3>
-            <p>Row House-56, Silver Springs Township <br>
-            Phase -I, By Pass Road, Near Mata Gujri Girls Public School <br>
-            Indore (M.P.)-452020 <br>
-            E-mail : hostel@iiti.ac.in <br>
-            Contact No. 0731- 4056640</p> 
+	<div class="content" style="margin-bottom:50px;">
+    	<div class="pacl_contact">          
+            <div class="pacl_map" >   
+                
+                <iframe width="400" class="gFrame" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Silver+Springs+Township,+Indore,+Madhya+Pradesh,+India&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=47.215051,99.931641&amp;t=h&amp;ie=UTF8&amp;hq=Silver+Springs+Township,&amp;hnear=Indore,+Madhya+Pradesh,+India&amp;ll=22.658992,75.908085&amp;spn=0.133269,0.11079&amp;output=embed"></iframe>
+            </div>    
+         <!--       
+                <small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Silver+Springs+Township,+Indore,+Madhya+Pradesh,+India&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=47.215051,99.931641&amp;t=h&amp;ie=UTF8&amp;hq=Silver+Springs+Township,&amp;hnear=Indore,+Madhya+Pradesh,+India&amp;ll=22.658992,75.908085&amp;spn=0.133269,0.11079" style="color:#0000FF;text-align:left;position:relative;top:-60px;">View Larger Map</a></small>
+                
+                 -->
+             
+            <div class="pacl_address">
+            		<center>
+   						<h3>ADDRESS:Temporary Campus</h3>
+                        <p>Row House-56, Silver Springs Township <br>
+                        Phase -I, By Pass Road,<br> Near Mata Gujri Girls Public School <br>
+                        Indore (M.P.)-452020 <br>
+                        E-mail : hostel@iiti.ac.in <br>
+                        Contact No. 0731- 4056640</p> 
+                     </center>
+             </div>       
           </div>
-        </center> 
-    </div>
+          <div class="temp_campus_contact">          
+             <div class="PACL_address">
+            		<center>
+   						<h3>ADDRESS:Permanent Campus</h3>
+                        <p>Row House-56, Silver Springs Township <br>
+                        Phase -I, By Pass Road,<br> Near Mata Gujri Girls Public School <br>
+                        Indore (M.P.)-452020 <br>
+                        E-mail : hostel@iiti.ac.in <br>
+                        Contact No. 0731- 4056640</p> 
+                     </center>
+             </div>       
+          </div>
+          
+          
+          <div class="simrol_contact">          
+            <div class="simrol_map" >   
+                
+                <iframe width="400" class="gFrame" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Silver+Springs+Township,+Indore,+Madhya+Pradesh,+India&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=47.215051,99.931641&amp;t=h&amp;ie=UTF8&amp;hq=Silver+Springs+Township,&amp;hnear=Indore,+Madhya+Pradesh,+India&amp;ll=22.658992,75.908085&amp;spn=0.133269,0.11079&amp;output=embed"></iframe>
+            </div>    
+         <!--       
+                <small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Silver+Springs+Township,+Indore,+Madhya+Pradesh,+India&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=47.215051,99.931641&amp;t=h&amp;ie=UTF8&amp;hq=Silver+Springs+Township,&amp;hnear=Indore,+Madhya+Pradesh,+India&amp;ll=22.658992,75.908085&amp;spn=0.133269,0.11079" style="color:#0000FF;text-align:left;position:relative;top:-60px;">View Larger Map</a></small>
+                
+                 -->
+             
+            <div class="simrol_address">
+            		<center>
+   						<h3>ADDRESS:Permanent Campus</h3>
+                        <p>Row House-56, Silver Springs Township <br>
+                        Phase -I, By Pass Road,<br> Near Mata Gujri Girls Public School <br>
+                        Indore (M.P.)-452020 <br>
+                        E-mail : hostel@iiti.ac.in <br>
+                        Contact No. 0731- 4056640</p> 
+                     </center>
+             </div>       
+          </div>
+          
+          
+          
+          
+          
 
   </div>
 
 
  <footer class="footer">
-     	<div class="footercontent">
+     	<div class="footercontent" >
              <div id="quicklinks">
-            	<h2>Quick Links</h2>
-                <ul>
+            	<ul>
+                <h2>Quick Links</h2>
                 <li><a href="#">Institute Website</a></li>
                 <li><a href="">School of Computer Science and Engineering</a></li>
                 <li><a href="">School of Electrical Engineering</a></li>
@@ -116,10 +196,13 @@
             <img id="youtubelogo" src="images/Logos/youtube_logo.png" height="64px" />
             
             </div>
-              <p style="font-family:Signika; font-size:14px;color:#666;">IIT Indore Hostel Website2013-14 <br> Designed and Developed by <b>Synapse</b>. Copyright  &copy </p> 
+              <p style="font-family:Signika; font-size:14px;color:#666;">Designed By Cascade | Creative Media Labs | IIT Indore </p> 
         </div> 
+       
      </footer>
+     
   <script type="text/javascript" src="js/vendor/jquery-1.10.1.min.js" ></script>
   <script type="text/javascript" src="js/index.js"></script>
+  <script src="js/header_login.js"></script>
 </body>
 </html>

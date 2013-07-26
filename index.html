@@ -4,17 +4,49 @@
   <title>Hostel | IIT Indore</title>
   <link rel="stylesheet" href="css/pagelayout.css" />
   <link rel="stylesheet" href="css/marquee.css" />
-  <link rel="stylesheet" href="css/feed.css" />
-  <link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/header_login.css" />
+	
 </head>
 
-<body background="images/background.jpg">
+<body >
    <div class="fixedHeader">
-      <a href="index.php"><img src="images/logo.jpg" style="height:50px;float:left;padding:0 10px 0 10px;"><p style="float:left;margin:0px;padding:12px 4px;color:#FFF;font-size:18px">Hostel</p></a>
-      <a href="http://www.youtube.com"><p style="color:#FFF;float:right;margin:0px;padding:12px 4px 0 10px;font-size:18px">Sign In </p></a>
+      <a href="index.php">
+      <img src="images/logo.jpg" style="height:50px;float:left;padding:0 10px 0 10px;"><p style="float:left;margin:0px;padding:12px 4px;color:#FFF;font-size:18px">Hostel</p></a>
+      <div class="login_container">
+        <div class="flat-form">
+            <ul class="tabs">
+                <li>
+                    <a href="#login" class="active">Login</a>
+                </li>
+                
+            </ul>
+            <div id="login" class="form-action show">
+                <h2>Login to Your Basket</h2>
+                <p>
+                    Enter your Credentials.
+                </p>
+                <form id="form">
+                    <ul>
+                        <li>
+                            <input type="text" placeholder="Username" />
+                        </li>
+                        <li>
+                            <input type="password" placeholder="Password" />
+                        </li>
+                        <li>
+                            <input type="submit" value="Login" class="button" />
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <!--/#login.form-action-->
+            
+        </div>
+    </div>
     </div>
   
-  <div class="myDiv" style="height:790px;">
+  <div class="myDiv" style="height:auto;">
+    <div class="pageHeader_fill">
     <div class="pageHeader">
       <nav id="pageNav" role="navigation">
         <ul> 
@@ -76,6 +108,8 @@
       </nav>
     </div>
     <!--For class pageHeader-->
+    </div>
+    <div class="content" style="margin-bottom:520px;">
     <!-- Marquee ------------------------------------------------------------------------------------------------------------------------->
             <div class="marquee_container">
                   <div class="marquee_photos"></div>
@@ -85,36 +119,20 @@
                   <div class="marquee_nav"></div>  
             </div>
 			
-    <div class="marquee_panels">
+    		<div class="marquee_panels">
                 <div class="marquee_panel">
                     <img src="images/Slider/4.jpg" class="marquee_panel_photo"  />
                 </div>
-                <div class="marquee_panel_caption">
-                    <h2>Caption</h2>
-                  <p>This is a test caption
-                  <br  />This is a test caption</p>
-                  <p><a href="#">Check it out!</a></p>
-                </div>
+                
         
                 <div class="marquee_panel">
                     <img src="images/Slider/1.jpg" class="marquee_panel_photo" />
                 </div>
-                <div class="marquee_panel_caption">
-                    <h2>Caption</h2>
-                  <p>This is a test caption
-                  <br  />This is a test caption</p>
-                  <p><a href="#">Check it out!</a></p>
-                </div>     
-        
+                
                 <div class="marquee_panel">
                     <img src="images/Slider/4.jpg" class="marquee_panel_photo"/>
                 </div>
-                <div class="marquee_panel_caption">
-                    <h2>Caption</h2>
-                  <p>This is a test caption
-                  <br  />This is a test caption</p>
-                  <p><a href="#">Check it out!</a></p>
-                </div>     
+                   
         
                 <div class="marquee_panel">
                     <img src="images/Slider/1.jpg" class="marquee_panel_photo" />
@@ -127,41 +145,43 @@
                 </div>
         
       </div><!--For marquee_panels-->
-      <div id="feed">
+     <!-- <div id="feed">
         <div id="feedheader"><center>EVENTS</center></div>
         <div id="feedmain"></div>
       </div><!-- For feed-->
-      
-		<div class="description_content"><div class="hostel_description"<p>" IIT Indore's Hostel is located in the beautiful township of Silver Springs on AB By pass Road, Indore. IIT Indore buses ply between the township and the institute at regular intervals for students. It is a 20 minute ride to the temporary campus from the township. Presently around 600 students are residing in the hostel. Staying here will truly be a winderful and memorable experience."</p></div></div>
      
-     </div>
-     
-    <!--  <div class="footer">
-     	
-     	<div class="footer_overlay_content">
-        	<div class="footer_quicklinks">
-            	<h2>QUICK LINKS</h2>
-                <ul>
-                <li><a href="#">Institute Website</a></li>
-                <li><a href="#">Student Gymkhana</a></li>
-                <li><a href="#">Training and Placement Cell</a></li>
-                <li><a href="">School of Computer Science and Engineering</a></li>
-                <li><a href="">School of Electrical Engineering</a></li>
-                <li><a href="">School of Mechanical Engineering</a></li>
-                <li><a href="">School of Psychology</a></li>
-            </ul></div>
-            <div class="footer_quicklinks_2">
-            	<ul><li><a href="">Downloads</a>
-                <li><a href="">Complaint Box</a></li>
-            </div>
+		<div class="about_hostel">
+        <div class="hostel_description"><p style="text-align:justify;">" IIT Indore's Hostel is located in the beautiful township of Silver Springs on AB By pass Road, Indore. IIT Indore buses ply between the township and the institute at regular intervals for students. It is a 20 minute ride to the temporary campus from the township. Presently around 600 students are residing in the hostel. Staying here will truly be a wonderful and memorable experience."</p>
         </div>
-		
-     </div>-->
-     <footer class="footer">
+        </div>
+       <div class="3_div_data">
+            <div class="news">
+                <div style="width:100%;height:40px;background:#e74c3c;color:white;margin:0px;text-align:center;">
+                    <h4>EVENTS</h4>
+                   </div> 
+                    <ul style="line-height:1.5em;">
+                    	<!--**********************************NEWS ELEMENTS***************************************-->
+                        <li>adfsfdagasdg</li>
+                        <li>fedfedgegedgr</li>
+                        <li>sfdgedgvefdgef</li>
+                        <li>fdfdgfdddddddddddddddddddddddd</li>
+                
+            </div>
+            <div class="border">
+            </div>
+            <div class="something">
+                <div style="width:100%;height:40px;background:#e74c3c;color:white;margin:0px;top:0px;text-align:center;">
+                    <h4>NEWS</h4>
+                </div>
+            </div>
+        </div><!----for 3_div_data---->
+      </div>
+    </div>
+  <footer class="footer" >
      	<div class="footercontent">
              <div id="quicklinks">
-            	<h2>Quick Links</h2>
-                <ul>
+            	<ul>
+                <h2>Quick Links</h2>
                 <li><a href="#">Institute Website</a></li>
                 <li><a href="">School of Computer Science and Engineering</a></li>
                 <li><a href="">School of Electrical Engineering</a></li>
@@ -179,13 +199,19 @@
             <img id="youtubelogo" src="images/Logos/youtube_logo.png" height="64px" />
             
             </div>
-              <p style="font-family:Signika; font-size:14px;color:#666;">IIT Indore Hostel Website2013-14 <br> Designed and Developed by <b>Synapse</b>. Copyright  &copy </p> 
+              <p style="font-family:Signika; font-size:14px;color:#666;">Designed By Cascade | Creative Media Labs | IIT Indore </p> 
         </div> 
+       
      </footer>
   <script type="text/javascript" src="js/vendor/jquery-1.10.1.min.js" ></script>
   <script type="text/javascript" src="js/farinspace/jquery.imgpreload.min.js" ></script>
   <script type="text/javascript" src="js/marquee.js"></script>
-  <script type="text/javascript" src="js/index.js"></script>
-  <script type="text/javascript" src="js/feed.js"></script>
+  <script type="text/javascript" src="js/index.js" ></script>
+  <script src="js/header_login.js"></script>
+  <script>
+	$(document).ready(function(e) {
+        $(this).fadeIn(2000);
+    });
+	</script>
 </body>
 </html>

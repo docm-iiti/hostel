@@ -1,5 +1,8 @@
 .superbox{
-	background: #333;
+	background: #CCC;
+	position:relative;
+	margin-top:50px;
+	margin-bottom:50px;
 }
 .superbox-list {
 	display:inline-block;
