@@ -5,17 +5,15 @@
   <link rel="stylesheet" href="css/pagelayout.css" />
   <link rel="stylesheet" href="css/studentscorner.css" />
   <link rel="stylesheet" href="css/complaint.css" />
+  <link rel="stylesheet" href="css/header_login.css" />
   <link href="css/orangeHostelTheme/jquery-ui-1.9.2.custom.css" rel="stylesheet">
 </head>
 
 <body background="images/background.jpg">
   <?php 
     session_start();
+    include 'header.php';
   ?>
-  <div class="fixedHeader">
-    <a href="index.php"><img src="images/logo.jpg" style="height:50px;float:left;padding:0 10px 0 10px;"><p style="float:left;margin:0px;padding:12px 4px;color:#FFF;font-size:18px">Hostel</p></a>
-    <a href="http://www.youtube.com"><p style="color:#FFF;float:right;margin:0px;padding:12px 4px 0 10px;font-size:18px">Sign In </p></a>
-  </div>
   <div class="myDiv" style="height:790px">
     <div class="pageHeader_fill">
     <div class="pageHeader">
@@ -118,15 +116,20 @@ if (isset($_SESSION['rollno'])){
           <div id="cbContr">
             Search: <input ng-model="query">
             Order by: <select ng-model="order">
-              <option value="time" selected>New</option>
-              <option value="votes">Top</option>
+              <option value="-time" selected>New</option>
+              <option value="-votes">Top</option>
             </select>
+            <input type="button" value="Reload" id="cbReload">
+            <input type="button" value="Add" id="cbAdd">
           </div>
           <div id="cbComplaints">
 
-            <div class="cbpost" ng-repeat="c in complaints | filter:query | orderBy:order">
-              <div complaintid="{{c.complaintid}}" voted="{{c.voted}}" class="cbplus ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only" role="button" aria-disabled="false" title="">
-                <span class="ui-button-icon-primary ui-icon ui-icon-plusthick"></span>
+            <div class="cbpost" ng-repeat="c in complaints | filter:query | orderBy:order" ng-animate="'animate'">
+              <div class="cbplus ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only" role="button" aria-disabled="false"  ng-click="vote(c);">
+              <div ng-switch on="c.voted">
+                <span ng-switch-when="1" class="ui-button-icon-primary ui-icon ui-icon-minusthick"></span>
+                <span ng-switch-default class="ui-button-icon-primary ui-icon ui-icon-plusthick"></span>
+              </div>
                 <span class="ui-button-text"></span>
               </div>
               <div class="cbvotes">{{c.votes}}
@@ -143,6 +146,21 @@ if (isset($_SESSION['rollno'])){
           </div>
         </div>
       </div>
+          <!--div id="cbinfo">
+            <h3>What is this complaint box?</h3>
+            <p>This complaint box is a place where you can submit your daily complaints about your college/hostel life. Other users can vote on them and hence help priorotize the complaints.</p>
+            <h3>How do I add my complaint?</h3>
+            <p>Just click the "Add" tab of the complaint box, write the complaint and click send.</p>
+            <h3>How do I vote?</h3>
+            <p>Go to one of the "new"/"top" tabs where you can view the latest and most voted complaints, and click the respective button for voting it.</p>
+          </div>
+
+
+          <div id="cbadd">Enter complaint:<br/>
+            <input id="complaintInp" /><br/>
+            <input type="button" id="bSendComplaint" value="Send" />
+            <div id="complaintMsg"></div>
+          </div-->
     <?php
     echo "<script>var who = '$who';</script>";
 } else {
@@ -165,5 +183,6 @@ if (isset($_SESSION['rollno'])){
   <script type="text/javascript" src="js/studentscorner.js" ></script>
   <script type="text/javascript" src="js/complaint.js" ></script>
   <script type="text/javascript" src="js/complaintCtrl.js" ></script>
+  <script src="js/header_login.js"></script>
 </body>
 </html>

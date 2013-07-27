@@ -3,17 +3,15 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Hostel | IIT Indore</title>
   <link rel="stylesheet" href="css/pagelayout.css" />
-  <link rel="stylesheet" href="css/login.css" />
   <link rel="stylesheet" href="css/studentscorner.css" />
+  <link rel="stylesheet" href="css/header_login.css" />
   <link href="css/orangeHostelTheme/jquery-ui-1.9.2.custom.css" rel="stylesheet">
 </head>
 
 <body background="images/background.jpg">
   <?php 
     session_start();
-  ?>
-  <?php
-  include 'header.php';
+    include 'header.php';
   ?>
   <div class="myDiv" style="height:790px">
     <div class="pageHeader_fill">

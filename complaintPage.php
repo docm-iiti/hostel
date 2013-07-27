@@ -5,17 +5,15 @@
   <link rel="stylesheet" href="css/pagelayout.css" />
   <link rel="stylesheet" href="css/studentscorner.css" />
   <link rel="stylesheet" href="css/complaintpage.css" />
+  <link rel="stylesheet" href="css/header_login.css" />
   <link href="css/orangeHostelTheme/jquery-ui-1.9.2.custom.css" rel="stylesheet">
 </head>
 
 <body background="images/background.jpg">
   <?php 
     session_start();
+    include 'header.php';
   ?>
-  <div class="fixedHeader">
-    <a href="index.php"><img src="images/logo.jpg" style="height:50px;float:left;padding:0 10px 0 10px;"><p style="float:left;margin:0px;padding:12px 4px;color:#FFF;font-size:18px">Hostel</p></a>
-    <a href="http://www.youtube.com"><p style="color:#FFF;float:right;margin:0px;padding:12px 4px 0 10px;font-size:18px">Sign In </p></a>
-  </div>
   <div class="myDiv" style="height:790px">
     <div class="pageHeader_fill">
     <div class="pageHeader">
@@ -196,5 +194,6 @@ if (isset($_SESSION['rollno'])){
   <script type="text/javascript" src="js/index.js" ></script>
   <script type="text/javascript" src="js/complaintpage.js" ></script>
   <script type="text/javascript" src="js/studentscorner.js" ></script>
+  <script src="js/header_login.js"></script>
 </body>
 </html>
