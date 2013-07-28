@@ -1,7 +1,10 @@
-#login{
-	position: relative;
-	font-family: Signika;
-	margin-top: 150px;
-	height: 750px;
-	bottom: 0;
+.login{
+	padding: 10px;
+	border-radius: 2px;
+	box-shadow: rgba(0, 0, 0, 0.4) 0 0 10px 0;
+	color: #FFF;
+	background: #e74c3c;
+	height: 320px;
+	width: 400px;
+	margin: 80px auto;
 }

@@ -80,18 +80,9 @@
     </div>
     </div>
     <div id="stdcnr">
-  	  <div id="sidebar">
-  	    <div id="sidebarmenu">
-  	      M <br> E <br> N <br> U
-  	    </div>
-  	    <ul>
-  	      <a href="index.php"><li>Home</li></a>
-            <a href="profile.php"><li>Profile</li></a>
-            <a href="complaint.php"><li>Complaint box</li></a>
-            <a href="links.php"><li>Links</li></a>
-            <a href="logout.php"><li>Logout</li></a>
-  	    </ul>
-  	  </div>
+  	  <?php
+        include 'sidebar.html';
+        ?>
 	    <div id="stdcnrcont">
         
 <?php

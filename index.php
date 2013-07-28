@@ -5,14 +5,19 @@
   <link rel="stylesheet" href="css/pagelayout.css" />
   <link rel="stylesheet" href="css/studentscorner.css" />
   <link rel="stylesheet" href="css/header_login.css" />
+  <link rel="stylesheet" href="css/login.css" />
   <link href="css/orangeHostelTheme/jquery-ui-1.9.2.custom.css" rel="stylesheet">
 </head>
 
 <body background="images/background.jpg">
   <?php 
     session_start();
-    include 'header.php';
   ?>
+  <link rel="stylesheet" href="css/header_login.css" />
+<div class="fixedHeader">
+  <a href="index.php">
+  <img src="images/logo.jpg" style="height:50px;float:left;padding:0 10px 0 10px;"><p style="float:left;margin:0px;padding:12px 4px;color:#FFF;font-size:18px">Hostel</p></a>
+  </div>
   <div class="myDiv" style="height:790px">
     <div class="pageHeader_fill">
     <div class="pageHeader">
@@ -96,19 +101,8 @@
       $fetch = $query->fetch(PDO::FETCH_ASSOC);
       if($fetch['confkey'] == 1){
         // Verified ID ----------------------------
+        include 'sidebar.html';
         ?>
-          <div id="sidebar">
-            <div id="sidebarmenu">
-              M <br> E <br> N <br> U
-            </div>
-            <ul>
-              <a href="index.php"><li>Home</li></a>
-              <a href="profile.php"><li>Profile</li></a>
-              <a href="complaint.php"><li>Complaint box</li></a>
-              <a href="links.php"><li>Links</li></a>
-              <a href="logout.php"><li>Logout</li></a>
-            </ul>
-          </div>
           <div id="stdcnrcont">
             
           </div>
@@ -127,38 +121,30 @@
   } else {
       // Not logged in-----------------
   ?>
-      <div id='login'>
-        <center>
-        <h1>Login:</h1>
-        <form id='loginform' onsubmit="return false;">
-          <table cellpadding="10px">
-            <tr>
-              <td>
-                College E-mail ID:
-              </td>
-              <td>
-                <input id="email" />@iiti.ac.in<br/>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Password:
-              </td>
-              <td>
-                <input type="password" id="pass" /><br/>
-              </td>
-            </tr>
-              <td colspan="2">
-                <center>
-                <input type="submit" value="Log in!" /><br/>
-                </center>
-              </td>
-            </tr>
-          </table>
-        </form>
-        <div id="loginMsg"></div><br/>
-        </center>
-      </div>
+      <div class="login">
+        <div id="login" class="form-action show">
+            <h2>Login to Your Basket</h2>
+            <p>
+                Enter your Credentials.
+            </p>
+            <form id="form" onsubmit="return false;">
+                <ul>
+                    <li>
+                        <input type="text" id="email" placeholder="Username" />
+                    </li>
+                    <li>
+                        <input type="password" id="pass" placeholder="Password" />
+                    </li>
+                    <li>
+                        <input type="submit" value="Login" class="button" />
+                    </li>
+                </ul>
+            </form>
+            <div id="loginMsg"></div>
+        </div>
+        <!--/#login.form-action-->
+    </div>
+</div>
   <?php  
     }; ?>
 

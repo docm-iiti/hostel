@@ -80,18 +80,9 @@
     </div>
     </div>
     <div id="stdcnr">
-      <div id="sidebar">
-        <div id="sidebarmenu">
-          M <br> E <br> N <br> U
-        </div>
-        <ul>
-          <a href="index.php"><li>Home</li></a>
-            <a href="profile.php"><li>Profile</li></a>
-            <a href="complaint.php"><li>Complaint box</li></a>
-            <a href="links.php"><li>Links</li></a>
-            <a href="logout.php"><li>Logout</li></a>
-        </ul>
-      </div>
+      <?php
+        include 'sidebar.html';
+        ?>
       <div id="stdcnrcont">
             
         
@@ -138,8 +129,10 @@ if (isset($_SESSION['rollno'])){
                 <div class="cbcomp">
                   <a href="complaintPage.php?comp={{c.complaintid}}">#{{c.complaintid}} {{c.complaint}}</a>
                 </div>
-                <div class="cbinfo">submitted by <a href="profile.php?rollno={{c.rollno}}">{{c.name}}</a> at {{c.time}}
-                </div>
+                <div class="cbinfo">submitted by <a href="profile.php?rollno={{c.rollno}}"><span ng-switch on="c.name">
+                    <span ng-switch-when="">{{c.rollno}}</span>
+                    <span ng-switch-default>{{c.name}}</span>
+                </span></a> at {{c.time}}
               </div>
             </div>
 
