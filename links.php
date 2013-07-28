@@ -5,6 +5,7 @@
   <link rel="stylesheet" href="css/pagelayout.css" />
   <link rel="stylesheet" href="css/studentscorner.css" />
   <link rel="stylesheet" href="css/header_login.css" />
+  <link rel="stylesheet" href="css/links.css" />
 </head>
 
 <body background="images/background.jpg">
@@ -97,8 +98,13 @@ if (isset($_SESSION['rollno'])){
     $edit = true;
   }
     ?> 
-    <div id="complaintbox">
-
+    <div ng-controller="linksCtrl" ng-app>
+      <div class="links" ng-repeat="linkGroup in linkGroups">
+        <h2>{{linkGroup.title}}</h2>
+        <ul>
+          <li ng-repeat="link in linkGroup.links"><a href="{{link.link}}">{{link.title}}</a></li>
+        </ul>
+      </div>
     </div>
     <?php
     echo "<script>var who = '$who';</script>";
@@ -116,7 +122,9 @@ if (isset($_SESSION['rollno'])){
     include "footer.html";
   ?>
   <script type="text/javascript" src="js/vendor/jquery-1.10.1.min.js" ></script>
+  <script type="text/javascript" src="js/vendor/angular.min.js" ></script>
   <script type="text/javascript" src="js/index.js" ></script>
+  <script type="text/javascript" src="js/links.js" ></script>
   <script type="text/javascript" src="js/studentscorner.js" ></script>
   <script src="js/header_login.js"></script>
 </body>
