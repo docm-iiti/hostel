@@ -1,7 +1,5 @@
 .memesContainer{
     width:100%;
-    height:690px;
-    overflow:auto;
 	background: rgba(239,239,239,0.4);
 }
 .meme{

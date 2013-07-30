@@ -98,13 +98,8 @@ if (isset($_SESSION['rollno'])){
     $edit = true;
   }
     ?> 
-    <div ng-controller="linksCtrl" ng-app>
-      <div class="links" ng-repeat="linkGroup in linkGroups">
-        <h2>{{linkGroup.title}}</h2>
-        <ul>
-          <li ng-repeat="link in linkGroup.links"><a href="{{link.link}}">{{link.title}}</a></li>
-        </ul>
-      </div>
+    <div ng-app="hostel">
+      <div ng-view></div>
     </div>
     <?php
     echo "<script>var who = '$who';</script>";

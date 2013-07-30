@@ -1,22 +1,28 @@
 $(document).ready(function() {
 	$("#bSendComplaint").button().click(function(){
 		$("#complaintMsg").text("Sending..");
+		var btn = $(this);
+		btn.button("option","disabled","ture");
 		$.post("ajax/complaint/add.php", {comp: $("#complaintInp").val()}, function(data){
 			$("#complaintMsg").html(data);
+			$("#complaintInp").val("");
 		});
 	});
 });
+
+angular.module('complaints',[]).config(['$routeProvider', function($routeProvider) {
+  $routeProvider.
+  when('/', {templateUrl: 'complaints/complaints.html', controller: complaintCtrl}).
+  when('/add', {templateUrl: 'complaints/add.html', controller: complaintCtrl}).
+  when('/info', {templateUrl: 'complaints/info.html', controller: complaintCtrl}).
+  otherwise({redirectTo: '/'});
+}]);
 
 function complaintCtrl($scope, $http){
 	$http.post("ajax/complaint/alltab.php").success(function(data){
 		$scope.complaints = data;
 	});
 	$scope.order = "-time";
-	$("#cbReload").click(function(){
-		$http.post("ajax/complaint/alltab.php").success(function(data){
-			$scope.complaints = data;
-		});
-	});
 	$scope.vote = function(c){
 		var id = c.complaintid;
 		if(c.voted == "1"){

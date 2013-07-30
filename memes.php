@@ -105,7 +105,6 @@ if (isset($_SESSION['rollno'])){
           <option value="-time" selected>New</option>
           <option value="-votes">Top</option>
         </select>
-        <input type="button" value="Reload" id="memeReload">
         <input type="button" value="Add" id="memeAdd">
       </div>
       <div class="memesContainer">

@@ -1,6 +1,5 @@
 #complaintbox {
 	font: 75% "Signika", sans-serif;
-	height: 700px;
 	border-left: #000 2px solid;
 	border-right: #000 2px solid;
 	margin: 0 auto;
@@ -8,14 +7,12 @@
 	background: #DDD;
 	z-index: 1;
 }
-
 #cbHeader{
 	background: #000;
 	font-size: 24px;
 	padding: 33px;
 	color: #e74c3c;
 }
-
 #cbContr{
     padding:0 50px;;
 	font-size: 150%;
@@ -25,7 +22,6 @@
 	color: #DDD;
 	border-bottom: 2px solid #e74c3c;
 }
-
 #cbContr input,select{
 	border: 1px solid #555;
     border-radius: 2px;;
@@ -35,24 +31,13 @@
     font-variant: 700;
 	height: 90%;
 }
-
 #cbContr input:hover,select:hover{
     background:rgba(100,100,100,0.5);
 }
-
 #cbComplaints{
-	height: 550px;
 	padding: 0 30px;
-	overflow: auto;
 }
-
-// Posts
-.cbpost:nth-child(2n) {
-	background: rgba(235,223,200,0.4);
-}
-
 .cbpost{
-	font-family: Signika;
 	border-left: 4px #e74c3c solid;
 	background: rgba(255,255,255,0.4);
 	min-height: 60px;
@@ -60,11 +45,9 @@
     margin: 20px 0;
     box-shadow: rgba(0,0,0,0.4) 0 0 4px 0;
 }
-
 .cbpost:hover{
     background: rgba(255,255,255,0.8);
 }
-
 .cbplus {
 	float: left;
 	margin: 3px;
@@ -73,7 +56,6 @@
 	position: relative;
 	top: 11px;
 }
-
 .cbvotes{
 	height: 50px;
 	width: 50px;
@@ -85,19 +67,28 @@
 	border-radius: 3px;
 	color: #e74c3c;
 }
-
 .cbnotvotes{
     padding-left: 100px;
 }
-
-.cbcomp *{
+.cbcomp a{
 	font-size: 150%;
 	text-decoration:none;
 	font-weight: 700;
 }
-
-.cbinfo{
-	font-size: 80%;
+#cbinfo{
+	padding: 50px;
+	font-size: 120%;
 	font-family: Helvetica;
 	margin-top: 10px;
+}
+#cbAddDiv{
+	padding: 50px;
+	background: #EEE;
+	border: 2px solid #e74c3c;
+    box-shadow: rgba(0,0,0,0.4) 0 0 10px 0;
+	margin: auto;
+}
+#cbAddDiv textarea{
+	width: 250px;
+	height: 50px;
 }

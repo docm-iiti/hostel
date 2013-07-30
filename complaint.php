@@ -14,7 +14,7 @@
     session_start();
     include 'header.php';
   ?>
-  <div class="myDiv" style="height:790px">
+  <div class="myDiv">
     <div class="pageHeader_fill">
     <div class="pageHeader">
     <nav id="pageNav" role="navigation">
@@ -99,61 +99,14 @@ if (isset($_SESSION['rollno'])){
     $edit = true;
   }
     ?> 
-      <div id="complaintbox">
-        <div id="cbHeader">
-          Complaint Box
-        </div>
-        <div id="cbCont" ng-controller="complaintCtrl" ng-app>
-          <div id="cbContr">
-            Search: <input ng-model="query">
-            Order by: <select ng-model="order">
-              <option value="-time" selected>New</option>
-              <option value="-votes">Top</option>
-            </select>
-            <input type="button" value="Reload" id="cbReload">
-            <input type="button" value="Add" id="cbAdd">
-          </div>
-          <div id="cbComplaints">
 
-            <div class="cbpost" ng-repeat="c in complaints | filter:query | orderBy:order" ng-animate="'animate'">
-              <div class="cbplus ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only" role="button" aria-disabled="false"  ng-click="vote(c);">
-              <div ng-switch on="c.voted">
-                <span ng-switch-when="1" class="ui-button-icon-primary ui-icon ui-icon-minusthick"></span>
-                <span ng-switch-default class="ui-button-icon-primary ui-icon ui-icon-plusthick"></span>
-              </div>
-                <span class="ui-button-text"></span>
-              </div>
-              <div class="cbvotes">{{c.votes}}
-              </div>
-              <div class="cbnotvotes">
-                <div class="cbcomp">
-                  <a href="complaintPage.php?comp={{c.complaintid}}">#{{c.complaintid}} {{c.complaint}}</a>
-                </div>
-                <div class="cbinfo">submitted by <a href="profile.php?rollno={{c.rollno}}"><span ng-switch on="c.name">
-                    <span ng-switch-when="">{{c.rollno}}</span>
-                    <span ng-switch-default>{{c.name}}</span>
-                </span></a> at {{c.time}}
-              </div>
-            </div>
-
-          </div>
-        </div>
+    <div id="complaintbox" ng-app="complaints">
+      <div id="cbHeader">
+        Complaint Box
       </div>
-          <!--div id="cbinfo">
-            <h3>What is this complaint box?</h3>
-            <p>This complaint box is a place where you can submit your daily complaints about your college/hostel life. Other users can vote on them and hence help priorotize the complaints.</p>
-            <h3>How do I add my complaint?</h3>
-            <p>Just click the "Add" tab of the complaint box, write the complaint and click send.</p>
-            <h3>How do I vote?</h3>
-            <p>Go to one of the "new"/"top" tabs where you can view the latest and most voted complaints, and click the respective button for voting it.</p>
-          </div>
-
-
-          <div id="cbadd">Enter complaint:<br/>
-            <input id="complaintInp" /><br/>
-            <input type="button" id="bSendComplaint" value="Send" />
-            <div id="complaintMsg"></div>
-          </div-->
+      <div ng-animate="'slide'" ng-view></div>
+    </div>
+    
     <?php
     echo "<script>var who = '$who';</script>";
 } else {

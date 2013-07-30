@@ -165,3 +165,18 @@ form input[type=password] {
 #form ul li{
 	list-style-type:none;
 }
+
+/* Logout */
+
+#logout{
+  position:relative;
+  height: 30px;
+  padding: 13px 60px 0;
+  float:right;
+  background: #e74c3c;
+  color: #FFF;
+}
+#logout:hover{
+  background: #f75c4c;
+  cursor: pointer;
+}

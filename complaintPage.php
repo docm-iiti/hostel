@@ -14,7 +14,7 @@
     session_start();
     include 'header.php';
   ?>
-  <div class="myDiv" style="height:790px">
+  <div class="myDiv">
     <div class="pageHeader_fill">
     <div class="pageHeader">
     <nav id="pageNav" role="navigation">
@@ -101,19 +101,19 @@ if (isset($_SESSION['rollno'])){
 		$edit = true;
 	}
 		?> 
-		<div id="profile">
-			<div id="profileHeader">
+		<div id="complaintComments">
+			<div id="ccHeader">
       <h2>Complaint #<?=$which?></h2>
 			</div>
-			<div id="profDataDiv">
-      <div id="profData">
+			<div id="ccDataDiv">
+      <div id="ccData">
 			<?php
-        $query = $hosteldb->prepare("SELECT complaint FROM complaints WHERE id=?");
+        $query = $hosteldb->prepare("SELECT complaint, votes FROM complaints WHERE id=?");
         $query->execute(array($which));
         $tcomp = $query->fetch(PDO::FETCH_ASSOC);
-        echo $tcomp['complaint'];
+        echo "<h1>".$tcomp['complaint']."</h1>";
       ?>
-      <h3>Voted by</h3>
+      <h3>Voters [<?=$tcomp['votes']?>]</h3>
         <?php
         $query = $hosteldb->prepare("SELECT com.userID, users.name, users.rollno
           FROM complaint_votes as com 
@@ -130,10 +130,9 @@ if (isset($_SESSION['rollno'])){
           else
             echo $row['rollno'];
           echo "</a>";
-          echo ", ";
+          echo "<br>";
         }
         ?>
-      <br>
       <h3>Comments</h3>
       <ul>
         <?php
@@ -159,7 +158,7 @@ if (isset($_SESSION['rollno'])){
         }
         ?>
       </ul>
-      <input id="tComment">
+      <input id="tComment" type="text">
       <input id="bComment" type="button" value="Comment">
       </div>
 			</div>

@@ -1,0 +1,96 @@
+[
+	{
+		"title": "General",
+		"links": [
+			{
+				"title": "2013-14",
+				"link": "#/batch/general"
+			}
+		]
+	},
+	{
+		"title": "2013 Batch",
+		"links": [
+			{
+				"title": "CSE",
+				"link": "#/batch/cse2013"
+			},
+			{
+				"title": "EE",
+				"link": "#/batch/ee2013"
+			},
+			{
+				"title": "ME",
+				"link": "#/batch/me2013"
+			}
+		]
+	},
+	{
+		"title": "2012 Batch",
+		"links": [
+			{
+				"title": "CSE",
+				"link": "#/batch/cse2012"
+			},
+			{
+				"title": "EE",
+				"link": "#/batch/ee2012"
+			},
+			{
+				"title": "ME",
+				"link": "#/batch/me2012"
+			}
+		]
+	},
+	{
+		"title": "2011 Batch",
+		"links": [
+			{
+				"title": "CSE",
+				"link": "#/batch/cse2011"
+			},
+			{
+				"title": "EE",
+				"link": "#/batch/ee2011"
+			},
+			{
+				"title": "ME",
+				"link": "#/batch/me2011"
+			}
+		]
+	},
+	{
+		"title": "2010 Batch",
+		"links": [
+			{
+				"title": "CSE",
+				"link": "#/batch/cse2010"
+			},
+			{
+				"title": "EE",
+				"link": "#/batch/ee2010"
+			},
+			{
+				"title": "ME",
+				"link": "#/batch/me2010"
+			}
+		]
+	},
+	{
+		"title": "2009 Batch",
+		"links": [
+			{
+				"title": "CSE",
+				"link": "#/batch/cse2009"
+			},
+			{
+				"title": "EE",
+				"link": "#/batch/ee2009"
+			},
+			{
+				"title": "ME",
+				"link": "#/batch/me2009"
+			}
+		]
+	}
+]

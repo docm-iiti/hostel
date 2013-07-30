@@ -8,7 +8,8 @@
 	padding: 20px 0;
 	float: left;
 	border-radius: 3px;
-	box-shadow: rgba(0, 0, 0, 0.4) 0 0 10px 0;
+	box-shadow: rgba(0,0,0,0.4) 0 0 10px 0;
+	overflow: auto;
 }
 .links h2{
 	width:100%;
@@ -17,4 +18,15 @@
 	color:white;
 	margin:0px;
 	text-align:center;
+}
+.links ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.links ul li{
+	padding: 10px 10px 10px 25px;
+}
+.links ul li:hover{
+	background: rgba(255,255,255,0.75);
 }

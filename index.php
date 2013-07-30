@@ -104,7 +104,7 @@
         include 'sidebar.html';
         ?>
           <div id="stdcnrcont">
-            
+            <script type="text/javascript">window.open("profile.php","_self")</script>
           </div>
         <?php
       } else {

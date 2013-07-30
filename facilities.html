@@ -3,8 +3,85 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Hostel | IIT Indore</title>
   <link rel="stylesheet" href="css/pagelayout.css" />
-  <link rel="stylesheet" href="css/marquee.css" />
+  <link rel="stylesheet" href="css/accordion.css"/>	
   <link rel="stylesheet" href="css/header_login.css" />
+  <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
+  <script type="text/javascript" src="js/vendor/jquery-1.10.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.5"></script>
+  <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css?v=2.1.5" media="screen" />
+  <script type="text/javascript" src="js/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    
+    
+   <script type="text/javascript">
+		$(document).ready(function() {
+			$('.fancybox').fancybox();
+			$('.fancybox-buttons').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  :true,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+			$("#fancybox-manual-a").click(function() {
+				$.fancybox.open('1_b.jpg');
+			});
+
+			$("#fancybox-manual-b").click(function() {
+				$.fancybox.open({
+					href : 'iframe.html',
+					type : 'iframe',
+					padding : 5
+				});
+			});
+
+			$("#fancybox-manual-c").click(function() {
+				$.fancybox.open([
+					{
+						href : '1_b.jpg',
+						title : 'My title'
+					}, {
+						href : '2_b.jpg',
+						title : '2nd title'
+					}, {
+						href : '3_b.jpg'
+					}
+				], {
+					helpers : {
+						thumbs : {
+							width: 75,
+							height: 50
+						}
+					}
+				});
+			});
+
+
+		});
+	</script>
+	<style type="text/css">
+		.fancybox-custom .fancybox-skin {
+			box-shadow: 0 0 50px #222;
+		}
+
+		
+	</style>
+    
+    
+    
 	
 </head>
 
@@ -57,30 +134,29 @@
                 <div class="dropOut">
                   <div class="triangle"></div>
                   <ul>
-                    <li><a href="warden.html" class="subheading">Wardens</a></li>
-                    
-               <!-------------Add Students Menu Here------------------>
-                    
-                    <li><a href="adminstaff.html" class="subheading">Admin Staff</a></li>
+                    <li><a href="people.html#warden" class="subheading">Wardens</a></li>
+                    <li><a href="people.html#sgm" class="subheading">Gymkhana</a></li>
+                    <li><a href="people.html#hstaff" class="subheading">Hostel Staff</a></li>
+                    <li><a href="people.html#astaff" class="subheading">Admin Staff</a></li>
                   </ul>
                 </div>
               </div>
             </li>           
           
-            <li class="drop" ><a href="residences.html" class="heading">Facilities</a>
+            <li class="drop" ><a href="facilities.html" class="heading">Facilities</a>
               <div class="dropdownContain">
                 <div class="dropOut">
                   <div class="triangle"></div>
                   <ul>
-                    <li><a href="residences.html" class="subheading">Residences</a></li>
-                    <li><a href="hostel_office.html" class="subheading">Hostel Office</a></li>
-                    <li><a href="medical.html" class="subheading">Medical</a></li>
-                    <li><a href="transport.html" class="subheading">Transport</a></li>
-                    <li><a href="guest_house.html" class="subheading">Guest House</a></li>
-                    <li><a href="sport.html" class="subheading">Sports</a></li>
-                    <li><a href="internet.html" class="subheading">Internet</a></li>
-                    <li><a href="diningfaci.html" class="subheading">Dining</a></li>
-                    <li><a href="lafresco.html" class="subheading">La-Fresco</a></li>
+                    <li><a href="facilities.html#residences" class="subheading">Residences</a></li>
+                    <li><a href="facilities.html#hosteloffice" class="subheading">Hostel Office</a></li>
+                    <li><a href="facilities.html#medical" class="subheading">Medical</a></li>
+                    <li><a href="facilities.html#transport" class="subheading">Transport</a></li>
+                    <li><a href="facilities.html#guesthouse" class="subheading">Guest House</a></li>
+                    <li><a href="facilities.html#sport" class="subheading">Sports</a></li>
+                    <li><a href="facilities.html#computercentre" class="subheading">Internet</a></li>
+                    <li><a href="facilities.html#dining" class="subheading">Dining</a></li>
+                    <li><a href="facilities.html#lafresco" class="subheading">La-Fresco</a></li>
                   </ul>
                 </div>
               </div>      
@@ -91,17 +167,17 @@
                 <div class="dropOut">
                   <div class="triangle"></div>
                   <ul>
-                    <li>Events</li>
-                    <li>Festivals</li>
-                    <li>Trips</li>
-                    <li>Others</li>
+                    <li><a href="life.html#events" class="subheading">Events</a></li>
+                    <li><a href="life.html#festival"class="subheading">Festivals</a></li>
+                    <li><a href="life.html#trips"class="subheading">Trips</a></li>
+                    <li><a href="life.html#others"class="subheading">Others</a></li>
                   </ul>
                 </div>
               </div>      
             </li>
           
             <li><a href="gallery.html" class="heading">Gallery</a></li>
-            <li><a href="http://hostel-iiti.vacau.com" class="heading">Student's Corner</a></li>
+            <li><a href="studentcorner.html" class="heading">Student's Corner</a></li>
             <li><a href="contactus.html" class="heading">Contact Us</a></li>
         
           </ul> 
@@ -109,72 +185,177 @@
     </div>
     <!--For class pageHeader-->
     </div>
-    <div class="content" style="margin-bottom:520px;">
+    <div class="content" style="margin-bottom:50px;height:1000px;">
+    
+        <div  class="accordion vertical" >
+		  <span id="residences">
+		      <h2><a href="#residences">Residences</a></h2>
+		      <p class="info">Students at IIT Indore enjoy world class residential facilities. The residential complex at Silver Springs Township is the one of the best hostel facility in the country. The rooms are spacious and large and looks out to the nearby mountains; the township itself is clean, safe and beautiful. IIT Indore gives utmost importance to the health and hygiene of the students. Some of the facilties we have for students includes a RO system installed in every room to provide safe water and housekeeping is responsible for cleaning the rooms every single day. The hostel is enjoys wireless internet connectivity, gymnasium and many other recreational facilities.</p>
+              <p class="info">
+		<a class="fancybox" href="1_b.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="1_s.jpg" alt="" /></a>
 
-      <div class="about_hostel">
-        <div class="hostel_description">
-          <img src="">
-        </div>
-      </div>
-      <div class="3_div_data">
-        <div class="news">
-            <div style="width:100%;height:40px;background:#e74c3c;color:white;margin:0px;text-align:center;">
-                <h4>EVENTS</h4>
-               </div> 
-                <ul style="line-height:1.5em;">
-                  <!--**********************************NEWS ELEMENTS***************************************-->
-                    <li>adfsfdagasdg</li>
-                    <li>fedfedgegedgr</li>
-                    <li>sfdgedgvefdgef</li>
-                    <li>fdfdgfdddddddddddddddddddddddd</li>
-            
-        </div>
-        <div class="border">
-        </div>
-        <div class="something">
-            <div style="width:100%;height:40px;background:#e74c3c;color:white;margin:0px;top:0px;text-align:center;">
-                <h4>NEWS</h4>
-            </div>
-        </div>
-      </div>
+		<a class="fancybox" href="2_b.jpg" data-fancybox-group="gallery" title="Etiam quis mi eu elit temp"><img src="2_s.jpg" alt="" /></a>
 
+		<a class="fancybox" href="3_b.jpg" data-fancybox-group="gallery" title="Cras neque mi, semper leon"><img src="3_s.jpg" alt="" /></a>
+
+		<a class="fancybox" href="4_b.jpg" data-fancybox-group="gallery" title="Sed vel sapien vel sem uno"><img src="4_s.jpg" alt="" /></a>
+	</p>
+		  </span>
+		  <span id="hosteloffice">
+		      <h2><a href="#hosteloffice">Hostel Office</a></h2>
+		      <p class="info">We have a Hostel Office within the residency area which includes offices of Hostel Wardens, Hostel Supervisor and Estate Officer. Students can go anytime to the Office and file their complaints. However, students are encouraged to use the new Basket feature to lodge complaints unless very imminent measures are deemed necessary. Login on the top to lodge a complaint .</p>
+                <p class="info">
+		<a class="fancybox" href="1_b.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="1_s.jpg" alt="" /></a>
+
+		<a class="fancybox" href="2_b.jpg" data-fancybox-group="gallery" title="Etiam quis mi eu elit temp"><img src="2_s.jpg" alt="" /></a>
+
+		<a class="fancybox" href="3_b.jpg" data-fancybox-group="gallery" title="Cras neque mi, semper leon"><img src="3_s.jpg" alt="" /></a>
+
+		<a class="fancybox" href="4_b.jpg" data-fancybox-group="gallery" title="Sed vel sapien vel sem uno"><img src="4_s.jpg" alt="" /></a>
+	</p>
+		  </span>
+		  <span id="medical">
+		      <h2><a href="#medical">Medical</a></h2>
+		      <p class="info"> You ill Son ? Don't worry , we've got it covered . </p>
+                <p class="info">
+		<a class="fancybox" href="1_b.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="1_s.jpg" alt="" /></a>
+
+		<a class="fancybox" href="2_b.jpg" data-fancybox-group="gallery" title="Etiam quis mi eu elit temp"><img src="2_s.jpg" alt="" /></a>
+
+		<a class="fancybox" href="3_b.jpg" data-fancybox-group="gallery" title="Cras neque mi, semper leon"><img src="3_s.jpg" alt="" /></a>
+
+		<a class="fancybox" href="4_b.jpg" data-fancybox-group="gallery" title="Sed vel sapien vel sem uno"><img src="4_s.jpg" alt="" /></a>
+	</p>
+		  </span>
+		  <span id="transport">
+		      <h2><a href="#transport">Transport</a></h2>
+		      <p class="info">We have a fleet of modern and spacious buses with finger-print recognition facility for travelling to college for daily classes. Apart from these regular buses, we also have buses to city for weekend shopping and recreation. We also have 24X7 ambulance facility available at hostel for emergency medical situations. If a large group of students require additional transport facility , it can be aranged through a written request to respective authorities on the basis of a moderate fee.</p>
+                <p class="info">
+		<a class="fancybox" href="1_b.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="1_s.jpg" alt="" /></a>
+
+		<a class="fancybox" href="2_b.jpg" data-fancybox-group="gallery" title="Etiam quis mi eu elit temp"><img src="2_s.jpg" alt="" /></a>
+
+		<a class="fancybox" href="3_b.jpg" data-fancybox-group="gallery" title="Cras neque mi, semper leon"><img src="3_s.jpg" alt="" /></a>
+
+		<a class="fancybox" href="4_b.jpg" data-fancybox-group="gallery" title="Sed vel sapien vel sem uno"><img src="4_s.jpg" alt="" /></a>
+	</p>
+		  </span>
+		  <span id="guesthouse">
+		      <h2><a href="#guesthouse">Guest House</a></h2>
+		      <p class="info">We have a Guest House facility at our hostel premises where visitors and parents can stay with prior booking.</p>
+                <p class="info">
+		<a class="fancybox" href="1_b.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="1_s.jpg" alt="" /></a>
+
+		<a class="fancybox" href="2_b.jpg" data-fancybox-group="gallery" title="Etiam quis mi eu elit temp"><img src="2_s.jpg" alt="" /></a>
+
+		<a class="fancybox" href="3_b.jpg" data-fancybox-group="gallery" title="Cras neque mi, semper leon"><img src="3_s.jpg" alt="" /></a>
+
+		<a class="fancybox" href="4_b.jpg" data-fancybox-group="gallery" title="Sed vel sapien vel sem uno"><img src="4_s.jpg" alt="" /></a>
+	</p>
+		  </span>
+          <span id="sports">
+		      <h2><a href="#sports">Sports</a></h2>
+		      <p class="info">IIT Indore believes in nurturing and encouraging a variety of sports for fitness, competition and overall well being of our students. We therefore have facilities for football, basketball, volleyball, cricket and table tennis. Selected students are sent to sports academy for advanced coaching in Swimming, Badminton & Table tennis. An intramural activity goes on throughout the year. Extramurally the students participate in the Inter IIT meet. Institute sport officer looks after the fitness and conditioning of students. good qualified coaches are appointed fulltime by IIT Indore. Our Institute has a sports body Sports Convenor Dr. Monalisa Sarma & Sports Officer. Any query regarding sport related matter you can make a call to Mr. Ritesh, Sports Officer IIT Indore- 7389582408.</p>
+                <p class="info">
+		<a class="fancybox" href="1_b.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="1_s.jpg" alt="" /></a>
+
+		<a class="fancybox" href="2_b.jpg" data-fancybox-group="gallery" title="Etiam quis mi eu elit temp"><img src="2_s.jpg" alt="" /></a>
+
+		<a class="fancybox" href="3_b.jpg" data-fancybox-group="gallery" title="Cras neque mi, semper leon"><img src="3_s.jpg" alt="" /></a>
+
+		<a class="fancybox" href="4_b.jpg" data-fancybox-group="gallery" title="Sed vel sapien vel sem uno"><img src="4_s.jpg" alt="" /></a>
+	</p>
+		  </span>
+          <span id="computercentre">
+		      <h2><a href="#computercentre">Computer Centre</a></h2>
+		      <p class="info">Our hostel's  computer center ,Cyberus is equipped with enough PCs with 24x7 LAN connectivity. Students can go anytime to Cyberus to access internet. Besides this ,most students have Wi-Fi access. </p>
+                <p class="info">
+		<a class="fancybox" href="1_b.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="1_s.jpg" alt="" /></a>
+
+		<a class="fancybox" href="2_b.jpg" data-fancybox-group="gallery" title="Etiam quis mi eu elit temp"><img src="2_s.jpg" alt="" /></a>
+
+		<a class="fancybox" href="3_b.jpg" data-fancybox-group="gallery" title="Cras neque mi, semper leon"><img src="3_s.jpg" alt="" /></a>
+
+		<a class="fancybox" href="4_b.jpg" data-fancybox-group="gallery" title="Sed vel sapien vel sem uno"><img src="4_s.jpg" alt="" /></a>
+	</p>
+		  </span>
+          <span id="dining">
+		      <h2><a href="#dining">Dining</a></h2>
+		      <p class="info">We have well maintained, spacious and hygenic dining halls both for Veg and Non. Veg food. Students are provided four meals a day: Breakfast, Lunch, Evening Snacks & Dinner. Mess Menu is regularly updated and changed as per students' demand. Apart from that, televisions are installed in common area.</p>
+                <p class="info">
+		<a class="fancybox" href="1_b.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="1_s.jpg" alt="" /></a>
+
+		<a class="fancybox" href="2_b.jpg" data-fancybox-group="gallery" title="Etiam quis mi eu elit temp"><img src="2_s.jpg" alt="" /></a>
+
+		<a class="fancybox" href="3_b.jpg" data-fancybox-group="gallery" title="Cras neque mi, semper leon"><img src="3_s.jpg" alt="" /></a>
+
+		<a class="fancybox" href="4_b.jpg" data-fancybox-group="gallery" title="Sed vel sapien vel sem uno"><img src="4_s.jpg" alt="" /></a>
+	</p>
+		  </span>
+          <span id="lafresco">
+		      <h2><a href="#lafresco">La-Fresco - IIT Indore's Convenience Store</a></h2>
+		      <p class="info">IIT Indore has its own general store at the hostel, where students can purchase items for daily use at prices lower than market rates. Printing and photocopying facility is also available at this store. Most neccessities can be met, however if not , can be arranged from the city if required in large quantities. We also have other private vendors inside Silver Springs who do not subsidize rates.</p>
+                <p class="info">
+		<a class="fancybox" href="1_b.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="1_s.jpg" alt="" /></a>
+
+		<a class="fancybox" href="2_b.jpg" data-fancybox-group="gallery" title="Etiam quis mi eu elit temp"><img src="2_s.jpg" alt="" /></a>
+
+		<a class="fancybox" href="3_b.jpg" data-fancybox-group="gallery" title="Cras neque mi, semper leon"><img src="3_s.jpg" alt="" /></a>
+
+		<a class="fancybox" href="4_b.jpg" data-fancybox-group="gallery" title="Sed vel sapien vel sem uno"><img src="4_s.jpg" alt="" /></a>
+	</p>
+		  </span>
+          <span id="library">
+     	      <h2><a href="#library">Hostel Library</a></h2>
+		      <p class="info">We have well maintained, spacious and hygenic dining halls both for Veg and Non. Veg food. Students are provided four meals a day: Breakfast, Lunch, Evening Snacks & Dinner. Mess Menu is regularly updated and changed as per students' demand. Apart from that, televisions are installed in common area.</p>
+                <p class="info">
+		<a class="fancybox" href="1_b.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="1_s.jpg" alt="" /></a>
+
+		<a class="fancybox" href="2_b.jpg" data-fancybox-group="gallery" title="Etiam quis mi eu elit temp"><img src="2_s.jpg" alt="" /></a>
+
+		<a class="fancybox" href="3_b.jpg" data-fancybox-group="gallery" title="Cras neque mi, semper leon"><img src="3_s.jpg" alt="" /></a>
+
+		<a class="fancybox" href="4_b.jpg" data-fancybox-group="gallery" title="Sed vel sapien vel sem uno"><img src="4_s.jpg" alt="" /></a>
+	</p>
+		  </span>
+     </div>
+     </div>
     </div>
-    </div>
+ 
   <footer class="footer" >
      	<div class="footercontent">
              <div id="quicklinks">
             	<ul>
                 <h2>Quick Links</h2>
-                <li><a href="#">Institute Website</a></li>
-                <li><a href="">School of Computer Science and Engineering</a></li>
-                <li><a href="">School of Electrical Engineering</a></li>
-                <li><a href="">School of Mechanical Engineering</a></li>
-                <li><a href="">School of Psychology</a></li>
+                <li><a href="iiti.ac.in">Institute Website</a></li>
+                <li><a href="cse.iiti.ac.in">School of Computer Science and Engineering</a></li>
+                <li><a href="ee.iiti.ac.in">School of Electrical Engineering</a></li>
+                <li><a href="me.iiti.ac.in">School of Mechanical Engineering</a></li>
                 <li><a href="#">Training and Placement Cell</a></li>
                 <li><a href="#">Student Gymkhana</a></li>
-                <li><a href="#">Webmail</a></li>      
-            </ul>
+                <li><a href="#">Webmail</a></li> 
+              </ul>
              </div>
-            <div id="connect">
-        	<h2>Connect With Us</h2>
+             <div id="connect">
+            <h2>Connect With Us</h2>
             <img id="fblogo" src="images/Logos/fb_logo.png" height="64px" />
             <img id="gpluslogo" src="images/Logos/gplus_logo.png" height="64px" />
             <img id="youtubelogo" src="images/Logos/youtube_logo.png" height="64px" />
-            
             </div>
-              <p style="font-family:Signika; font-size:14px;color:#666;">Designed By Cascade | Creative Media Labs | IIT Indore </p> 
-        </div> 
-       
-     </footer>
-  <script type="text/javascript" src="js/vendor/jquery-1.10.1.min.js" ></script>
-  <script type="text/javascript" src="js/farinspace/jquery.imgpreload.min.js" ></script>
-  <script type="text/javascript" src="js/marquee.js"></script>
+            <div id="downloads">
+            <ul><h2>Downloads</h2>
+                <li>Bus Timetable</li>
+                <li>Mess Menu</li>
+             </ul>
+             </div>
+             </div>
+             <center><p id="author"  >Cascade | Department Of Creative Media [DoCM] | IIT Indore </p> </center>
+           </footer>
+  
+  
   <script type="text/javascript" src="js/index.js" ></script>
   <script src="js/header_login.js"></script>
-  <script>
-	$(document).ready(function(e) {
-        $(this).fadeIn(2000);
-    });
-	</script>
+
+ 
 </body>
 </html>

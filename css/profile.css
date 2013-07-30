@@ -1,6 +1,6 @@
 #profile{
 	height: 600px;
-	padding: 50px 50px 0 50px;
+	padding: 0 50px;
 }
 
 #profileHeader{
@@ -24,7 +24,7 @@
 
 #profDataDiv {
 	position: relative;
-	top: -120px;
+	top: 0;
 	height: 700px;
 	border-left: #F90 2px solid;
 	border-right: #F90 2px solid;
@@ -36,7 +36,7 @@
 
 #profData {
 	position: relative;
-	top: 170px;
+	top: 100px;
 	margin: 0 auto;
 	width: 600px; 
 	background: #DDD;

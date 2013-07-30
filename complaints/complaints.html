@@ -1,0 +1,39 @@
+<div id="cbCont" ng-controller="complaintCtrl" ng-app>
+  <div id="cbContr">
+    Search: <input ng-model="query">
+    Order by: <select ng-model="order">
+      <option value="-time" selected>New</option>
+      <option value="-votes">Top</option>
+    </select>
+    <a href="#/add"><input type="button" value="Add"></a>
+    <a href="#/info"><input type="button" value="Info"></a>
+  </div>
+  <div id="cbComplaints">
+
+    <div class="cbpost" ng-repeat="c in complaints | filter:query | orderBy:order" ng-animate="'animate'">
+      <div class="cbplus ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only" role="button" aria-disabled="false"  ng-click="vote(c);">
+      <div ng-switch on="c.voted">
+        <span ng-switch-when="1" class="ui-button-icon-primary ui-icon ui-icon-minusthick"></span>
+        <span ng-switch-default class="ui-button-icon-primary ui-icon ui-icon-plusthick"></span>
+      </div>
+        <span class="ui-button-text"></span>
+      </div>
+      <div class="cbvotes">{{c.votes}}
+      </div>
+      <div class="cbnotvotes">
+        <div class="cbcomp">
+          <a href="complaintPage.php?comp={{c.complaintid}}">
+            #{{c.complaintid}} {{c.complaint}}<br>
+            <div style='font-size:75%;opacity:0.7;'>[{{c.comments}} Comments]</div>
+          </a>
+        </div>
+        <div class="cbinfo">submitted by <a href="profile.php?rollno={{c.rollno}}"><span ng-switch on="c.name">
+            <span ng-switch-when="">{{c.rollno}}</span>
+            <span ng-switch-default>{{c.name}}</span>
+        </span></a> at {{c.time}}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

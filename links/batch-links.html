@@ -1,0 +1,10 @@
+<div class="links" ng-repeat="linkGroup in linkGroups">
+<h2>{{linkGroup.title}}</h2>
+<ul><a ng-repeat="link in linkGroup.links" href="{{link.link}}">
+  <li>
+    {{link.title}}
+    <br>
+    {{link.description}}
+  </li></a>
+</ul>
+</div>
