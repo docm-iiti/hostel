@@ -5,20 +5,14 @@
   <link rel="stylesheet" href="css/pagelayout.css" />
   <link rel="stylesheet" href="css/studentscorner.css" />
   <link rel="stylesheet" href="css/header_login.css" />
-  <link rel="stylesheet" href="css/login.css" />
-  <link href="css/orangeHostelTheme/jquery-ui-1.9.2.custom.css" rel="stylesheet">
 </head>
 
 <body background="images/background.jpg">
   <?php 
     session_start();
+    include 'header.php';
   ?>
-  <link rel="stylesheet" href="css/header_login.css" />
-<div class="fixedHeader">
-  <a href="index.php">
-  <img src="images/logo.jpg" style="height:50px;float:left;padding:0 10px 0 10px;"><p style="float:left;margin:0px;padding:12px 4px;color:#FFF;font-size:18px">Hostel</p></a>
-  </div>
-  <div class="myDiv" style="height:790px">
+  <div class="myDiv">
     <div class="pageHeader_fill">
     <div class="pageHeader">
     <nav id="pageNav" role="navigation">
@@ -83,83 +77,41 @@
     </nav>
     </div>
     </div>
-      <!--/*********** Content ***************/-->
-
     <div id="stdcnr">
-  <?php
-    if(isset($_SESSION['rollno'])){
-
-      //Logged in---------------
-
-      include 'connect.inc.php';
-		$hosteldb = new PDO("mysql:host=$MySQLhost;dbname=$MySQLdbname;charset=utf8", 
-					$MySQLuser, 
-					$MySQLpass);
-      $query = $hosteldb->prepare("SELECT confkey FROM users WHERE rollno=?;");
-      $query->execute(array($_SESSION["rollno"]));
-
-      $fetch = $query->fetch(PDO::FETCH_ASSOC);
-      if($fetch['confkey'] == 1){
-        // Verified ID ----------------------------
+      <?php
         include 'sidebar.html';
         ?>
-          <div id="stdcnrcont">
-            <script type="text/javascript">window.open("profile.php","_self")</script>
-          </div>
-        <?php
-      } else {
-        //Not Verified ----------------------------
-        ?>
-        <center>
-          <div style="padding: 50px; border: #222 2px solid;">Confirm your email to continue. <br>
-           <a href="" id="sendConfLink" onclick="return false;">If you didn't get the mail within 5 mins of registration, Click here to send it again.</a>
-           <div id="sendConfMsg"></div>
-         </div>
-        <input type="button" value="Logout" onclick="window.open('logout.php','_self');"></center>
-        <?php
-      }
-  } else {
-      // Not logged in-----------------
-  ?>
-      <div class="login">
-        <div id="login" class="form-action show">
-            <h2>Login to Your Basket</h2>
-            <p>
-                Enter your Credentials.
-            </p>
-            <form id="form" onsubmit="return false;">
-                <ul>
-                    <li>
-                        <input type="text" id="email" placeholder="Username" />
-                    </li>
-                    <li>
-                        <input type="password" id="pass" placeholder="Password" />
-                    </li>
-                    <li>
-                        <input type="submit" value="Login" class="button" />
-                    </li>
-                </ul>
-            </form>
-            <div id="loginMsg"></div>
-        </div>
-        <!--/#login.form-action-->
+      <div id="stdcnrcont">
+            
+        
+<?php
+if (isset($_SESSION['rollno'])){
+  include 'connect.inc.php';
+    $user = $_SESSION['rollno'];
+    $edit = true;
+    ?> 
+    <div ng-app="hostel">
+      <div ng-view ></div>
     </div>
-</div>
-  <?php  
-    }; ?>
-
+    <?php
+    echo "<script>var user = '$user';</script>";
+} else {
+?>
+<script type="text/javascript">window.open("login.php", "_self")</script>
+<?php 
+  }
+?>
     </div>
+  </div>
   </div>
 
   <?php
     include "footer.html";
   ?>
-
   <script type="text/javascript" src="js/vendor/jquery-1.10.1.min.js" ></script>
   <script type="text/javascript" src="js/vendor/jquery-ui-1.9.2.custom.min.js" ></script>
+  <script type="text/javascript" src="js/vendor/angular.min.js" ></script>
   <script type="text/javascript" src="js/index.js" ></script>
-  <script type="text/javascript" src="js/login.js" ></script>
-  <script type="text/javascript" src="js/studentscorner.js" ></script>
   <script src="js/header_login.js"></script>
 </body>
 </html>

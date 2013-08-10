@@ -5,14 +5,19 @@
   <link rel="stylesheet" href="css/pagelayout.css" />
   <link rel="stylesheet" href="css/studentscorner.css" />
   <link rel="stylesheet" href="css/header_login.css" />
-  <link rel="stylesheet" href="css/memes.css" />
+  <link rel="stylesheet" href="css/login.css" />
+  <link href="css/orangeHostelTheme/jquery-ui-1.9.2.custom.css" rel="stylesheet">
 </head>
 
 <body background="images/background.jpg">
   <?php 
     session_start();
-    include 'header.php';
   ?>
+  <link rel="stylesheet" href="css/header_login.css" />
+<div class="fixedHeader">
+  <a href="index.php">
+  <img src="images/logo.jpg" style="height:50px;float:left;padding:0 10px 0 10px;"><p style="float:left;margin:0px;padding:12px 4px;color:#FFF;font-size:18px">Hostel</p></a>
+  </div>
   <div class="myDiv" style="height:790px">
     <div class="pageHeader_fill">
     <div class="pageHeader">
@@ -78,65 +83,82 @@
     </nav>
     </div>
     </div>
+      <!--/*********** Content ***************/-->
+
     <div id="stdcnr">
-      <?php
+  <?php
+    if(isset($_SESSION['rollno'])){
+
+      //Logged in---------------
+
+      include 'connect.inc.php';
+		$hosteldb = new PDO("mysql:host=$MySQLhost;dbname=$MySQLdbname;charset=utf8", 
+					$MySQLuser, 
+					$MySQLpass);
+      $query = $hosteldb->prepare("SELECT confkey FROM users WHERE rollno=?;");
+      $query->execute(array($_SESSION["rollno"]));
+
+      $fetch = $query->fetch(PDO::FETCH_ASSOC);
+      if($fetch['confkey'] == 1){
+        // Verified ID ----------------------------
         include 'sidebar.html';
         ?>
-      <div id="stdcnrcont">
-            
-        
-<?php
-if (isset($_SESSION['rollno'])){
-  include 'connect.inc.php';
-  $edit = false;
-  if(isset($_GET['rollno'])){
-    //------- other profile
-    $who = $_GET['rollno'];
+          <div id="stdcnrcont">
+            <script type="text/javascript">window.open("/#/profile","_self")</script>
+          </div>
+        <?php
+      } else {
+        //Not Verified ----------------------------
+        ?>
+        <center>
+          <div style="padding: 50px; border: #222 2px solid;">Confirm your email to continue. <br>
+           <a href="" id="sendConfLink" onclick="return false;">If you didn't get the mail within 5 mins of registration, Click here to send it again.</a>
+           <div id="sendConfMsg"></div>
+         </div>
+        <input type="button" value="Logout" onclick="window.open('logout.php','_self');"></center>
+        <?php
+      }
   } else {
-    // --- user profile
-    $who = $_SESSION['rollno'];
-    $edit = true;
-  }
-    ?> 
-    <div ng-controller="memeCtrl" ng-app>
-      <div id="memeContr">
-        Search: <input ng-model="query">
-        Order by: <select ng-model="order">
-          <option value="-time" selected>New</option>
-          <option value="-votes">Top</option>
-        </select>
-        <input type="button" value="Add" id="memeAdd">
-      </div>
-      <div class="memesContainer">
-        <div class="meme" ng-repeat="meme in memes | filter:query | orderBy:order" ng-animate="'animate'">
-        <img src="{{meme.src}}"><br>
-        <a href="profile.php?rollno={{meme.rollno}}"><span ng-switch on="meme.name">
-            <span ng-switch-when="">{{meme.rollno}}</span>
-            <span ng-switch-default>{{meme.name}}</span>
-        </span></a><br>
-        submitted at {{meme.time}}
+      // Not logged in-----------------
+  ?>
+      <div class="login">
+        <div id="login" class="form-action show">
+            <h2>Login to Your Basket</h2>
+            <p>
+                Enter your Credentials.
+            </p>
+            <form id="form" onsubmit="return false;">
+                <ul>
+                    <li>
+                        <input type="text" id="email" placeholder="Username" />
+                    </li>
+                    <li>
+                        <input type="password" id="pass" placeholder="Password" />
+                    </li>
+                    <li>
+                        <input type="submit" value="Login" class="button" />
+                    </li>
+                </ul>
+            </form>
+            <div id="loginMsg"></div>
         </div>
-      </div>
+        <!--/#login.form-action-->
     </div>
-    <?php
-    echo "<script>var who = '$who';</script>";
-} else {
-?>
-<script type="text/javascript">window.open("index.php", "_self")</script>
-<?php 
-  }
-?>
+</div>
+  <?php  
+    }; ?>
+
     </div>
-  </div>
   </div>
 
   <?php
     include "footer.html";
   ?>
+
   <script type="text/javascript" src="js/vendor/jquery-1.10.1.min.js" ></script>
-  <script type="text/javascript" src="js/vendor/angular.min.js" ></script>
+  <script type="text/javascript" src="js/vendor/jquery-ui-1.9.2.custom.min.js" ></script>
   <script type="text/javascript" src="js/index.js" ></script>
-  <script type="text/javascript" src="js/memes.js" ></script>
+  <script type="text/javascript" src="js/login.js" ></script>
   <script type="text/javascript" src="js/studentscorner.js" ></script>
   <script src="js/header_login.js"></script>
 </body>

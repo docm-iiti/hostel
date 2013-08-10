@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="memes/css/memes.css" />
+<div ng-controller="memeCtrl" ng-app>
+  <div id="memeContr">
+    Search: <input ng-model="query">
+    Order by: <select ng-model="order">
+      <option value="-time" selected>New</option>
+      <option value="-votes">Top</option>
+    </select>
+    <a href="#/memes/add"><input type="button" value="Add" id="memeAdd"></a>
+  </div>
+  <div class="memesContainer">
+    <div class="meme" ng-repeat="meme in memes | filter:query | orderBy:order" ng-animate="'animate'">
+    <img src="{{meme.src}}"><br>
+    <a href="profile.php?rollno={{meme.rollno}}"><span ng-switch on="meme.name">
+        <span ng-switch-when="">{{meme.rollno}}</span>
+        <span ng-switch-default>{{meme.name}}</span>
+    </span></a><br>
+    submitted at {{meme.time}}
+    </div>
+  </div>
+</div>

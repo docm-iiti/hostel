@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="complaints/css/complaintpage.css" />
+<div id="complaintComments">
+	<div id="ccHeader">
+		<h2>Complaint #{{complaintid}}</h2>
+	</div>
+	<div id="ccDataDiv">
+		<div id="ccData">
+			<h1>asd{{complaint}}</h1>
+			<h3>Voters [{{votes}}]</h3>
+			<div ng-repeat="voter in voters">
+				<div ng-switch="voter.name">
+				    <div ng-switch-when=''><a href='profile.php?rollno={{voter.rollno}}'>{{voter.rollno}}</a></div>
+				    <div ng-switch-default><a href='profile.php?rollno={{voter.rollno}}'>{{voter.name}}</a></div>
+				</div>
+			</div>
+			<h3>Comments</h3>
+			<ul>
+		        <li ng-repeat="comment in comments">{{comment.comment}}
+		       		<br>by <a href='profile.php?rollno={{comment.rollno}}>'>
+					<div ng-switch="comment.name">
+					    <div ng-switch-when=''>{{comment.rollno}}</div>
+					    <div ng-switch-default>{{comment.name}}</div>
+					</div>
+		       		</a> at {{comment.time}}.
+		       	</li>
+		    </ul>
+		    <input id="tComment" type="text">
+			<input id="bComment" type="button" value="Comment">
+		</div>
+	</div>
+</div>

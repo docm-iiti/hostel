@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="profile/css/profile.css" />
+<div id="profile">
+	<div id="profileHeader">
+		<div ng-switch="data.name">
+			<h2 ng-switch-when="">{{data.rollno}}'s Profile</h2>
+			<h2 ng-switch-default>{{data.name}}'s Profile</h2>
+		</div>
+		<a href="/#/profile"><input type="button" value="Done Editing" id="editProfile" ></input></a>
+	</div>
+	<div id="profDataDiv">
+	<table id="profData">
+		<tr>
+			<td>Name:</td>
+			<td><input type="text" id="editName" value="{{data.name}}"></td>
+		</tr>
+		<tr>
+			<td>College ID:</td>
+			<td>{{data.rollno}}</td>
+		</tr>
+		<tr>
+			<td>Branch:</td>
+			<td><input type="text" id="editBranch" value="{{data.branch}}"></td>
+		</tr>
+		<tr><td><button id="editData">Update</button></td><td><div id="editDataMsg"></div></td></tr>
+		<tr>
+			<td colspan="2"><h3>Change password</h3></td>
+		</tr>
+			<tr><td>Old Password:</td><td><input type="password" id="oldPass" /></td></tr>
+			<tr><td>New Password:</td><td><input type="password" id="newPass" /></td></tr>
+			<tr><td>Confirm Password:</td><td><input type="password" id="newPassConf" /></td></tr>
+			<tr><td colspan="2"><input type="button" id="bChangePass" value="Change Password"></input></td></tr>
+			<tr><td colspan="2"><div id="passChangeMsg"></td></tr>
+	</table>	
+	</div>
+</div>

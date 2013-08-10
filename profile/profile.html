@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="profile/css/profile.css" />
+<div id="profile">
+	<div id="profileHeader">
+		<div ng-switch="data.name">
+			<h2 ng-switch-when="">{{data.rollno}}'s Profile</h2>
+			<h2 ng-switch-default>{{data.name}}'s Profile</h2>
+		</div>
+		<a href="/#/profile/edit"><input type="button" value="Edit Profile" id="editProfile" ></input></a>
+	</div>
+	<div id="profDataDiv">
+	<table id="profData">
+		<tr>
+			<td>Name:</td>
+			<td>{{data.name}}</td>
+		</tr>
+		<tr>
+			<td>College ID:</td>
+			<td>{{data.rollno}}</td>
+		</tr>
+		<tr>
+			<td>Branch:</td>
+			<td>{{data.branch}}</td>
+		</tr>
+	</table>
+	</div>
+</div>

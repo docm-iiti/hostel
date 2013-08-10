@@ -31,5 +31,4 @@
 	} else {
 		echo 'Enter old password.';
 	}
-	mysql_close();
 ?>

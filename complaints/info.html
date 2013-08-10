@@ -1,3 +1,20 @@
+<link rel="stylesheet" href="complaints/css/complaint.css" />
+<div id="complaintbox">
+  <div id="cbHeader">
+    Complaint Box
+  </div>
+  <div id="cbCont">
+    <div id="cbContr">
+      Search: <input ng-model="query">
+      Order by: <select ng-model="order">
+        <option value="-time" selected>New</option>
+        <option value="-votes">Top</option>
+      </select>
+      <a href="#/complaints/add"><input type="button" value="Add"></a>
+      <a href="#/complaints/info"><input type="button" value="Info"></a>
+    </div>
+    <div id="cbComplaints">
+
 <div id="cbinfo">
 	<h3>What is this complaint box?</h3>
 	<p>This complaint box is a place where you can submit your daily complaints about your college/hostel life. Other users can vote on them and hence help priorotize the complaints.</p>
@@ -5,5 +22,9 @@
 	<p>Just click the "Add" button of the complaint box, write the complaint and click send.</p>
 	<h3>How do I vote?</h3>
 	<p>Click the plus button of the respective post for voting it.</p>
-	<a href="#/"><input type="button" value="Go Back" /></a>
+	<a href="#/complaints"><input type="button" value="Go Back" /></a>
+</div>
+
+    </div>
+  </div>
 </div>

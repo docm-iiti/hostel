@@ -1,9 +1,32 @@
-<div id="cbAddDiv">
-	<center>
-		Enter complaint:<br/>
-		<textarea id="complaintInp"></textarea><br/>
-		<input type="button" id="bSendComplaint" value="Send" />
-		<a href="#/"><input type="button" value="Go Back" /></a>
-		<div id="complaintMsg"></div>
-	</center>
+<link rel="stylesheet" href="complaints/css/complaint.css" />
+<script type="text/javascript" src="complaints/complaint.js"></script>
+<div id="complaintbox">
+  <div id="cbHeader">
+    Complaint Box
+  </div>
+  <div id="cbCont">
+    <div id="cbContr">
+      Search: <input ng-model="query">
+      Order by: <select ng-model="order">
+        <option value="-time" selected>New</option>
+        <option value="-votes">Top</option>
+      </select>
+      <a href="#/complaints/add"><input type="button" value="Add"></a>
+      <a href="#/complaints/info"><input type="button" value="Info"></a>
+    </div>
+    <div id="cbComplaints">
+
+      <div id="cbAddDiv">
+		<center>
+			Enter complaint:<br/>
+			<textarea id="complaintInp"></textarea><br/>
+			<input type="button" id="bSendComplaint" value="Send" />
+			<a href="#/complaints"><input type="button" value="Go Back" /></a>
+			<div id="complaintMsg"></div>
+		</center>
+	</div>
+
+      </div>
+    </div>
+  </div>
 </div>

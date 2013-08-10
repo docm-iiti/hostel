@@ -4,7 +4,7 @@
 		"links": [
 			{
 				"title": "2013-14",
-				"link": "#/batch/general"
+				"link": "#/links/general"
 			}
 		]
 	},
@@ -13,15 +13,15 @@
 		"links": [
 			{
 				"title": "CSE",
-				"link": "#/batch/cse2013"
+				"link": "#/links/cse2013"
 			},
 			{
 				"title": "EE",
-				"link": "#/batch/ee2013"
+				"link": "#/links/ee2013"
 			},
 			{
 				"title": "ME",
-				"link": "#/batch/me2013"
+				"link": "#/links/me2013"
 			}
 		]
 	},
@@ -30,15 +30,15 @@
 		"links": [
 			{
 				"title": "CSE",
-				"link": "#/batch/cse2012"
+				"link": "#/links/cse2012"
 			},
 			{
 				"title": "EE",
-				"link": "#/batch/ee2012"
+				"link": "#/links/ee2012"
 			},
 			{
 				"title": "ME",
-				"link": "#/batch/me2012"
+				"link": "#/links/me2012"
 			}
 		]
 	},
@@ -47,15 +47,15 @@
 		"links": [
 			{
 				"title": "CSE",
-				"link": "#/batch/cse2011"
+				"link": "#/links/cse2011"
 			},
 			{
 				"title": "EE",
-				"link": "#/batch/ee2011"
+				"link": "#/links/ee2011"
 			},
 			{
 				"title": "ME",
-				"link": "#/batch/me2011"
+				"link": "#/links/me2011"
 			}
 		]
 	},
@@ -64,15 +64,15 @@
 		"links": [
 			{
 				"title": "CSE",
-				"link": "#/batch/cse2010"
+				"link": "#/links/cse2010"
 			},
 			{
 				"title": "EE",
-				"link": "#/batch/ee2010"
+				"link": "#/links/ee2010"
 			},
 			{
 				"title": "ME",
-				"link": "#/batch/me2010"
+				"link": "#/links/me2010"
 			}
 		]
 	},
@@ -81,15 +81,15 @@
 		"links": [
 			{
 				"title": "CSE",
-				"link": "#/batch/cse2009"
+				"link": "#/links/cse2009"
 			},
 			{
 				"title": "EE",
-				"link": "#/batch/ee2009"
+				"link": "#/links/ee2009"
 			},
 			{
 				"title": "ME",
-				"link": "#/batch/me2009"
+				"link": "#/links/me2009"
 			}
 		]
 	}

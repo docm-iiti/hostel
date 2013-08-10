@@ -112,6 +112,7 @@ nav#pageNav .dropOut .triangle {
 	top:-8px;
 	left:50%;
 	margin-left:-8px;
+	z-index:3;
 }
 
 nav#pageNav .dropdownContain {
@@ -121,6 +122,7 @@ nav#pageNav .dropdownContain {
 	left:50%;
 	margin-left:-80px;
 	top:-500px;
+	
 }
 
 nav#pageNav .dropOut {
@@ -217,8 +219,8 @@ nav#pageNav ul li:hover .dropOut {
 	position:relative;
 	height:150px;
 	color:#000;
-	font-size:24px;
-	width:900px;
+	font-size:20px;
+	width:600px;
 	margin:0 auto;
 	font-family:Roboto;
 	
@@ -246,12 +248,22 @@ nav#pageNav ul li:hover .dropOut {
 	padding: 10px;
 }
 .news{
-	width:350px;	
+	width:300px;	
 	padding:0px;
+	padding-right:25px;
+	padding-left:25px;
 }
 .something{
-	width:700px;
+	width:600px;
 	padding:0px;
+	padding-right:50px;
+	padding-left:50px;
+	margin-bottom:50px;
+	
+}
+.something li{
+	text-align:justify;
+	
 }
 	
 /***********Footer*************************************/
@@ -347,8 +359,6 @@ color:#e74c3c;
 	width:1096px;
 	margin:50px;
 	height:400px;
-	border-bottom-left-radius:5px;
-	border-top-left-radius:5px;
 	border-left:2px solid #e74c3c;
 	border-right:2px solid #e74c3c;
 	-webkit-box-shadow:0 2px 6px rgba(0,0,0,.15);
@@ -371,19 +381,17 @@ color:#e74c3c;
 .warden_mem{
 	position:relative;
 	height:100%;
-	width:284px;
+	width:300px;
 	float:left;
 	margin-left:50px;
-	background-color:#000000;
+	background-color: #666666;
 	
 }
 .sgm{
 	position:relative;
 	width:1096px;
 	margin:50px;
-	height:250px;
-	border-bottom-left-radius:5px;
-	border-top-left-radius:5px;
+	height:550px;
 	border-left:2px solid #e74c3c;
 	border-right:2px solid #e74c3c;
 	-webkit-box-shadow:0 2px 6px rgba(0,0,0,.15);
@@ -393,15 +401,17 @@ color:#e74c3c;
 
 .sgm_mem{
 	position:relative;
-	height:100%;
-	width:150px;
+	height:45%;
+
+	margin-top:18px;
+	width:210px;
 	float:left;
 	margin-left:50px;
-	background-color:#000000;
+	background-color:#333;
 
 }
 .description{
-	color:black;
+	color:#000000;
 	width:1100px;
 	position:relative;
 	margin:50px;
@@ -412,7 +422,7 @@ color:#e74c3c;
 	width:500px;
 	height:100%;
 	float:left;
-	background-color:#000000;
+	background-color:#666;
 	border-left:2px solid #e74c3c;
 	border-right:2px solid #e74c3c;
 	-webkit-box-shadow:0 2px 6px rgba(0,0,0,.15);

@@ -11,7 +11,7 @@ $(document).ready(function(){
 	$('img.marquee_panel_photo').each(function(index){
 		var photoWidth = $('.marquee_container').width();
 		var photoPosition = index * photoWidth;
-		$('.marquee_photos').append('<img class="marquee_photo" style="left: '+photoPosition+'" src="'+$(this).attr('src')+'" alt="'+$(this).attr('alt')+'" width="1200" height="400" />');
+		$('.marquee_photos').append('<img class="marquee_photo" style="left: '+photoPosition+'" src="'+$(this).attr('src')+'" alt="'+$(this).attr('alt')+'" width="1096" height="400" />');
 		$('.marquee_photos').css('width', photoPosition+photoWidth);
 		no_of_photos=index;
 	});
@@ -19,7 +19,7 @@ $(document).ready(function(){
 	
 	
 	//This is my AutoPlay Code
-	var photoChangeInterval=5000;
+	var photoChangeInterval=4000;
 	var marqueeIndex=0;
 	var navHandle=document.getElementsByClassName("marquee_nav_item");
 	function autoPlay(){
