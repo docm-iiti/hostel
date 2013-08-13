@@ -42,3 +42,37 @@
 #memeContr input:hover,select:hover{
     background:rgba(100,100,100,0.5);
 }
+
+#memeupload{
+	margin: 50px auto;
+	padding: 30px;
+	color: #FFF;
+	border-radius: 5px;
+	background: #e74c3c;
+	width: 350px;
+	height: 200px;
+}
+
+#memeupload input{
+	margin: 20px;
+}
+
+#memeupload input[type=submit], #memeupload input[type=button]{
+    border: none;
+    background: #136899;
+    height: 40px;
+    width: 80px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 3px 1px #2075aa;
+}
+#memeupload input[type=submit]:hover, #memeupload input[type=button]:hover {
+  background: #1e75aa;
+  /*box-shadow: 0 3px 1px #237bb2;*/
+}
+
+#memeupload input[type=submit]:active, #memeupload input[type=button]:active {
+  background: #136899;
+  /*box-shadow: 0 3px 1px #0f608c;*/
+}

@@ -70,6 +70,21 @@
 	min-height: 500px;
 }
 
+#loginForm{
+    margin: 50px auto;
+    padding: 30px;
+    color: #FFF;
+    border-radius: 5px;
+    background: #e74c3c;
+    width: 400px;
+}
+#loginForm input[type=text],#loginForm input[type=password]{
+    width: 300px;
+}
+#loginForm ul li{
+    list-style-type: none;
+}
+
 .animate-enter, 
 .animate-leave { 
     -webkit-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;

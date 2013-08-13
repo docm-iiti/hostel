@@ -4,7 +4,6 @@
   <title>Hostel | IIT Indore</title>
   <link rel="stylesheet" href="css/pagelayout.css" />
   <link rel="stylesheet" href="css/studentscorner.css" />
-  <link rel="stylesheet" href="css/header_login.css" />
   <link rel="stylesheet" href="css/login.css" />
   <link href="css/orangeHostelTheme/jquery-ui-1.9.2.custom.css" rel="stylesheet">
 </head>
@@ -121,29 +120,25 @@
   } else {
       // Not logged in-----------------
   ?>
-      <div class="login">
-        <div id="login" class="form-action show">
-            <h2>Login to Your Basket</h2>
-            <p>
-                Enter your Credentials.
-            </p>
-            <form id="form" onsubmit="return false;">
-                <ul>
-                    <li>
-                        <input type="text" id="email" placeholder="Username" />
-                    </li>
-                    <li>
-                        <input type="password" id="pass" placeholder="Password" />
-                    </li>
-                    <li>
-                        <input type="submit" value="Login" class="button" />
-                    </li>
-                </ul>
-            </form>
-            <div id="loginMsg"></div>
-        </div>
+    <form id="loginForm" onsubmit="return false;">
+    <h2>Login to Your Basket</h2>
+    <p>
+        Enter your Credentials.
+    </p>
+        <ul>
+            <li>
+                <input type="text" id="email" placeholder="Username" />
+            </li>
+            <li>
+                <input type="password" id="pass" placeholder="Password" />
+            </li>
+            <li>
+                <input type="submit" value="Login" class="button" />
+            </li>
+        </ul>
+    </form>
+    <div id="loginMsg"></div>
         <!--/#login.form-action-->
-    </div>
 </div>
   <?php  
     }; ?>
@@ -159,7 +154,6 @@
   <script type="text/javascript" src="js/vendor/jquery-ui-1.9.2.custom.min.js" ></script>
   <script type="text/javascript" src="js/index.js" ></script>
   <script type="text/javascript" src="js/login.js" ></script>
-  <script type="text/javascript" src="js/studentscorner.js" ></script>
   <script src="js/header_login.js"></script>
 </body>
 </html>

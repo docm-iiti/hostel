@@ -6,7 +6,6 @@
 <?php
 echo "Hee";
 if(isset($_POST['submit'])){
-	echo 1111;
 	if(move_uploaded_file($_FILES['userfile']['tmp_name'], 'images/'.$_FILES['userfile']['name']))
 		echo "Uploaded.";
 }
