@@ -34,3 +34,9 @@
   
 	
 })( jQuery );
+
+$("#form").submit(function(){
+  $.post('ajax/login.php', {email: $('#headerEmail').val(), pass: $('#headerPass').val()}, function(data){
+    alert(data);
+  });
+});

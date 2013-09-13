@@ -149,9 +149,9 @@
   <?php
     include "footer.html";
   ?>
-
   <script type="text/javascript" src="js/vendor/jquery-1.10.1.min.js" ></script>
   <script type="text/javascript" src="js/vendor/jquery-ui-1.9.2.custom.min.js" ></script>
+  <script type="text/javascript" src="js/vendor/angular.min.js" ></script>
   <script type="text/javascript" src="js/index.js" ></script>
   <script type="text/javascript" src="js/login.js" ></script>
   <script src="js/header_login.js"></script>
