@@ -1,0 +1,85 @@
+<link rel="stylesheet" href="css/accordion.css">
+<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen">
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css?v=2.1.5" media="screen">
+<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.5"></script>
+<script type="text/javascript" src="js/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('.fancybox').fancybox();
+	$('.fancybox-buttons').fancybox({
+	        openEffect  : 'none',
+	        closeEffect : 'none',
+
+	        prevEffect : 'none',
+	        nextEffect : 'none',
+
+	        closeBtn  :true,
+
+	        helpers : {
+	                title : {
+	                        type : 'inside'
+	                },
+	                buttons : {}
+	        },
+
+	        afterLoad : function() {
+	                this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+	        }
+	});
+	$("#fancybox-manual-a").click(function() {
+	        $.fancybox.open('1_b.jpg');
+	});
+
+	$("#fancybox-manual-b").click(function() {
+	        $.fancybox.open({
+	                href : 'iframe.html',
+	                type : 'iframe',
+	                padding : 5
+	        });
+	});
+
+	$("#fancybox-manual-c").click(function() {
+	        $.fancybox.open([
+	                {
+	                        href : '1_b.jpg',
+	                        title : 'My title'
+	                }, {
+	                        href : '2_b.jpg',
+	                        title : '2nd title'
+	                }, {
+	                        href : '3_b.jpg'
+	                }
+	        ], {
+	                helpers : {
+	                        thumbs : {
+	                                width: 75,
+	                                height: 50
+	                        }
+	                }
+	        });
+	});
+});
+</script>
+
+<style type="text/css">
+	.fancybox-custom .fancybox-skin {
+		box-shadow: 0 0 50px #222;
+	}
+</style>
+
+<div class="content" style="margin-bottom:50px;height:1000px;">
+    <section class="ac-container">
+        <div ng-repeat="facility in facilities">
+            <input id="ac-{{$index}}" name="accordion-1" type="radio"> <label for="ac-{{$index}}">{{facility.facility}}</label>
+            <article class="ac-medium">
+                <p class="info">
+                   {{facility.info}}
+                </p>
+                <p class="info">
+                    <a ng-repeat="image in facility.images" class="fancybox" href="{{image.url}}" data-fancybox-group="gallery" title="{{image.title}}"><img src="{{image.thumb}}"> </a>
+                </p>
+            </article>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,95 @@
+<link rel="stylesheet" href="css/pagelayout.css" />
+<link rel="stylesheet" href="css/marquee.css" />
+<link rel="stylesheet" href="css/header_login.css" />
+<script type="text/javascript" src="js/vendor/jquery-1.10.1.min.js" ></script>
+
+<style>
+	.member_description{
+		width:100%;
+		height:100%;
+		opacity:0;
+		line-height:2em;
+		font-size:20px;
+	}
+
+	.member_description:hover{
+		background:rgba(0,0,0,0.5);
+		opacity:1;
+    color: white;
+    text-decoration: none;
+		-webkit-transition:all 0.5s ease-out;
+  	-moz-transition:all 0.5s ease-out;
+  	-ms-transition:all 0.5s ease-out;
+  	-o-transition:all 0.5s ease-out;
+  	transition:all 0.5s ease-out;				
+	}
+</style>
+
+    
+<div class="content" style="margin-bottom:50px;">
+	<div class="description">
+    <h2 id="warden">WARDENS</h2><hr/>
+    <p>Discipline in the hostel is maintained by 3 wardens. They are also a final point of contact for students with concern 
+    regarding state of affairs and help students solve their problems. Their contacts have been provided below. To view, just
+    hover over their images.
+    </p>
+  </div>
+  <div class="warden">
+    <div ng-repeat="warden in wardens" class="warden_mem" style="{{warden.photo}}">
+      <a href="{{warden.link}}" target="_blank">
+        <div class="member_description">
+        <center>
+        <label>Name:</label>{{warden.name}}
+        <label>Contact:</label>{{warden.contact}}
+        </center>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div  class="description">
+    <h2 id="sgm">STUDENT GYMKHANA</h2><hr/>
+    <p>Any Institute requires a functional, robust and effective Student Body that caters to the requirements of the students.
+    IIT Indore's Student Body Council or as we call it, Student Gymkhana comprises of 8 dedicated members. Click here to go to 
+    our dedicated <a href =" ">Student Gymkhana Website</a>
+  </div>
+
+  <div class="sgm">
+  	<div ng-repeat="sgm in sgms" class="sgm_mem" style="{{sgm.photo}}">
+      <div class="member_description">
+        <center>
+        <label>Name:</label>{{sgm.name}}
+        <label>Contact:</label>{{sgm.contact}}
+        </center>
+      </div>
+    </div>
+  </div>
+
+<div style="width:100%;border-bottom:2px dotted #e74c32;height:auto;"></div>
+<div class="warden">
+  <div class="staff">
+  	<div id="astaff" class="side">
+      	<p>A<br />D<br />M<br />I<br />N<br />S<br />T<br />A<br />F<br />F</p>
+    </div>
+    <div style="margin-left:50px;" class="people_content">
+      <ul>
+        <li ng-repeat="admin in admins">{{admin.name}}</li>
+      </ul>
+    </div>
+  </div>
+  <div class="staff" style="float:right;">
+  	<div id="hstaff" class="side">
+     	<p>H<br />O<br />S<br />T<br />E<br />L<br />S<br />T<br />A<br />F<br />F</p>
+    </div>
+    <div style="margin-left:50px;" class="people_content">
+      <ul>
+        <li ng-repeat="admin in staff">{{admin.name}}</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="js/farinspace/jquery.imgpreload.min.js" ></script>
+<script type="text/javascript" src="js/marquee.js"></script>
+<script type="text/javascript" src="js/index.js" ></script>
+<script src="js/header_login.js"></script>

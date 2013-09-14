@@ -1,0 +1,106 @@
+[
+    {
+        "facility": "Events",
+        "info": "",
+        "images": [
+                {
+                    "url":"life/images/other/1_b.jpg",
+                    "title":"Lorem ipsum dolor sit amet",
+                    "thumb":"life/images/other/1_s.jpg"
+                },
+                {
+                    "url":"life/images/other/2_b.jpg",
+                    "title":"Etiam quis mi eu elit temp",
+                    "thumb":"life/images/other/2_s.jpg"
+                },
+                {
+                    "url":"life/images/other/3_b.jpg",
+                    "title":"Cras neque mi, semper leon",
+                    "thumb":"life/images/other/3_s.jpg"
+                },
+                {
+                    "url":"life/images/other/4_b.jpg",
+                    "title":"Sed vel sapien vel sem uno",
+                    "thumb":"life/images/other/4_s.jpg"
+                }
+        ]
+    },
+    {
+        "facility": "Festivals",
+        "info": "",
+        "images": [
+                {
+                    "url":"life/images/other/1_b.jpg",
+                    "title":"Lorem ipsum dolor sit amet",
+                    "thumb":"life/images/other/1_s.jpg"
+                },
+                {
+                    "url":"life/images/other/2_b.jpg",
+                    "title":"Etiam quis mi eu elit temp",
+                    "thumb":"life/images/other/2_s.jpg"
+                },
+                {
+                    "url":"life/images/other/3_b.jpg",
+                    "title":"Cras neque mi, semper leon",
+                    "thumb":"life/images/other/3_s.jpg"
+                },
+                {
+                    "url":"life/images/other/4_b.jpg",
+                    "title":"Sed vel sapien vel sem uno",
+                    "thumb":"life/images/other/4_s.jpg"
+                }
+        ]
+    },
+    {
+        "facility": "Trips",
+        "info": "",
+        "images": [
+                {
+                    "url":"life/images/other/1_b.jpg",
+                    "title":"Lorem ipsum dolor sit amet",
+                    "thumb":"life/images/other/1_s.jpg"
+                },
+                {
+                    "url":"life/images/other/2_b.jpg",
+                    "title":"Etiam quis mi eu elit temp",
+                    "thumb":"life/images/other/2_s.jpg"
+                },
+                {
+                    "url":"life/images/other/3_b.jpg",
+                    "title":"Cras neque mi, semper leon",
+                    "thumb":"life/images/other/3_s.jpg"
+                },
+                {
+                    "url":"life/images/other/4_b.jpg",
+                    "title":"Sed vel sapien vel sem uno",
+                    "thumb":"life/images/other/4_s.jpg"
+                }
+        ]
+    },
+    {
+        "facility": "Others",
+        "info": "",
+        "images": [
+                {
+                    "url":"life/images/other/1_b.jpg",
+                    "title":"Lorem ipsum dolor sit amet",
+                    "thumb":"life/images/other/1_s.jpg"
+                },
+                {
+                    "url":"life/images/other/2_b.jpg",
+                    "title":"Etiam quis mi eu elit temp",
+                    "thumb":"life/images/other/2_s.jpg"
+                },
+                {
+                    "url":"life/images/other/3_b.jpg",
+                    "title":"Cras neque mi, semper leon",
+                    "thumb":"life/images/other/3_s.jpg"
+                },
+                {
+                    "url":"life/images/other/4_b.jpg",
+                    "title":"Sed vel sapien vel sem uno",
+                    "thumb":"life/images/other/4_s.jpg"
+                }
+        ]
+    }
+]

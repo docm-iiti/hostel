@@ -1,0 +1,251 @@
+[
+    {
+        "facility": "Residences",
+        "info": "Students at IIT Indore enjoy world class residential facilities. The residential complex at Silver Springs Township is the one of the best hostel facility in the country. The rooms are spacious and large and looks out to the nearby mountains; the township itself is clean, safe and beautiful. IIT Indore gives utmost importance to the health and hygiene of the students. Some of the facilties we have for students includes a RO system installed in every room to provide safe water and housekeeping is responsible for cleaning the rooms every single day. The hostel is enjoys wireless internet connectivity, gymnasium and many other recreational facilities.",
+        "images": [
+                {
+                    "url":"facilities/images/other/1_b.jpg",
+                    "title":"Lorem ipsum dolor sit amet",
+                    "thumb":"facilities/images/other/1_s.jpg"
+                },
+                {
+                    "url":"facilities/images/other/2_b.jpg",
+                    "title":"Etiam quis mi eu elit temp",
+                    "thumb":"facilities/images/other/2_s.jpg"
+                },
+                {
+                    "url":"facilities/images/other/3_b.jpg",
+                    "title":"Cras neque mi, semper leon",
+                    "thumb":"facilities/images/other/3_s.jpg"
+                },
+                {
+                    "url":"facilities/images/other/4_b.jpg",
+                    "title":"Sed vel sapien vel sem uno",
+                    "thumb":"facilities/images/other/4_s.jpg"
+                }
+        ]
+    },
+    {
+        "facility": "Hostel Office",
+        "info": "We have a Hostel Office within the residency area which includes offices of Hostel Wardens, Hostel Supervisor and Estate Officer. Students can go anytime to the Office and file their complaints. However, students are encouraged to use the new Basket feature to lodge complaints unless very imminent measures are deemed necessary. Login on the top to lodge a complaint .",
+        "images": [
+                {
+                    "url":"facilities/images/other/1_b.jpg",
+                    "title":"Lorem ipsum dolor sit amet",
+                    "thumb":"facilities/images/other/1_s.jpg"
+                },
+                {
+                    "url":"facilities/images/other/2_b.jpg",
+                    "title":"Etiam quis mi eu elit temp",
+                    "thumb":"facilities/images/other/2_s.jpg"
+                },
+                {
+                    "url":"facilities/images/other/3_b.jpg",
+                    "title":"Cras neque mi, semper leon",
+                    "thumb":"facilities/images/other/3_s.jpg"
+                },
+                {
+                    "url":"facilities/images/other/4_b.jpg",
+                    "title":"Sed vel sapien vel sem uno",
+                    "thumb":"facilities/images/other/4_s.jpg"
+                }
+        ]
+    },
+    {
+        "facility": "Medical",
+        "info": "You ill Son ? Don't worry , we've got it covered .",
+        "images": [
+                {
+                    "url":"facilities/images/other/1_b.jpg",
+                    "title":"Lorem ipsum dolor sit amet",
+                    "thumb":"facilities/images/other/1_s.jpg"
+                },
+                {
+                    "url":"facilities/images/other/2_b.jpg",
+                    "title":"Etiam quis mi eu elit temp",
+                    "thumb":"facilities/images/other/2_s.jpg"
+                },
+                {
+                    "url":"facilities/images/other/3_b.jpg",
+                    "title":"Cras neque mi, semper leon",
+                    "thumb":"facilities/images/other/3_s.jpg"
+                },
+                {
+                    "url":"facilities/images/other/4_b.jpg",
+                    "title":"Sed vel sapien vel sem uno",
+                    "thumb":"facilities/images/other/4_s.jpg"
+                }
+        ]
+    },
+    {
+        "facility": "Transport",
+        "info": "We have a fleet of modern and spacious buses with finger-print recognition facility for travelling to college for daily classes. Apart from these regular buses, we also have buses to city for weekend shopping and recreation. We also have 24X7 ambulance facility available at hostel for emergency medical situations. If a large group of students require additional transport facility , it can be aranged through a written request to respective authorities on the basis of a moderate fee.",
+        "images": [
+                {
+                    "url":"facilities/images/other/1_b.jpg",
+                    "title":"Lorem ipsum dolor sit amet",
+                    "thumb":"facilities/images/other/1_s.jpg"
+                },
+                {
+                    "url":"facilities/images/other/2_b.jpg",
+                    "title":"Etiam quis mi eu elit temp",
+                    "thumb":"facilities/images/other/2_s.jpg"
+                },
+                {
+                    "url":"facilities/images/other/3_b.jpg",
+                    "title":"Cras neque mi, semper leon",
+                    "thumb":"facilities/images/other/3_s.jpg"
+                },
+                {
+                    "url":"facilities/images/other/4_b.jpg",
+                    "title":"Sed vel sapien vel sem uno",
+                    "thumb":"facilities/images/other/4_s.jpg"
+                }
+        ]
+    },
+    {
+        "facility": "Guest House",
+        "info": "We have a Guest House facility at our hostel premises where visitors and parents can stay with prior booking.",
+        "images": [
+                {
+                    "url":"facilities/images/other/1_b.jpg",
+                    "title":"Lorem ipsum dolor sit amet",
+                    "thumb":"facilities/images/other/1_s.jpg"
+                },
+                {
+                    "url":"facilities/images/other/2_b.jpg",
+                    "title":"Etiam quis mi eu elit temp",
+                    "thumb":"facilities/images/other/2_s.jpg"
+                },
+                {
+                    "url":"facilities/images/other/3_b.jpg",
+                    "title":"Cras neque mi, semper leon",
+                    "thumb":"facilities/images/other/3_s.jpg"
+                },
+                {
+                    "url":"facilities/images/other/4_b.jpg",
+                    "title":"Cras neque mi, semper leon",
+                    "thumb":"facilities/images/other/4_s.jpg"
+                }
+        ]
+    },
+    {
+        "facility": "Sports",
+        "info": "IIT Indore believes in nurturing and encouraging a variety of sports for fitness, competition and overall well being of our students. We therefore have facilities for football, basketball, volleyball, cricket and table tennis. Selected students are sent to sports academy for advanced coaching in Swimming, Badminton &amp; Table tennis. An intramural activity goes on throughout the year. Extramurally the students participate in the Inter IIT meet. Institute sport officer looks after the fitness and conditioning of students. good qualified coaches are appointed fulltime by IIT Indore. Our Institute has a sports body Sports Convenor Dr. Monalisa Sarma &amp; Sports Officer. Any query regarding sport related matter you can make a call to Mr. Ritesh, Sports Officer IIT Indore- 7389582408.",
+        "images": [
+                {
+                    "url":"facilities/images/sports/1_b.JPG",
+                    "title":"Sports#1",
+                    "thumb":"facilities/images/sports/1_s.jpg"
+                },
+                {
+                    "url":"facilities/images/sports/2_b.JPG",
+                    "title":"Sports#2",
+                    "thumb":"facilities/images/sports/2_s.jpg"
+                },
+                {
+                    "url":"facilities/images/sports/3_b.JPG",
+                    "title":"Sports#3",
+                    "thumb":"facilities/images/sports/3_s.jpg"
+                },
+                {
+                    "url":"facilities/images/sports/4_b.JPG",
+                    "title":"Sports#4",
+                    "thumb":"facilities/images/sports/4_s.jpg"
+                },
+                {
+                    "url":"facilities/images/sports/5_b.JPG",
+                    "title":"Sports#5",
+                    "thumb":"facilities/images/sports/5_s.jpg"
+                },
+                {
+                    "url":"facilities/images/sports/6_b.JPG",
+                    "title":"Sports#6",
+                    "thumb":"facilities/images/sports/6_s.jpg"
+                },
+                {
+                    "url":"facilities/images/sports/7_b.JPG",
+                    "title":"Sports#7",
+                    "thumb":"facilities/images/sports/7_s.jpg"
+                }
+        ]
+    },
+    {
+        "facility": "Computer Centre",
+        "info": "Our hostel's computer center is equipped with enough PCs with 24x7 LAN connectivity. Students can go anytime to Cyberus to access internet. Besides this ,most students have Wi-Fi access.",
+        "images": [
+                {
+                    "url":"facilities/images/other/1_b.jpg",
+                    "title":"Lorem ipsum dolor sit amet",
+                    "thumb":"facilities/images/other/1_s.jpg"
+                },
+                {
+                    "url":"facilities/images/other/2_b.jpg",
+                    "title":"Etiam quis mi eu elit temp",
+                    "thumb":"facilities/images/other/2_s.jpg"
+                },
+                {
+                    "url":"facilities/images/other/3_b.jpg",
+                    "title":"Cras neque mi, semper leon",
+                    "thumb":"facilities/images/other/3_s.jpg"
+                },
+                {
+                    "url":"facilities/images/other/4_b.jpg",
+                    "title":"Sed vel sapien vel sem uno",
+                    "thumb":"facilities/images/other/4_s.jpg"
+                }
+        ]
+    },
+    {
+        "facility": "La-Fresco , IIT Indore's Own Convenience Store",
+        "info": "We have well maintained, spacious and hygenic dining halls both for Veg and Non. Veg food. Students are provided four meals a day: Breakfast, Lunch, Evening Snacks &amp; Dinner. Mess Menu is regularly updated and changed as per students' demand. Apart from that, televisions are installed in common area.",
+        "images": [
+                {
+                    "url":"facilities/images/other/1_b.jpg",
+                    "title":"Lorem ipsum dolor sit amet",
+                    "thumb":"facilities/images/other/1_s.jpg"
+                },
+                {
+                    "url":"facilities/images/other/2_b.jpg",
+                    "title":"Etiam quis mi eu elit temp",
+                    "thumb":"facilities/images/other/2_s.jpg"
+                },
+                {
+                    "url":"facilities/images/other/3_b.jpg",
+                    "title":"Cras neque mi, semper leon",
+                    "thumb":"facilities/images/other/3_s.jpg"
+                },
+                {
+                    "url":"facilities/images/other/4_b.jpg",
+                    "title":"Sed vel sapien vel sem uno",
+                    "thumb":"facilities/images/other/4_s.jpg"
+                }
+        ]
+    },
+    {
+        "facility": "Students Mess",
+        "info": "We have well maintained, spacious and hygenic dining halls both for Veg and Non. Veg food. Students are provided four meals a day: Breakfast, Lunch, Evening Snacks &amp; Dinner. Mess Menu is regularly updated and changed as per students' demand. Apart from that, televisions are installed in common area.",
+        "images": [
+                {
+                    "url":"facilities/images/mess/1_b.JPG",
+                    "title":"Lorem ipsum dolor sit amet",
+                    "thumb":"facilities/images/mess/1_s.jpg"
+                },
+                {
+                    "url":"facilities/images/mess/2_b.JPG",
+                    "title":"Etiam quis mi eu elit temp",
+                    "thumb":"facilities/images/mess/2_s.jpg"
+                },
+                {
+                    "url":"facilities/images/mess/3_b.jpg",
+                    "title":"Cras neque mi, semper leon",
+                    "thumb":"facilities/images/mess/3_s.jpg"
+                },
+                {
+                    "url":"facilities/images/mess/3_b.jpg",
+                    "title":"Sed vel sapien vel sem uno",
+                    "thumb":"facilities/images/mess/3_s.jpg"
+                }
+        ]
+    }
+]

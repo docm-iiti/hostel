@@ -1,11 +1,11 @@
 angular.module('main',[]).config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
   $routeProvider.
-  when('/home', {templateUrl: 'views/home.html', controller: profileCtrl}).
-  when('/facilities', {templateUrl: 'views/facilities/facilities.html', controller: profileCtrl}).
-  when('/life', {templateUrl: 'views/life/life.html', controller: profileCtrl}).
-  when('/contactus', {templateUrl: 'views/contactus.html', controller: profileCtrl}).
-  when('/gallery', {templateUrl: 'views/gallery.html', controller: profileCtrl}).
-  when('/people', {templateUrl: 'views/people.html', controller: profileCtrl}).
+  when('/home', {templateUrl: 'views/home.html'}).
+  when('/facilities', {templateUrl: 'facilities/facilities.html', controller: facilitiesCtrl}).
+  when('/life', {templateUrl: 'life/life.html', controller: lifeCtrl}).
+  when('/contactus', {templateUrl: 'views/contactus.html'}).
+  when('/gallery', {templateUrl: 'views/gallery.html'}).
+  when('/people', {templateUrl: 'people/people.html', controller: peopleCtrl}).
   otherwise({redirectTo: '/home'});
   $locationProvider.hashPrefix('!');
 }]);

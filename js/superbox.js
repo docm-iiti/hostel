@@ -31,13 +31,10 @@ var superboxImages = new Array(
     );
 
 $(document).ready(function() {
-
     for (var i = 0; i < superboxImages.length; i++) {
         $(".superbox").append('<div class="superbox-list"><img src="'+superboxImages[i]+'" data-img="'+superboxImages[i]+'" alt="" class="superbox-img"></div>');
     };
-
     $('.superbox').SuperBox();
-
 });
 
 

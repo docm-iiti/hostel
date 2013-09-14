@@ -14,69 +14,72 @@
   ?>
   <div class="myDiv">
     <div class="pageHeader_fill">
-    <div class="pageHeader">
-    <nav id="pageNav" role="navigation">
-      <ul> 
-        <li>
-          <a href="index.html" class="heading">Home</a>
-        </li>
-        <li class="drop">
-          <a href="people.html" class="heading">People</a>
-          <div class="dropdownContain">
-            <div class="dropOut">
-              <div class="triangle"></div>
+      <div class="pageHeader">
+          <nav id="pageNav" role="navigation">
               <ul>
-                <li><a href="warden.html" class="subheading">Wardens</a></li>
-                
-           <!-------------Add Students Menu Here------------------>
-                
-                <li><a href="adminstaff.html" class="subheading">Admin Staff</a></li>
+                  <li>
+                      <a href="index.html#!/home" class="heading">Home</a>
+                  </li>
+                  <li class="drop">
+                      <a href="index.html#!/people" class="heading">People</a>
+                      <div class="dropdownContain">
+                          <div class="dropOut">
+                              <div class="triangle"></div>
+                              <ul>
+                                  <li>
+                                      <a href="index.html#!/people#warden" class="subheading">Wardens</a>
+                                  </li>
+                                  <li>
+                                      <a href="index.html#!/people#sgm" class="subheading">Gymkhana</a>
+                                  </li>
+                                  <li>
+                                      <a href="index.html#!/people#hstaff" class="subheading">Hostel Staff</a>
+                                  </li>
+                                  <li>
+                                      <a href="index.html#!/people#astaff" class="subheading">Admin Staff</a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </li>
+                  <li>
+                      <a href="index.html#!/facilities" class="heading">Facilities</a>
+                  </li>
+                  <li class="drop">
+                      <a href="index.html#!/life" class="heading">Life</a>
+                      <div class="dropdownContain">
+                          <div class="dropOut">
+                              <div class="triangle"></div>
+                              <ul>
+                                  <li>
+                                      <a href="index.html#!/life#events" class="subheading">Events</a>
+                                  </li>
+                                  <li>
+                                      <a href="index.html#!/life#festival" class="subheading">Festivals</a>
+                                  </li>
+                                  <li>
+                                      <a href="index.html#!/life#trips" class="subheading">Trips</a>
+                                  </li>
+                                  <li>
+                                      <a href="index.html#!/life#others" class="subheading">Others</a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </li>
+                  <li>
+                      <a href="index.html#!/gallery" class="heading">Gallery</a>
+                  </li>
+                  <li>
+                      <a href="/" class="heading">Student's Corner</a>
+                  </li>
+                  <li>
+                      <a href="index.html#!/contactus" class="heading">Contact Us</a>
+                  </li>
               </ul>
-            </div>
-          </div>
-        </li>           
-      
-        <li class="drop" ><a href="residences.html" class="heading">Facilities</a>
-          <div class="dropdownContain">
-            <div class="dropOut">
-              <div class="triangle"></div>
-              <ul>
-                <li><a href="residences.html" class="subheading">Residences</a></li>
-                <li><a href="hostel_office.html" class="subheading">Hostel Office</a></li>
-                <li><a href="medical.html" class="subheading">Medical</a></li>
-                <li><a href="transport.html" class="subheading">Transport</a></li>
-                <li><a href="guest_house.html" class="subheading">Guest House</a></li>
-                <li><a href="sport.html" class="subheading">Sports</a></li>
-                <li><a href="internet.html" class="subheading">Internet</a></li>
-                <li><a href="diningfaci.html" class="subheading">Dining</a></li>
-                <li><a href="lafresco.html" class="subheading">La-Fresco</a></li>
-              </ul>
-            </div>
-          </div>      
-        </li>
-      
-        <li class="drop" ><a href="life.html" class="heading">Life</a>
-          <div class="dropdownContain">
-            <div class="dropOut">
-              <div class="triangle"></div>
-              <ul>
-                <li>Events</li>
-                <li>Festivals</li>
-                <li>Trips</li>
-                <li>Others</li>
-              </ul>
-            </div>
-          </div>      
-        </li>
-      
-        <li><a href="gallery.html" class="heading">Gallery</a></li>
-        <li class="current"><a href="http://hostel-iiti.vacau.com" class="heading">Student's Corner</a></li>
-        <li><a href="contactus.html" class="heading">Contact Us</a></li>
-    
-      </ul> 
-    </nav>
-    </div>
-    </div>
+          </nav>
+      </div><!--For class pageHeader-->
+  </div>
     <div id="stdcnr">
       <?php
         include 'sidebar.html';

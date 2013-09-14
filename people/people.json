@@ -1,0 +1,18 @@
+[
+  	{
+  	 	"photo": "url(images/logo.jpg)",
+        "name": "Dr. Biswaroop Pathak",
+        "contact": "1234567890",
+        "link": "http://people.iiti.ac.in/~biswarup/"
+    },
+    {
+  	 	"photo": "url(images/logo.jpg)",
+        "name": "Blah Blah #2",
+        "contact": "1234567890"
+    },
+    {
+  	 	"photo": "url(images/logo.jpg)",
+        "name": "Blah Blah #3",
+        "contact": "1234567890"
+    }
+]

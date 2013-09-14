@@ -1,0 +1,42 @@
+[
+  	{
+      "photo": "url(images/logo.jpg)",
+      "name": "SGM 2",
+      "contact": "1234567890"
+    },
+    {
+      "photo": "url(images/logo.jpg)",
+      "name": "SGM 1",
+      "contact": "1234567890"
+    },
+    {
+      "photo": "url(images/logo.jpg)",
+      "name": "SGM 3",
+      "contact": "1234567890"
+    },
+    {
+      "photo": "url(images/logo.jpg)",
+      "name": "SGM 4",
+      "contact": "1234567890"
+    },
+    {
+      "photo": "url(images/logo.jpg)",
+      "name": "SGM 5",
+      "contact": "1234567890"
+    },
+    {
+      "photo": "url(images/logo.jpg)",
+      "name": "SGM 6",
+      "contact": "1234567890"
+    },
+    {
+      "photo": "url(images/logo.jpg)",
+      "name": "SGM 8",
+      "contact": "1234567890"
+    },
+    {
+  	 	"photo": "url(images/logo.jpg)",
+      "name": "SGM 7",
+      "contact": "1234567890"
+    }
+]
