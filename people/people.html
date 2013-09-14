@@ -1,6 +1,4 @@
-<link rel="stylesheet" href="css/pagelayout.css" />
-<link rel="stylesheet" href="css/marquee.css" />
-<link rel="stylesheet" href="css/header_login.css" />
+<link rel="stylesheet" href="css/people.css" />
 <script type="text/javascript" src="js/vendor/jquery-1.10.1.min.js" ></script>
 
 <style>
@@ -69,22 +67,32 @@
 <div class="warden">
   <div class="staff">
   	<div id="astaff" class="side">
-      	<p>A<br />D<br />M<br />I<br />N<br />S<br />T<br />A<br />F<br />F</p>
+      	<p style="margin-left:15px;">A<br>D<br>M<br>I<br>N<br><br>S<br>T<br>A<br>F<br>F</p>
     </div>
     <div style="margin-left:50px;" class="people_content">
-      <ul>
-        <li ng-repeat="admin in admins">{{admin.name}}</li>
-      </ul>
+      <div ng-repeat="admin in admins" class="item">
+        <div class="staff-head">
+          {{admin.name}}
+        </div>
+        <div class="staff-description">
+          {{admin.designation}}<br>{{admin.contact}}
+        </div>
+      </div>
     </div>
   </div>
   <div class="staff" style="float:right;">
   	<div id="hstaff" class="side">
-     	<p>H<br />O<br />S<br />T<br />E<br />L<br />S<br />T<br />A<br />F<br />F</p>
+     	<p style="margin-left:15px;">H<br>O<br>S<br>T<br>E<br>L<br><br>S<br>T<br>A<br>F<br>F</p>
     </div>
     <div style="margin-left:50px;" class="people_content">
-      <ul>
-        <li ng-repeat="admin in staff">{{admin.name}}</li>
-      </ul>
+      <div ng-repeat="admin in staff" class="item">
+        <div class="staff-head">
+          {{admin.name}}
+        </div>
+        <div class="staff-description">
+          {{admin.designation}}<br>{{admin.contact}}
+        </div>
+      </div>
     </div>
   </div>
 </div>

@@ -71,7 +71,8 @@ $(document).ready(function() {
 <div class="content" style="margin-bottom:50px;height:1000px;">
     <section class="ac-container">
         <div ng-repeat="facility in facilities">
-            <input id="ac-{{$index}}" name="accordion-1" type="radio"> <label for="ac-{{$index}}">{{facility.facility}}</label>
+            <input ng-model="topic" id="ac-{{$index}}" name="accordion-1" type="radio" value="{{facility.facility}}">
+            <label for="ac-{{$index}}">{{facility.facility}}</label>
             <article class="ac-medium">
                 <p class="info">
                    {{facility.info}}

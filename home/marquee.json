@@ -1,0 +1,14 @@
+[
+	{
+	  "url":"images/Slider/4.jpg",
+	  "caption": {
+	  	"header":"Capsstion"
+	  }
+	},
+	{
+	  "url":"images/Slider/1.jpg",
+	  "caption": {
+	  	"header":"Caption"
+	  }
+	}
+]

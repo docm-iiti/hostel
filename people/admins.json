@@ -1,0 +1,67 @@
+[
+	{	
+		"name":"Mr. Mangesh Rangnekar",
+		"designation":"Hospitality Manager",
+		"contact":"9755262345"
+	},
+	{	
+		"name":"Mr. Yogesh Datar",
+		"designation":"Facility Manager",
+		"contact":"9425791679"
+	},
+	{	
+		"name":"Mr. Prashant Chourasia",
+		"designation":"Hostel Supervisor",
+		"contact":"9806118472"
+	},
+	{	
+		"name":"Mr. Dignat Karve",
+		"designation":"Mess&GuestHouse Supervisor",
+		"contact":"9753970010"
+	},
+	{	
+		"name":"Mr. Jatin Vyas",
+		"designation":"Housekeeping Supervisor",
+		"contact":"9584860882"
+	},
+	{	
+		"name":"Mr. Sandeep Joshi",
+		"designation":"Housekeeping Supervisor",
+		"contact":"8305753404"
+	},
+	{	
+		"name":"Mr. Mukesh Tewari",
+		"designation":"Junior Assistant (A/c& Purchase)",
+		"contact":"9981919239"
+	},
+	{	
+		"name":"Ms. Sarita Batra",
+		"designation":"Coordinator",
+		"contact":"9685469561"
+	},
+	{	
+		"name":"Mr. Santosh Gangle",
+		"designation":"Attendant (Hostel &Store)",
+		"contact":"9826011157"
+	},
+	{	
+		"name":"Mr. RamNarayan",
+		"designation":"Attendant (Hostel)",
+		"contact":"8109204351"
+	},
+	{	
+		"name":"Mr. Mithlesh Kumar Yadav",
+		"designation":"Attendant (GuestHouse)",
+		"contact":"9589572380"
+	},
+	{	
+		"name":"Mr. Deepak Charles Kerketta",
+		"designation":"Attendant (GuestHouse)",
+		"contact":"9630325121"
+	},
+	{	
+		"name":"Mr. SandeepDeshmukh",
+		"designation":"Attendant (GuestHouse)",
+		"contact":"8305347269"
+	}
+]

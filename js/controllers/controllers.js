@@ -1,5 +1,23 @@
-function profileCtrl($scope, $http, $routeParams){
-	
+function homeCtrl($scope, $http, $routeParams){
+	$http.get("home/marquee.json").success(function(data){
+		$scope.images = data;
+	});
+}
+
+function facilitiesCtrl($scope, $http, $routeParams){
+	$http.get("facilities/facilities.json")
+	.success(function(data){
+		$scope.facilities = data;
+	});
+	$scope.topic = $routeParams.topic;
+}
+
+function lifeCtrl($scope, $http, $routeParams){
+	$http.get("life/life.json")
+	.success(function(data){
+		$scope.facilities = data;
+	});
+	$scope.topic = $routeParams.topic;
 }
 
 function peopleCtrl($scope, $http){
@@ -9,38 +27,10 @@ function peopleCtrl($scope, $http){
 	$http.get("people/sgm.json").success(function(data){
 		$scope.sgms = data;
 	});
-	$scope.admins = [
-		{"name":"Person A"},
-		{"name":"Person A"},
-		{"name":"Person A"},
-		{"name":"Person A"},
-		{"name":"Person A"},
-		{"name":"Person A"},
-		{"name":"Person A"},
-		{"name":"Person A"}
-	];
-	$scope.staff = [
-		{"name":"Staff aaa"},
-		{"name":"Staff aaa"},
-		{"name":"Staff aaa"},
-		{"name":"Staff aaa"},
-		{"name":"Staff aaa"},
-		{"name":"Staff aaa"},
-		{"name":"Staff aaa"},
-		{"name":"Staff aaa"}
-	];
-}
-
-function facilitiesCtrl($scope, $http){
-	$http.get("facilities/facilities.json")
-	.success(function(data){
-		$scope.facilities = data;
+	$http.get("people/admins.json").success(function(data){
+		$scope.admins = data;
 	});
-}
-
-function lifeCtrl($scope, $http){
-	$http.get("life/life.json")
-	.success(function(data){
-		$scope.facilities = data;
+	$http.get("people/staff.json").success(function(data){
+		$scope.staff = data;
 	});
 }
