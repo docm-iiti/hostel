@@ -1,3 +1,5 @@
-# robotstxt.org/
-
-User-agent: *
+User-Agent: *
+Disallow: /*.json
+Disallow: /*.xml
+Disallow: /*.php
+Allow: /

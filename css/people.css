@@ -13,14 +13,12 @@
 	position:absolute;
 	height:100%;
 	width:50px;
-	margin:auto 0;
+	margin:auto;
 	float:left;
-	border-bottom-left-radius:5px;
-	border-top-left-radius:5px;
+	border-bottom-left-radius:15px;
+	border-top-left-radius:15px;
 	background-color:#e74c3c;
 	color:white;
-	
-	
 }
 .warden_mem{
 	position:relative;
@@ -28,8 +26,6 @@
 	width:300px;
 	float:left;
 	margin-left:50px;
-	background-color: #666666;
-	
 }
 .sgm{
 	position:relative;
@@ -42,17 +38,14 @@
 	-moz-box-shadow:0 2px 6px rgba(0,0,0,.15);
 	box-shadow:0 2px 6px rgba(0,0,0,.15);
 }
-
 .sgm_mem{
 	position:relative;
 	height:45%;
-
 	margin-top:18px;
 	width:210px;
 	float:left;
 	margin-left:50px;
 	background-color:#333;
-
 }
 .description{
 	color:#000000;
@@ -66,14 +59,6 @@
 	width:500px;
 	height:100%;
 	float:left;
-	background-color:#222;
-	border-left:2px solid #e74c3c;
-	border-right:2px solid #e74c3c;
-	-webkit-box-shadow:0 2px 6px rgba(0,0,0,.15);
-	-moz-box-shadow:0 2px 6px rgba(0,0,0,.15);
-	box-shadow:0 2px 6px rgba(0,0,0,.15);
-	border-bottom-left-radius:5px;
-	border-top-left-radius:5px;
 }
 .people_content{
 	height:100%;
@@ -81,21 +66,37 @@
 }
 .staff .item{
     padding: 15px;
+    background:#222;
+}
+.staff .item:nth-child(2n){
+    padding: 15px;
+    background:#111;
 }
 .staff .item:hover{
-    background: rgba(255,255,255,0.1);
-    color: #F90;
+    background: rgba(34,34,34,0.9);
+    color: #f75c4c;
 }
 .staff-description{
     font-size: 80%;
     padding-left: 15px;
 }
-#author{
-	border-top:1px inset #333333;
-	padding-top:2px;
-	font-size:14px;
-	color:#333333;
+.member_description{
+	width:100%;
+	height:100%;
+	opacity:0;
+	line-height:2em;
+	font-size:20px;
 }
-#author:hover{
-	color:#e74c32;
+.member_description:hover{
+	background:rgba(0,0,0,0.5);
+	opacity:1;
+	-webkit-transition:all 0.5s ease-out;
+	-moz-transition:all 0.5s ease-out;
+	-ms-transition:all 0.5s ease-out;
+	-o-transition:all 0.5s ease-out;
+	transition:all 0.5s ease-out;				
+}
+.staffnstaff{
+	margin:50px;
+	height: 400px;
 }

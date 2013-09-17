@@ -1,7 +1,6 @@
 #complaintComments{
 	padding: 0 50px;
 }
-
 #ccHeader{
 	background: #000;
 	margin: 0 -100px 0 -100px;
@@ -9,17 +8,14 @@
 	color: #E74C32;
 	z-index: 2;
 }
-
 #complaintComments h2 {
 	margin: 0;
 	width: 800px;
 }
-
 #complaintComments h1 {
 	padding: 50px;
 	margin: 0;
 }
-
 #ccDataDiv {
 	border-left: #E74C32 2px solid;
 	border-right: #E74C32 2px solid;
@@ -28,7 +24,6 @@
 	background: #DDD;
 	z-index: 1;
 }
-
 #ccData {
 	margin: 0 auto;
 	width: 85%; 

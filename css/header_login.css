@@ -23,7 +23,6 @@ body {
 	box-shadow:0 2px 6px rgba(0,0,0,.5);
 }
 .tabs {
-  
   background:black;
   height: 40px;
   margin: 0;
@@ -50,7 +49,6 @@ body {
   font-size: 16px;
   padding: 12px 22px 12px 22px;
   /*border-right: 1px solid @tab-border;*/
-
 }
 .tabs li:last-child a {
   border-right: none;
@@ -62,13 +60,11 @@ body {
 .tabs a.active {
   background: #e74c3c;
   border-right: none;
-  
 }
 .form-action {
   padding: 0 20px;
   position: relative;
 }
-
 .form-action h1 {
   font-size: 42px;
   padding-bottom: 10px;
@@ -86,7 +82,6 @@ form input[type=password],
 form input[type=submit] {
   font-family: 'Roboto';
 }
-
 form input[type=text],
 form input[type=password] {
   width: 100%;
@@ -98,7 +93,6 @@ form input[type=password] {
   color: #e74c3c;
   outline: none;
 }
-
 .dark-box {
   background: #5e0400;
   box-shadow: 1px 3px 3px #3d0100 inset;
@@ -121,8 +115,6 @@ form input[type=password] {
 .hide {
   display: none;
 }
-
-
 .button {
     border: none;
     display: block;
@@ -137,17 +129,14 @@ form input[type=password] {
 	  -moz-transition: all 0.15s linear;
 	  transition: all 0.15s linear;
 }
-
 .button:hover {
   background: #1e75aa;
   /*box-shadow: 0 3px 1px #237bb2;*/
 }
-
 .button:active {
   background: #136899;
   /*box-shadow: 0 3px 1px #0f608c;*/
 }
-
 ::-webkit-input-placeholder {
   color: #e74c3c;
 }

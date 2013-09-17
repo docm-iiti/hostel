@@ -9,7 +9,6 @@ html,body{
 	margin:0px;
 	color:#99a099;
 }
-
 .myDiv {
 	position:relative;
 	padding:34px 0 1px 0;
@@ -18,9 +17,7 @@ html,body{
 	font-family:Roboto;
 	margin:0 auto;
 	background:#CCCCCC;
-	
 }
-
 .fixedHeader {
 	font-family:Roboto;
 	top:0;
@@ -38,9 +35,7 @@ html,body{
 	width:1200px;
 	margin:0 auto;
 	height:auto;
-	
 }
-
 .pageHeader nav {
 	background:rgba(35,31,32,.8);
 	height:80px;
@@ -58,13 +53,10 @@ nav#pageNav {
 	background:#222;
 	width:1200px;
 	position:relative;
-	
 }
-
 nav#pageNav ul {
 	text-align:center;
 }
-
 nav#pageNav ul li {
 	font:16px Roboto;
 	cursor:pointer;
@@ -74,15 +66,12 @@ nav#pageNav ul li {
 	-o-transition:padding .05s linear;
 	transition:padding .05s linear;
 }
-
 nav#pageNav ul li.drop {
 	position:relative;
 }
-
 nav#pageNav ul > li {
 	display:inline-block;
 }
-
 nav#pageNav ul li a.heading {
 	line-height:80px;
 	height:80px;
@@ -97,11 +86,9 @@ nav#pageNav ul li a.heading {
 	transition:all .1s ease-out;
 	padding:0 45px;
 }
-
 nav#pageNav ul li.current a.heading {
 	color:#e75c2c;
 }
-
 nav#pageNav .dropOut .triangle {
 	width:0;
 	height:0;
@@ -114,7 +101,6 @@ nav#pageNav .dropOut .triangle {
 	margin-left:-8px;
 	z-index:3;
 }
-
 nav#pageNav .dropdownContain {
 	width:160px;
 	position:absolute;
@@ -122,9 +108,7 @@ nav#pageNav .dropdownContain {
 	left:50%;
 	margin-left:-80px;
 	top:-500px;
-	
 }
-
 nav#pageNav .dropOut {
 	width:160px;
 	background:#FFF;
@@ -144,14 +128,11 @@ nav#pageNav .dropOut {
 	-ms-transition:all .1s ease-out;
 	-o-transition:all .1s ease-out;
 	transition:all .1s ease-out;
-	
 }
-
 nav#pageNav .dropOut ul {
 	float:left;
 	padding:10px 0;
 }
-
 nav#pageNav .dropOut ul li {
 	text-align:left;
 	float:left;
@@ -168,41 +149,28 @@ nav#pageNav .dropOut ul li {
 	margin:0 10px;
 	padding:12px 0 10px 15px;
 }
-
 nav#pageNav .dropOut ul li:hover {
 	background:#f6f6f6;
 }
-
 nav#pageNav li:hover a.heading {
 	color:#FFF;
 }
-
 nav#pageNav li:hover a.subheading {
 	color:#000;
 	text-decoration:none;
 }
-
 nav#pageNav ul li:hover .dropdownContain {
 	top:65px;
 }
-
 nav#pageNav ul li:hover .underline {
 	border-bottom-color:#777;
 }
-
 nav#pageNav ul li:hover .dropOut {
 	opacity:1;
 	margin-top:8px;
 }
 /**********CSS for Student Corner*********************/
-.3_div_data{
-	position:relative;
-	width:1200;
-	height:600px;
-	margin-bottom:20px;
-}
 .about_hostel{
-	
 	position:relative;
 	width:1100px;
 	height:200px;
@@ -212,8 +180,6 @@ nav#pageNav ul li:hover .dropOut {
 	color:#FFF;
 	z-index:2;	
 	margin:0 50px 50px 50px;
-	
-	
 }
 .hostel_description{
 	position:relative;
@@ -223,49 +189,39 @@ nav#pageNav ul li:hover .dropOut {
 	width:600px;
 	margin:0 auto;
 	font-family:Roboto;
-	
 }
 .news_border{
 	border-right:dotted 2px #e74c3c;
 }
 .card{
-	position:relative;
 	height:400px;
-	border-radius: 2px;
+	border-radius: 10px;
 	border-top:2px solid #e74c3c;
 	border-bottom:2px solid #e74c3c;
 	background: rgba(245,245,245,0.65);
 	color:#111;
 	z-index:2;
 	float:left;
-	margin-left:50px;
+	margin:50px;
 	-webkit-box-shadow:0 2px  rgba(0,0,0,.15);
 	-moz-box-shadow:0 2px 6px rgba(0,0,0,.15);
 	box-shadow:0 2px 6px rgba(0,0,0,.15);
+    overflow:hidden;
 }
 .card h4 {
-	margin: 20px;
 	padding: 10px;
+    margin: 0;
 }
 .news{
-	width:300px;	
-	padding:0px;
-	padding-right:25px;
-	padding-left:25px;
+	width:300px;
 }
 .something{
 	width:600px;
 	padding:0px;
-	padding-right:50px;
-	padding-left:50px;
-	margin-bottom:50px;
-	
 }
 .something li{
 	text-align:justify;
-	
 }
-	
 /***********Footer*************************************/
 .footer{
 	bottom:0px;
@@ -321,7 +277,6 @@ nav#pageNav ul li:hover .dropOut {
 	float:left;
 	text-align:left;
 }
-
 #quicklinks li{
 	list-style:none;
 	color:#333333;
@@ -335,7 +290,6 @@ nav#pageNav ul li:hover .dropOut {
 }
 #quicklinks li a:hover{
 color:#e74c3c;
-
 }
 #downloads li{
 	list-style:none;
@@ -346,13 +300,10 @@ color:#e74c3c;
 	float:left;
 	display:block;
 	width:100%;
-	
 }
 #downloads li a:hover{
 color:#e74c3c;
-
 }
-
 /* ng animate animation */
 .ng3dx-enter, 
 .ng3dx-leave { 
@@ -364,7 +315,6 @@ color:#e74c3c;
     position: relative;
     display: block;
 } 
- 
 .ng3dx-leave.ng3dx-leave-active,
 .ng3dx-enter {
     -webkit-transform: rotateX(-180deg);
@@ -375,7 +325,6 @@ color:#e74c3c;
     opacity: 0;
     height: 0px;
 }        
- 
 .ng3dx-enter.ng3dx-enter-active,
 .ng3dx-leave {
     -webkit-transform: rotateX(0deg);
@@ -385,4 +334,13 @@ color:#e74c3c;
     transform: rotateX(0deg);
     opacity: 1;
     height: 30px;
+}
+#author{
+	border-top:1px inset #333333;
+	padding-top:2px;
+	font-size:14px;
+	color:#333333;
+}
+#author:hover{
+	color:#e74c32;
 }

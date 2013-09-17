@@ -1,14 +1,62 @@
 [
 	{
-	  "url":"images/Slider/4.jpg",
+	  "url":"images/slider/1.jpg",
 	  "caption": {
 	  	"header":"Capsstion"
 	  }
 	},
 	{
-	  "url":"images/Slider/1.jpg",
+	  "url":"images/slider/2.jpg",
 	  "caption": {
-	  	"header":"Caption"
+	  	"header":"klssdj"
+	  }
+	},
+	{
+	  "url":"images/slider/3.jpg",
+	  "caption": {
+	  	"header":"aakldj"
+	  }
+	},
+	{
+	  "url":"images/slider/4.jpg",
+	  "caption": {
+	  	"header":"kldjdf"
+	  }
+	},
+	{
+	  "url":"images/slider/5.jpg",
+	  "caption": {
+	  	"header":"kafjhldj"
+	  }
+	},
+	{
+	  "url":"images/slider/6.jpg",
+	  "caption": {
+	  	"header":"klavmj,dj"
+	  }
+	},
+	{
+	  "url":"images/slider/7.jpg",
+	  "caption": {
+	  	"header":"klssdj"
+	  }
+	},
+	{
+	  "url":"images/slider/8.jpg",
+	  "caption": {
+	  	"header":"kaaaaaaldj"
+	  }
+	},
+	{
+	  "url":"images/slider/9.jpg",
+	  "caption": {
+	  	"header":"sd"
+	  }
+	},
+	{
+	  "url":"images/slider/10.jpg",
+	  "caption": {
+	  	"header":"asfaf"
 	  }
 	}
 ]

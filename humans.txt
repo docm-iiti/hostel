@@ -1,24 +1,19 @@
-/* TEAM */
+﻿/* TEAM */
 
-	UI developer: Maria Macias
-	Twitter: @maria_ux
-	From:Barcelona, Catalonia, Spain
+	Department of Creative Media, IIT Indore.
 
-	One eyed illustrator: Carlos Mañas
-	Twitter: @oneeyedman
-	From:Madrid, Spain
+	UI & Backend Developer: B Krishna Chaitanya (BKC)
+	Facebook: https://www.facebook.com/chaitan94
+	Github: https://github.com/chaitan94
+	Gmail: bkchaitan94@gmail.com
+	Twitter: @chaitan94
+	From: Hyderabad, India
 
-	Standard Man: Abel Cabans
-	Twitter: @abelcabans
-	From:Barcelona, Catalonia, Spain
-
-	Web designer: Abel Sutilo
-	Twitter: @abelsutilo
-	From:Sevilla, Andalucia, Spain
+	Web designer: Sriram Ravindran
+	From: Chennai, India
 		
 
 /* SITE */
-	Last update: 26/06/2013
 	Language: English
 	Doctype:HTML5
-	IDE: Sublime Text, Inkscape
+	IDE: Sublime Text

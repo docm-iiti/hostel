@@ -1,42 +1,42 @@
 [
   	{
-      "photo": "url(images/logo.jpg)",
-      "name": "SGM 2",
+      "photo": "url(people/img/default_people.png)",
+      "name": "Deepak Raj",
       "contact": "1234567890"
     },
     {
-      "photo": "url(images/logo.jpg)",
-      "name": "SGM 1",
+      "photo": "url(people/img/default_people.png)",
+      "name": "Vibhor Pandhare",
       "contact": "1234567890"
     },
     {
-      "photo": "url(images/logo.jpg)",
-      "name": "SGM 3",
+      "photo": "url(people/img/default_people.png)",
+      "name": "Harshit Sharma",
       "contact": "1234567890"
     },
     {
-      "photo": "url(images/logo.jpg)",
-      "name": "SGM 4",
+      "photo": "url(people/img/default_people.png)",
+      "name": "D. Sri Yogesh",
       "contact": "1234567890"
     },
     {
-      "photo": "url(images/logo.jpg)",
-      "name": "SGM 5",
+      "photo": "url(people/img/default_people.png)",
+      "name": "M. Ramesh Krishna",
       "contact": "1234567890"
     },
     {
-      "photo": "url(images/logo.jpg)",
-      "name": "SGM 6",
+      "photo": "url(people/img/default_people.png)",
+      "name": "Sai Pranesh Rao H",
       "contact": "1234567890"
     },
     {
-      "photo": "url(images/logo.jpg)",
-      "name": "SGM 8",
+      "photo": "url(people/img/default_people.png)",
+      "name": "Kotti Satish",
       "contact": "1234567890"
     },
     {
-  	 	"photo": "url(images/logo.jpg)",
-      "name": "SGM 7",
+  	 	"photo": "url(people/img/default_people.png)",
+      "name": "Shankar Prasad",
       "contact": "1234567890"
     }
 ]

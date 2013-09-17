@@ -15,7 +15,7 @@
             <p style="float:left;margin:0px;padding:12px 4px;color:#FFF;font-size:18px">
                 Hostel
             </p></a>
-            <div class="login_container">
+            <!--div class="login_container">
                 <div class="flat-form">
                     <ul class="tabs">
                         <li>
@@ -44,76 +44,74 @@
                         </form>
                     </div>
                 </div>
-            </div>
+            </div-->
         </div>
         <div class="myDiv" style="height:auto;">
-            <div class="pageHeader_fill">
-                <div class="pageHeader">
-                    <nav id="pageNav" role="navigation">
-                        <ul>
-                            <li>
-                                <a href="#!/home" class="heading">Home</a>
-                            </li>
-                            <li class="drop">
-                                <a href="#!/people" class="heading">People</a>
-                                <div class="dropdownContain">
-                                    <div class="dropOut">
-                                        <div class="triangle"></div>
-                                        <ul>
-                                            <li>
-                                                <a href="#!/people#warden" class="subheading">Wardens</a>
-                                            </li>
-                                            <li>
-                                                <a href="#!/people#sgm" class="subheading">Gymkhana</a>
-                                            </li>
-                                            <li>
-                                                <a href="#!/people#hstaff" class="subheading">Hostel Staff</a>
-                                            </li>
-                                            <li>
-                                                <a href="#!/people#astaff" class="subheading">Admin Staff</a>
-                                            </li>
-                                        </ul>
-                                    </div>
+            <div class="pageHeader_fill pageHeader">
+                <nav id="pageNav" role="navigation">
+                    <ul>
+                        <li>
+                            <a href="#!/home" class="heading">Home</a>
+                        </li>
+                        <li class="drop">
+                            <a href="#!/people" class="heading">People</a>
+                            <div class="dropdownContain">
+                                <div class="dropOut">
+                                    <div class="triangle"></div>
+                                    <ul>
+                                        <a href="#!/people#warden" class="subheading"><li>Wardens</li></a>
+                                        <a href="#!/people#sgm" class="subheading"><li>Gymkhana</li></a>
+                                        <a href="#!/people#hstaff" class="subheading"><li>Hostel Staff</li></a>
+                                        <a href="#!/people#astaff" class="subheading"><li>Admin Staff</li></a>
+                                    </ul>
                                 </div>
-                            </li>
-                            <li>
-                                <a href="#!/facilities" class="heading">Facilities</a>
-                            </li>
-                            <li class="drop">
-                                <a href="#!/life" class="heading">Life</a>
-                                <div class="dropdownContain">
-                                    <div class="dropOut">
-                                        <div class="triangle"></div>
-                                        <ul>
-                                            <li>
-                                                <a href="#!/life#events" class="subheading">Events</a>
-                                            </li>
-                                            <li>
-                                                <a href="#!/life#festival" class="subheading">Festivals</a>
-                                            </li>
-                                            <li>
-                                                <a href="#!/life#trips" class="subheading">Trips</a>
-                                            </li>
-                                            <li>
-                                                <a href="#!/life#others" class="subheading">Others</a>
-                                            </li>
-                                        </ul>
-                                    </div>
+                            </div>
+                        </li>
+                        <li class="drop">
+                            <a href="#!/life" class="heading">Life</a>
+                            <div class="dropdownContain">
+                                <div class="dropOut">
+                                    <div class="triangle"></div>
+                                    <ul>
+                                        <a href="#!/life/Events" class="subheading"><li>Events</li></a>
+                                        <a href="#!/life/Festivals" class="subheading"><li>Festivals</li></a>
+                                        <a href="#!/life/Trips" class="subheading"><li>Trips</li></a>
+                                        <a href="#!/life/Others" class="subheading"><li>Others</li></a>
+                                    </ul>
                                 </div>
-                            </li>
-                            <li>
-                                <a href="#!/gallery" class="heading">Gallery</a>
-                            </li>
-                            <li>
-                                <a href="/" class="heading">Student's Corner</a>
-                            </li>
-                            <li>
-                                <a href="#!/contactus" class="heading">Contact Us</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div><!--For class pageHeader-->
-            </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#!/facilities" class="heading">Facilities</a>
+                            <div class="dropdownContain">
+                                <div class="dropOut">
+                                    <div class="triangle"></div>
+                                    <ul>
+                                        <a href="#!/facilities/Residences" class="subheading"><li>Residences</li></a>
+                                        <a href="#!/facilities/Hostel Office" class="subheading"><li>Hostel Office</li></a>
+                                        <a href="#!/facilities/Medical" class="subheading"><li>Medical</li></a>
+                                        <a href="#!/facilities/Transport" class="subheading"><li>Transport</li></a>
+                                        <a href="#!/facilities/Guest House" class="subheading"><li>Guest House</li></a>
+                                        <a href="#!/facilities/Sports" class="subheading"><li>Sports</li></a>
+                                        <a href="#!/facilities/Computer Centre" class="subheading"><li>Computer Centre</li></a>
+                                        <a href="#!/facilities/La Fresco" class="subheading"><li>La Fresco</li></a>
+                                        <a href="#!/facilities/Students Mess" class="subheading"><li>Students Mess</li></a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#!/gallery" class="heading">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="/" class="heading">Student's Corner</a>
+                        </li>
+                        <li>
+                            <a href="#!/contactus" class="heading">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div><!--For class pageHeader-->
             <div ng-app="main">
                 <div ng-view></div>
             </div>
@@ -128,25 +126,25 @@
                             </h2>
                         </li>
                         <li>
-                            <a href="iiti.ac.in">Institute Website</a>
+                            <a href="http://iiti.ac.in">Institute Website</a>
                         </li>
                         <li>
-                            <a href="cse.iiti.ac.in">School of Computer Science and Engineering</a>
+                            <a href="http://cse.iiti.ac.in">School of Computer Science and Engineering</a>
                         </li>
                         <li>
-                            <a href="ee.iiti.ac.in">School of Electrical Engineering</a>
+                            <a href="http://ee.iiti.ac.in">School of Electrical Engineering</a>
                         </li>
                         <li>
-                            <a href="me.iiti.ac.in">School of Mechanical Engineering</a>
+                            <a href="http://me.iiti.ac.in">School of Mechanical Engineering</a>
                         </li>
                         <li>
                             <a href="#" title="Under Construction">Training and Placement Cell</a>
                         </li>
                         <li>
-                            <a href="#">Student Gymkhana</a>
+                            <a href="#" title="Under Construction">Student Gymkhana</a>
                         </li>
                         <li>
-                            <a href="#">Webmail</a>
+                            <a href="http://webmail.iiti.ac.in">Webmail</a>
                         </li>
                     </ul>
                 </div>

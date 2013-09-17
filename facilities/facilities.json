@@ -4,24 +4,44 @@
         "info": "Students at IIT Indore enjoy world class residential facilities. The residential complex at Silver Springs Township is the one of the best hostel facility in the country. The rooms are spacious and large and looks out to the nearby mountains; the township itself is clean, safe and beautiful. IIT Indore gives utmost importance to the health and hygiene of the students. Some of the facilties we have for students includes a RO system installed in every room to provide safe water and housekeeping is responsible for cleaning the rooms every single day. The hostel is enjoys wireless internet connectivity, gymnasium and many other recreational facilities.",
         "images": [
                 {
-                    "url":"facilities/images/other/1_b.jpg",
+                    "url":"facilities/images/residences/1.jpg",
                     "title":"Lorem ipsum dolor sit amet",
-                    "thumb":"facilities/images/other/1_s.jpg"
+                    "thumb":"facilities/images/residences/1.jpg"
                 },
                 {
-                    "url":"facilities/images/other/2_b.jpg",
+                    "url":"facilities/images/residences/3.jpg",
                     "title":"Etiam quis mi eu elit temp",
-                    "thumb":"facilities/images/other/2_s.jpg"
+                    "thumb":"facilities/images/residences/3.jpg"
                 },
                 {
-                    "url":"facilities/images/other/3_b.jpg",
-                    "title":"Cras neque mi, semper leon",
-                    "thumb":"facilities/images/other/3_s.jpg"
+                    "url":"facilities/images/residences/4.jpg",
+                    "title":"Lorem ipsum dolor sit amet",
+                    "thumb":"facilities/images/residences/4.jpg"
                 },
                 {
-                    "url":"facilities/images/other/4_b.jpg",
-                    "title":"Sed vel sapien vel sem uno",
-                    "thumb":"facilities/images/other/4_s.jpg"
+                    "url":"facilities/images/residences/5.jpg",
+                    "title":"Etiam quis mi eu elit temp",
+                    "thumb":"facilities/images/residences/5.jpg"
+                },
+                {
+                    "url":"facilities/images/residences/6.jpg",
+                    "title":"Lorem ipsum dolor sit amet",
+                    "thumb":"facilities/images/residences/6.jpg"
+                },
+                {
+                    "url":"facilities/images/residences/7.jpg",
+                    "title":"Etiam quis mi eu elit temp",
+                    "thumb":"facilities/images/residences/7.jpg"
+                },
+                {
+                    "url":"facilities/images/residences/9.jpg",
+                    "title":"Lorem ipsum dolor sit amet",
+                    "thumb":"facilities/images/residences/9.jpg"
+                },
+                {
+                    "url":"facilities/images/residences/11.jpg",
+                    "title":"Etiam quis mi eu elit temp",
+                    "thumb":"facilities/images/residences/11.jpg"
                 }
         ]
     },
@@ -30,24 +50,49 @@
         "info": "We have a Hostel Office within the residency area which includes offices of Hostel Wardens, Hostel Supervisor and Estate Officer. Students can go anytime to the Office and file their complaints. However, students are encouraged to use the new Basket feature to lodge complaints unless very imminent measures are deemed necessary. Login on the top to lodge a complaint .",
         "images": [
                 {
-                    "url":"facilities/images/other/1_b.jpg",
+                    "url":"facilities/images/hosteloffice/1.jpg",
                     "title":"Lorem ipsum dolor sit amet",
-                    "thumb":"facilities/images/other/1_s.jpg"
+                    "thumb":"facilities/images/hosteloffice/1.jpg"
                 },
                 {
-                    "url":"facilities/images/other/2_b.jpg",
+                    "url":"facilities/images/hosteloffice/2.jpg",
+                    "title":"Lorem ipsum dolor sit amet",
+                    "thumb":"facilities/images/hosteloffice/2.jpg"
+                },
+                {
+                    "url":"facilities/images/hosteloffice/3.jpg",
                     "title":"Etiam quis mi eu elit temp",
-                    "thumb":"facilities/images/other/2_s.jpg"
+                    "thumb":"facilities/images/hosteloffice/3.jpg"
                 },
                 {
-                    "url":"facilities/images/other/3_b.jpg",
-                    "title":"Cras neque mi, semper leon",
-                    "thumb":"facilities/images/other/3_s.jpg"
+                    "url":"facilities/images/hosteloffice/4.jpg",
+                    "title":"Lorem ipsum dolor sit amet",
+                    "thumb":"facilities/images/hosteloffice/4.jpg"
                 },
                 {
-                    "url":"facilities/images/other/4_b.jpg",
-                    "title":"Sed vel sapien vel sem uno",
-                    "thumb":"facilities/images/other/4_s.jpg"
+                    "url":"facilities/images/hosteloffice/5.jpg",
+                    "title":"Etiam quis mi eu elit temp",
+                    "thumb":"facilities/images/hosteloffice/5.jpg"
+                },
+                {
+                    "url":"facilities/images/hosteloffice/6.jpg",
+                    "title":"Lorem ipsum dolor sit amet",
+                    "thumb":"facilities/images/hosteloffice/6.jpg"
+                },
+                {
+                    "url":"facilities/images/hosteloffice/7.jpg",
+                    "title":"Etiam quis mi eu elit temp",
+                    "thumb":"facilities/images/hosteloffice/7.jpg"
+                },
+                {
+                    "url":"facilities/images/hosteloffice/8.jpg",
+                    "title":"Etiam quis mi eu elit temp",
+                    "thumb":"facilities/images/hosteloffice/8.jpg"
+                },
+                {
+                    "url":"facilities/images/hosteloffice/9.jpg",
+                    "title":"Lorem ipsum dolor sit amet",
+                    "thumb":"facilities/images/hosteloffice/9.jpg"
                 }
         ]
     },
@@ -56,24 +101,29 @@
         "info": "You ill Son ? Don't worry , we've got it covered .",
         "images": [
                 {
-                    "url":"facilities/images/other/1_b.jpg",
+                    "url":"facilities/images/medical/1.jpg",
                     "title":"Lorem ipsum dolor sit amet",
-                    "thumb":"facilities/images/other/1_s.jpg"
+                    "thumb":"facilities/images/medical/1.jpg"
                 },
                 {
-                    "url":"facilities/images/other/2_b.jpg",
+                    "url":"facilities/images/medical/2.jpg",
+                    "title":"Lorem ipsum dolor sit amet",
+                    "thumb":"facilities/images/medical/2.jpg"
+                },
+                {
+                    "url":"facilities/images/medical/3.jpg",
                     "title":"Etiam quis mi eu elit temp",
-                    "thumb":"facilities/images/other/2_s.jpg"
+                    "thumb":"facilities/images/medical/3.jpg"
                 },
                 {
-                    "url":"facilities/images/other/3_b.jpg",
-                    "title":"Cras neque mi, semper leon",
-                    "thumb":"facilities/images/other/3_s.jpg"
+                    "url":"facilities/images/medical/4.jpg",
+                    "title":"Lorem ipsum dolor sit amet",
+                    "thumb":"facilities/images/medical/4.jpg"
                 },
                 {
-                    "url":"facilities/images/other/4_b.jpg",
-                    "title":"Sed vel sapien vel sem uno",
-                    "thumb":"facilities/images/other/4_s.jpg"
+                    "url":"facilities/images/medical/5.jpg",
+                    "title":"Etiam quis mi eu elit temp",
+                    "thumb":"facilities/images/medical/5.jpg"
                 }
         ]
     },
@@ -108,24 +158,29 @@
         "info": "We have a Guest House facility at our hostel premises where visitors and parents can stay with prior booking.",
         "images": [
                 {
-                    "url":"facilities/images/other/1_b.jpg",
+                    "url":"facilities/images/guesthouse/1.jpg",
                     "title":"Lorem ipsum dolor sit amet",
-                    "thumb":"facilities/images/other/1_s.jpg"
+                    "thumb":"facilities/images/guesthouse/1.jpg"
                 },
                 {
-                    "url":"facilities/images/other/2_b.jpg",
+                    "url":"facilities/images/guesthouse/2.jpg",
+                    "title":"Lorem ipsum dolor sit amet",
+                    "thumb":"facilities/images/guesthouse/2.jpg"
+                },
+                {
+                    "url":"facilities/images/guesthouse/3.jpg",
                     "title":"Etiam quis mi eu elit temp",
-                    "thumb":"facilities/images/other/2_s.jpg"
+                    "thumb":"facilities/images/guesthouse/3.jpg"
                 },
                 {
-                    "url":"facilities/images/other/3_b.jpg",
-                    "title":"Cras neque mi, semper leon",
-                    "thumb":"facilities/images/other/3_s.jpg"
+                    "url":"facilities/images/guesthouse/4.jpg",
+                    "title":"Lorem ipsum dolor sit amet",
+                    "thumb":"facilities/images/guesthouse/4.jpg"
                 },
                 {
-                    "url":"facilities/images/other/4_b.jpg",
-                    "title":"Cras neque mi, semper leon",
-                    "thumb":"facilities/images/other/4_s.jpg"
+                    "url":"facilities/images/guesthouse/5.jpg",
+                    "title":"Etiam quis mi eu elit temp",
+                    "thumb":"facilities/images/guesthouse/5.jpg"
                 }
         ]
     },
@@ -175,50 +230,55 @@
         "info": "Our hostel's computer center is equipped with enough PCs with 24x7 LAN connectivity. Students can go anytime to Cyberus to access internet. Besides this ,most students have Wi-Fi access.",
         "images": [
                 {
-                    "url":"facilities/images/other/1_b.jpg",
+                    "url":"facilities/images/computercenter/1.jpg",
                     "title":"Lorem ipsum dolor sit amet",
-                    "thumb":"facilities/images/other/1_s.jpg"
+                    "thumb":"facilities/images/computercenter/1.jpg"
                 },
                 {
-                    "url":"facilities/images/other/2_b.jpg",
+                    "url":"facilities/images/computercenter/2.jpg",
+                    "title":"Lorem ipsum dolor sit amet",
+                    "thumb":"facilities/images/computercenter/2.jpg"
+                },
+                {
+                    "url":"facilities/images/computercenter/3.jpg",
                     "title":"Etiam quis mi eu elit temp",
-                    "thumb":"facilities/images/other/2_s.jpg"
+                    "thumb":"facilities/images/computercenter/3.jpg"
                 },
                 {
-                    "url":"facilities/images/other/3_b.jpg",
-                    "title":"Cras neque mi, semper leon",
-                    "thumb":"facilities/images/other/3_s.jpg"
+                    "url":"facilities/images/computercenter/4.jpg",
+                    "title":"Lorem ipsum dolor sit amet",
+                    "thumb":"facilities/images/computercenter/4.jpg"
                 },
                 {
-                    "url":"facilities/images/other/4_b.jpg",
-                    "title":"Sed vel sapien vel sem uno",
-                    "thumb":"facilities/images/other/4_s.jpg"
+                    "url":"facilities/images/computercenter/5.jpg",
+                    "title":"Etiam quis mi eu elit temp",
+                    "thumb":"facilities/images/computercenter/5.jpg"
+                },
+                {
+                    "url":"facilities/images/computercenter/6.jpg",
+                    "title":"Lorem ipsum dolor sit amet",
+                    "thumb":"facilities/images/computercenter/6.jpg"
                 }
         ]
     },
     {
-        "facility": "La-Fresco , IIT Indore's Own Convenience Store",
+        "facility": "La Fresco",
         "info": "We have well maintained, spacious and hygenic dining halls both for Veg and Non. Veg food. Students are provided four meals a day: Breakfast, Lunch, Evening Snacks &amp; Dinner. Mess Menu is regularly updated and changed as per students' demand. Apart from that, televisions are installed in common area.",
         "images": [
                 {
-                    "url":"facilities/images/other/1_b.jpg",
-                    "title":"Lorem ipsum dolor sit amet",
-                    "thumb":"facilities/images/other/1_s.jpg"
+                    "url":"facilities/images/lafresco/3.JPG",
+                    "title":"lafresco#3",
+                    "thumb":"facilities/images/lafresco/3.jpg"
                 },
                 {
-                    "url":"facilities/images/other/2_b.jpg",
-                    "title":"Etiam quis mi eu elit temp",
-                    "thumb":"facilities/images/other/2_s.jpg"
+                    "url":"facilities/images/lafresco/4.JPG",
+                    "title":"lafresco#4",
+                    "thumb":"facilities/images/lafresco/4.jpg"
                 },
                 {
-                    "url":"facilities/images/other/3_b.jpg",
-                    "title":"Cras neque mi, semper leon",
-                    "thumb":"facilities/images/other/3_s.jpg"
-                },
-                {
-                    "url":"facilities/images/other/4_b.jpg",
-                    "title":"Sed vel sapien vel sem uno",
-                    "thumb":"facilities/images/other/4_s.jpg"
+                    "url":"facilities/images/lafresco/6.JPG",
+                    "title":"lafresco#6",
+                    "thumb":"facilities/images/lafresco/6.jpg"
                 }
         ]
     },

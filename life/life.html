@@ -66,6 +66,10 @@ $(document).ready(function() {
 	.fancybox-custom .fancybox-skin {
 		box-shadow: 0 0 50px #222;
 	}
+	.ac-container input:checked ~ article.ac-medium {
+		height: 500px;
+		overflow: auto;
+	}
 </style>
 
 <div class="content" style="margin-bottom:50px;height:1000px;">
@@ -78,7 +82,7 @@ $(document).ready(function() {
                    {{facility.info}}
                 </p>
                 <p class="info">
-                    <a ng-repeat="image in facility.images" class="fancybox" href="{{image.url}}" data-fancybox-group="gallery" title="{{image.title}}"><img src="{{image.thumb}}"> </a>
+                    <a ng-repeat="image in facility.images" class="fancybox" href="{{image.url}}" data-fancybox-group="gallery" title="{{image.title}}"><img style="max-height:200px;" src="{{image.thumb}}"> </a>
                 </p>
             </article>
         </div>

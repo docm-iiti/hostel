@@ -5,27 +5,23 @@
 	border-radius: 5px;
 	box-shadow: rgba(0,0,0,0.4) 0 0 5px 5px;
 }
-
 #gMap {
 	position: absolute;
 	margin: 100px 0 0 25px;
 	width: 600px;
 	z-index: 3;
 }
-
 #gMapHelper {
 	margin: 250px 0 100px 600px;
 	width: 500px;
 	height: 500px;
 	z-index: 2;
 }
-
 #gMapHelperDirections {
 	clear: both;
 	color: #283255;
 	padding: 50px;
 }
-
 .gFrame {
 	position:absolute;
 	margin:0px;
@@ -74,11 +70,3 @@
 .temp_campus_contact{
 	width:1096px;
 }
-	
-	
-	
-	
-	
-	
-	
-	

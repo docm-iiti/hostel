@@ -1,10 +1,52 @@
 [
-	{"name":"Staff aaa"},
-	{"name":"Staff aaa"},
-	{"name":"Staff aaa"},
-	{"name":"Staff aaa"},
-	{"name":"Staff aaa"},
-	{"name":"Staff aaa"},
-	{"name":"Staff aaa"},
-	{"name":"Staff aaa"}
+	{
+		"name":"Mr. Rajesh Rajak",
+		"designation":"State Engineer(Civil)",
+		"contact":"9479809656"
+	},
+	{
+		"name":"Mr. Pradeep Kr. Nayak",
+		"designation":"Electrical Engineer",
+		"contact":"9479758729"
+	},
+	{
+		"name":"Mr. J.C. Upadhyay",
+		"designation":"Electrician",
+		"contact": "8871366966,9981034224"
+	},
+	{
+		"name":"Mr. Jaishankar Upadhyay",
+		"designation":"Electrician",
+		"contact": "8359882253,9039670955"
+	},
+	{
+		"name":"Mr. Swadesh Kr. Chobey",
+		"designation":"Electrician",
+		"contact": "8357936992"
+	},
+	{
+		"name":"Mr. Ashok Verma",
+		"designation":"Electrician",
+		"contact":"9893014148"
+	},
+	{
+		"name":"Mr. Janu kandekar",
+		"designation":"Plumber",
+		"contact":"9981034220"
+	},
+	{
+		"name":"Mr. Rajesh Pal",
+		"designation":"Plumber",
+		"contact":"9977140789"
+	},
+	{
+		"name":"Mr. DeepakDubey",
+		"designation":"Helper(Carpenter)",
+		"contact": "8357936991"
+	},
+	{
+		"name":"Mr. DayaramGarg",
+		"designation":"Carpenter",
+		"contact": "8602526800"
+	}
 ]

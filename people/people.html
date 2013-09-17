@@ -1,29 +1,5 @@
 <link rel="stylesheet" href="css/people.css" />
-<script type="text/javascript" src="js/vendor/jquery-1.10.1.min.js" ></script>
 
-<style>
-	.member_description{
-		width:100%;
-		height:100%;
-		opacity:0;
-		line-height:2em;
-		font-size:20px;
-	}
-
-	.member_description:hover{
-		background:rgba(0,0,0,0.5);
-		opacity:1;
-    color: white;
-    text-decoration: none;
-		-webkit-transition:all 0.5s ease-out;
-  	-moz-transition:all 0.5s ease-out;
-  	-ms-transition:all 0.5s ease-out;
-  	-o-transition:all 0.5s ease-out;
-  	transition:all 0.5s ease-out;				
-	}
-</style>
-
-    
 <div class="content" style="margin-bottom:50px;">
 	<div class="description">
     <h2 id="warden">WARDENS</h2><hr/>
@@ -33,12 +9,12 @@
     </p>
   </div>
   <div class="warden">
-    <div ng-repeat="warden in wardens" class="warden_mem" style="{{warden.photo}}">
-      <a href="{{warden.link}}" target="_blank">
+    <div ng-repeat="warden in wardens" class="warden_mem" style="background:{{warden.photo}};background-repeat:no-repeat;">
+      <a style="text-decoration:none;color:white;" href="{{warden.link}}" target="_blank">
         <div class="member_description">
         <center>
-        <label>Name:</label>{{warden.name}}
-        <label>Contact:</label>{{warden.contact}}
+        {{warden.name}}<br>
+        {{warden.contact}}
         </center>
         </div>
       </a>
@@ -53,18 +29,18 @@
   </div>
 
   <div class="sgm">
-  	<div ng-repeat="sgm in sgms" class="sgm_mem" style="{{sgm.photo}}">
+  	<div ng-repeat="sgm in sgms" class="sgm_mem" style="background:{{sgm.photo}};background-repeat:no-repeat;">
       <div class="member_description">
         <center>
-        <label>Name:</label>{{sgm.name}}
-        <label>Contact:</label>{{sgm.contact}}
+        {{sgm.name}}
+        {{sgm.contact}}
         </center>
       </div>
     </div>
   </div>
 
 <div style="width:100%;border-bottom:2px dotted #e74c32;height:auto;"></div>
-<div class="warden">
+<div class="staffnstaff">
   <div class="staff">
   	<div id="astaff" class="side">
       	<p style="margin-left:15px;">A<br>D<br>M<br>I<br>N<br><br>S<br>T<br>A<br>F<br>F</p>
@@ -82,7 +58,7 @@
   </div>
   <div class="staff" style="float:right;">
   	<div id="hstaff" class="side">
-     	<p style="margin-left:15px;">H<br>O<br>S<br>T<br>E<br>L<br><br>S<br>T<br>A<br>F<br>F</p>
+     	<p style="margin-left:15px;">E<br>S<br>T<br>A<br>T<br>E<br> <br>O<br>F<br>F<br>I<br>C<br>E<br></p>
     </div>
     <div style="margin-left:50px;" class="people_content">
       <div ng-repeat="admin in staff" class="item">
@@ -96,8 +72,3 @@
     </div>
   </div>
 </div>
-
-<script type="text/javascript" src="js/farinspace/jquery.imgpreload.min.js" ></script>
-<script type="text/javascript" src="js/marquee.js"></script>
-<script type="text/javascript" src="js/index.js" ></script>
-<script src="js/header_login.js"></script>
