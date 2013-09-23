@@ -5,6 +5,18 @@ function homeCtrl($scope, $http, $routeParams, $timeout){
 	$http.get("home/marquee.json").success(function(data){
 		$scope.imgs = data;
 	});
+	$http.get("https://spreadsheets.google.com/feeds/list/0ArgpUuZnCjpddFdTUFI2NXlid0FlN0RiV3ZZam50Tmc/od6/public/basic?alt=json").success(function(data){
+		$scope.b4events = data.feed.entry;
+		$scope.events = [];
+		var temp, item, k;
+		for (var i = 0; i < $scope.b4events.length; i++) {
+			temp = $scope.b4events[i].content.$t;
+			item = {};
+			item.title = temp.substring(7,temp.indexOf("url: ")-2);
+			item.url = temp.substring(temp.indexOf("url: ")+5);
+			$scope.events.push(item);
+		};
+	});
     setInterval(function(){
         $scope.$apply(function() {
         	$scope.img = $scope.imgs[(i++)%10];
