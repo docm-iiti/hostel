@@ -8,6 +8,7 @@ angular.module('main',[]).config(['$routeProvider', '$locationProvider', functio
   when('/contactus', {templateUrl: 'views/contactus.html'}).
   when('/gallery', {templateUrl: 'views/gallery.html'}).
   when('/people', {templateUrl: 'people/people.html', controller: peopleCtrl}).
+  when('/404', {templateUrl: 'views/404.html'}).
   otherwise({redirectTo: '/home'});
   $locationProvider.hashPrefix('!');
 }]);
