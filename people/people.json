@@ -2,17 +2,22 @@
 	{
 	 	"photo": "url(people/img/default_people.png)",
     "name": "Dr. Biswaroop Pathak",
-    "contact": "1234567890",
+    "contact": "0731-2438-730",
     "link": "http://people.iiti.ac.in/~biswarup/"
   },
   {
 	 	"photo": "url(people/img/default_people.png)",
-    "name": "Blah Blah #2",
-    "contact": "1234567890"
+    "name": "Dr. Santosh Viswakarma",
+    "contact": "0732-4240-719"
   },
   {
-	 	"photo": "url(people/img/default_people.png)",
-    "name": "Blah Blah #3",
-    "contact": "1234567890"
+    "photo": "url(people/img/default_people.png)",
+    "name": "Dr. Preeti Bhobe",
+    "contact": "0731-2438-724"
+  },
+  {
+    "photo": "url(people/img/default_people.png)",
+    "name": "Dr. Sharad Gupta",
+    "contact": ""
   }
 ]

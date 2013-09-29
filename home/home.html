@@ -1,6 +1,6 @@
-<link rel="stylesheet" href="/css/marquee.css">
+<link rel="stylesheet" href="home/css/home.css">
 <div class="marquee">
-  <img src="{{img.url}}" alt="Loading.." ng-animate="'animate'">
+  <img src="{{img.url}}" ng-animate="'animate'">
   <div class="caption">
     {{img.caption.header}}
   </div>
@@ -9,31 +9,34 @@
 <div class="content" style="margin-bottom:50px;">
 
 <div class="about_hostel">
-    <div class="hostel_description"><p style="text-align:justify;">" IIT Indore's Hostel is located in the beautiful township of Silver Springs on AB By pass Road, Indore. IIT Indore buses ply between the township and the institute at regular intervals for students. It is a 20 minute ride to the temporary campus from the township. Presently around 600 students are residing in the hostel. Staying here will truly be a wonderful and memorable experience."</p>
-    </div>
-    </div>
-   <div class="3_div_data">
-        <div class="news card">
-            <div style="width:100%;height:40px;background:#333333;color:white;margin:0px;text-align:center;">
-                <h4>EVENTS</h4>
-               </div> 
-                <ul style="line-height:1.5em;">
-                  <!--**********************************NEWS ELEMENTS***************************************-->
-                    <a href="https://googledrive.com/host/0B7gpUuZnCjpdajRPa1FEMTZNVGs/GoGooglePlusRegistration.html" style="color:#000000;" target="_blank"><li>Go Google+</li></a>
-                    <li>Code Carnage 2.0</li>
-            
-        </div>
-        <div class="border">
-        </div>
-        <div class="something card">
-            <div style="width:100%;height:40px;background:#333333;color:white;margin:0px;text-align:center;">
-                <h4>NEWS</h4>
-                <ul style="line-height:1.5em;color:#000000;text-align:left;">
-                <li>New website for hostel is uploaded</li>
-                
-                </ul>
+  <div class="hostel_description"><p style="text-align:justify;">" IIT Indore's Hostel is located in the beautiful township of Silver Springs on AB By pass Road, Indore. IIT Indore buses ply between the township and the institute at regular intervals for students. It is a 20 minute ride to the temporary campus from the township. Presently around 600 students are residing in the hostel. Staying here will truly be a wonderful and memorable experience."</p>
+  </div>
+  </div>
+  <div class="3_div_data">
+    <div class="news card">
+      <div style="width:100%;height:40px;background:#333333;color:white;margin:0px;text-align:center;">
+        <h4>EVENTS</h4>
+      </div> 
+      <div class="items">
+        <div ng-repeat="event in events">
+          <a href="{{event.url}}" target="_blank">
+            <div class="item">
+              {{event.title}}
             </div>
+          </a>
         </div>
+      </div>
+    </div>
+    <div class="border">
+    </div>
+    <div class="something card">
+      <div style="width:100%;height:40px;background:#333333;color:white;margin:0px;text-align:center;">
+        <h4>NEWS</h4>
+        <ul style="line-height:1.5em;color:#000000;text-align:left;">
+        <li>New website for hostel is uploaded</li>
+        </ul>
+      </div>
+    </div>
     </div><!----for 3_div_data---->
   </div>
 </div>

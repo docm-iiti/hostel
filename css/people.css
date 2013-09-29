@@ -2,7 +2,7 @@
 	position:relative;
 	width:1096px;
 	margin:50px;
-	height:400px;
+	height:350px;
 	border-left:2px solid #e74c3c;
 	border-right:2px solid #e74c3c;
 	-webkit-box-shadow:0 2px 6px rgba(0,0,0,.15);
@@ -22,10 +22,10 @@
 }
 .warden_mem{
 	position:relative;
-	height:100%;
-	width:300px;
+	height:300px;
+	width:200px;
 	float:left;
-	margin-left:50px;
+	margin:25px;
 }
 .sgm{
 	position:relative;
