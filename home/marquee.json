@@ -1,62 +1,74 @@
 [
 	{
-	  "url":"images/slider/1.jpg",
+	  "url":"home/img/12.jpg",
 	  "caption": {
-	  	"header":"Capsstion"
+	  	"header":"Rejoice"
 	  }
 	},
 	{
-	  "url":"images/slider/2.jpg",
+	  "url":"home/img/11.jpg",
 	  "caption": {
-	  	"header":"klssdj"
+	  	"header":"Events"
 	  }
 	},
 	{
-	  "url":"images/slider/3.jpg",
+	  "url":"home/img/1.jpg",
 	  "caption": {
-	  	"header":"aakldj"
+	  	"header":"Silver Springs Entrance"
 	  }
 	},
 	{
-	  "url":"images/slider/4.jpg",
+	  "url":"home/img/2.jpg",
 	  "caption": {
-	  	"header":"kldjdf"
+	  	"header":"Dorms"
 	  }
 	},
 	{
-	  "url":"images/slider/5.jpg",
+	  "url":"home/img/3.jpg",
 	  "caption": {
-	  	"header":"kafjhldj"
+	  	"header":"Lawn"
 	  }
 	},
 	{
-	  "url":"images/slider/6.jpg",
+	  "url":"home/img/4.jpg",
 	  "caption": {
-	  	"header":"klavmj,dj"
+	  	"header":"Balcony view"
 	  }
 	},
 	{
-	  "url":"images/slider/7.jpg",
+	  "url":"home/img/5.jpg",
 	  "caption": {
-	  	"header":"klssdj"
+	  	"header":"Peace"
 	  }
 	},
 	{
-	  "url":"images/slider/8.jpg",
+	  "url":"home/img/6.jpg",
 	  "caption": {
-	  	"header":"kaaaaaaldj"
+	  	"header":"Serenity"
 	  }
 	},
 	{
-	  "url":"images/slider/9.jpg",
+	  "url":"home/img/7.jpg",
 	  "caption": {
-	  	"header":"sd"
+	  	"header":"Sports"
 	  }
 	},
 	{
-	  "url":"images/slider/10.jpg",
+	  "url":"home/img/8.jpg",
 	  "caption": {
-	  	"header":"asfaf"
+	  	"header":"2012 Batch :D"
+	  }
+	},
+	{
+	  "url":"home/img/9.jpg",
+	  "caption": {
+	  	"header":"Silver Springs"
+	  }
+	},
+	{
+	  "url":"home/img/10.jpg",
+	  "caption": {
+	  	"header":"Silver Springs Exit"
 	  }
 	}
 ]
